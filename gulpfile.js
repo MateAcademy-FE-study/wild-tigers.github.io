@@ -2,11 +2,11 @@ let gulp = require("gulp");
 let sass = require("gulp-sass");
 
 gulp.task('sass', function () {
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('default', function () {
-    gulp.watch('./scss/**/*.scss', ['sass']);
+    gulp.watch('./src/scss/**/*.scss', ['sass']);
 });
