@@ -8,7 +8,7 @@
 4. `git pull origin master`
 
 
-##How to contribute##
+## How to contribute
 
 1. `git add --all` or choose files to be committed
 2. `git commit -m "*comment to your commit*"`
