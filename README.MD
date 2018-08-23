@@ -6,3 +6,8 @@
 2. `npm install`
 3. `git checkout -b ` **Your branch name** (e.g. git checkout -b fixed-position-of-button-in-footer)
 4. `git pull origin master`
+
+
+##How to contribute##
+
+1. On your
