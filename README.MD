@@ -14,5 +14,5 @@
 2. `git commit -m "*comment to your commit*"`
 3. `git push --set-upstream origin *your branch name*`
 4. switch back to master `git checkout master`
-5. git pull
+5. `git pull`
 6. checkout to new branch (step 3 in install section)
