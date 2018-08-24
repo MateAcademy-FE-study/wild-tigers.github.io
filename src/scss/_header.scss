@@ -1,7 +1,13 @@
 @import 'variables';
 
-header {
+.header {
+    width: 100vw;
     &--bgColor {
         background-color: $color-mainYellow;
+        position: fixed;
+        top: 0;
+    }
+    &__container {
+        @extend %container;
     }
 }

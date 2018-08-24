@@ -30,4 +30,6 @@ gulp.task("serv", function() {
 
 gulp.task("default", ["sass", "copy:html", "copy:img", "serv"], function() {
   gulp.watch("./src/scss/**/*.scss", ["sass"]);
+  gulp.watch("./src/*.html", ["copy:html"]);
+  gulp.watch("./src/img/**/*", ["copy:img"]);
 });
