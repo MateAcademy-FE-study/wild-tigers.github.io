@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Objects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 799.9 799.9" style="enable-background:new 0 0 799.9 799.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#335E59;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFAE00;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#D6FFFA;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#71B8B0;}
+	.st4{fill:#D6FFFA;}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFEBBF;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#FC6E4B;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FFC1B2;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M249,448.1H353c2.1,0,3.9,1.7,3.9,3.9v65.6c0,2.1-1.7,3.9-3.9,3.9H249c-2.1,0-3.9-1.7-3.9-3.9V452
+			C245.2,449.9,246.9,448.1,249,448.1z"/>
+		<rect x="251" y="455.8" class="st1" width="100.1" height="53.7"/>
+		<path class="st2" d="M301,453.5c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4c-0.8,0-1.4,0.6-1.4,1.4
+			C299.6,452.9,300.2,453.5,301,453.5z"/>
+		<rect x="298.6" y="512.9" class="st2" width="4.7" height="4.7"/>
+		<polygon class="st2" points="245.2,521.5 356.8,521.5 376.2,534.2 225.8,534.2 		"/>
+		<path class="st0" d="M225.8,534.2h150.4v4.3c0,1.5-1.3,2.8-2.8,2.8H228.6c-1.5,0-2.8-1.3-2.8-2.8V534.2z"/>
+		<rect x="285.8" y="537.9" class="st2" width="30.4" height="1.9"/>
+		<rect x="225.8" y="534.2" class="st2" width="150.4" height="2.2"/>
+	</g>
+	<g>
+		<polygon class="st3" points="248,523.5 354,523.5 367,532.1 235,532.1 		"/>
+		<g>
+			<rect x="300.1" y="522.7" class="st4" width="1.4" height="10.2"/>
+			<polygon class="st4" points="315.1,522.5 317.7,532.7 316.3,533.1 313.7,522.9 			"/>
+			
+				<rect x="329" y="522.1" transform="matrix(0.8943 -0.4475 0.4475 0.8943 -201.3157 203.3288)" class="st4" width="1.4" height="11.4"/>
+			<polygon class="st4" points="340.5,522.3 348.4,532.4 347.3,533.3 339.3,523.2 			"/>
+			<rect x="241.1" y="525" class="st4" width="119.4" height="1.4"/>
+			<polygon class="st4" points="287.9,522.9 285.3,533.1 283.9,532.7 286.5,522.5 			"/>
+			
+				<rect x="266.2" y="527.1" transform="matrix(0.4474 -0.8943 0.8943 0.4474 -321.7981 534.7661)" class="st4" width="11.4" height="1.4"/>
+			
+				<rect x="251.2" y="527.1" transform="matrix(0.6172 -0.7868 0.7868 0.6172 -316.614 404.7842)" class="st4" width="12.9" height="1.4"/>
+			<rect x="236.8" y="528.5" class="st4" width="130" height="1.4"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st5" d="M275.6,463.9c11.7,0,10.1,20.3,0,20.3C265.5,484.2,263.9,463.9,275.6,463.9z"/>
+			<path class="st5" d="M282,483.5c7.3,2.5,11.1,9.5,11.9,18.2h-36.7c0.9-8.6,4.6-15.6,11.9-18.2c1.6,1.8,3.8,2.9,6.4,2.9
+				C278.2,486.4,280.4,485.3,282,483.5z"/>
+		</g>
+		<path class="st6" d="M300.6,493.3h42c0.5,0,0.9,0.4,0.9,0.9v6.4c0,0.5-0.4,0.9-0.9,0.9h-42c-0.5,0-0.9-0.4-0.9-0.9v-6.4
+			C299.6,493.8,300.1,493.3,300.6,493.3z"/>
+		<path class="st5" d="M300,487.8h16.2c0.2,0,0.4,0.2,0.4,0.4v2.5c0,0.2-0.2,0.4-0.4,0.4H300c-0.2,0-0.4-0.2-0.4-0.4v-2.5
+			C299.6,488,299.8,487.8,300,487.8z"/>
+		<path class="st6" d="M300.6,475h42c0.5,0,0.9,0.4,0.9,0.9v6.4c0,0.5-0.4,0.9-0.9,0.9h-42c-0.5,0-0.9-0.4-0.9-0.9V476
+			C299.6,475.4,300.1,475,300.6,475z"/>
+		<path class="st5" d="M300,469.5h16.2c0.2,0,0.4,0.2,0.4,0.4v2.5c0,0.2-0.2,0.4-0.4,0.4H300c-0.2,0-0.4-0.2-0.4-0.4v-2.5
+			C299.6,469.7,299.8,469.5,300,469.5z"/>
+	</g>
+	<g>
+		<path class="st7" d="M318.9,431.5h48.5c0.9,0,1.7,0.8,1.7,1.7v29.5c0,0.9-0.8,1.7-1.7,1.7h-48.5c-0.9,0-1.7-0.8-1.7-1.7v-29.5
+			C317.2,432.3,318,431.5,318.9,431.5z"/>
+		<rect x="317.2" y="454.6" class="st8" width="51.9" height="6.1"/>
+		<path class="st8" d="M321.4,434.5h9.9c0.5,0,0.9,0.4,0.9,0.9v6.5c0,0.5-0.4,0.9-0.9,0.9h-9.9c-0.5,0-0.9-0.4-0.9-0.9v-6.5
+			C320.4,435,320.8,434.5,321.4,434.5z"/>
+	</g>
+</g>
+</svg>
