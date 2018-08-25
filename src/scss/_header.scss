@@ -1,5 +1,4 @@
 @import 'variables';
-
 .header {
     width: 100vw;
     &--bgColor {
@@ -7,7 +6,5 @@
         position: fixed;
         top: 0;
     }
-    &__container {
-        @extend %container;
-    }
+    &__container {}
 }
