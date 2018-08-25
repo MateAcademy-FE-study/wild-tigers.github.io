@@ -3,6 +3,7 @@
 .features {
   display: flex;
   flex-wrap: wrap;
+  margin: 3em;
   //h3{
   //  display: block;
   //  text-align: center;
@@ -14,10 +15,10 @@
     color: $h2-font-color;
     width: 100%;
     height: 2em;
-
+    text-transform: uppercase;
     vertical-align: middle;
     box-shadow: $h2-box-shadow;
-    margin: 2em 25em;
+    margin: 2em 20em;
     flex-grow: 3;
     text-align: center;
     border: 1px solid $h2-bg-color;
