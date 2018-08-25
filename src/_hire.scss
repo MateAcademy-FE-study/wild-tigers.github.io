@@ -1,0 +1,25 @@
+.hire {
+    margin: 90px auto;
+    max-width: 1006px;
+    &__content {
+        background-color: $color-mainYellow;
+        color: $color-white;
+        padding: 37px 26px 33px 50px;
+        font-family: $buttons-font-family;
+        transform: translateY(-50%);
+        h3 {
+            font-size: 22px;
+        }
+    }
+    &__button {
+        float: right;
+        color: #3a3a3a;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+        padding: 13px 41px;
+        background-color: $color-white;
+        transform: translateY(-80%);
+        font-size: 20px;
+    }
+}
