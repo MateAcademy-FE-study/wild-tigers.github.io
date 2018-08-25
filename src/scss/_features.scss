@@ -1,19 +1,20 @@
 @import "variables";
 
-.our-features {
+.features {
   display: flex;
   flex-wrap: wrap;
-//h3{
-//  display: block;
-//  text-align: center;
-//}
-  .our-features__heading{
-    width: 100%;    flex-grow: 1;
-text-align: center;
+  //h3{
+  //  display: block;
+  //  text-align: center;
+  //}
+  .features__heading {
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
     //display: block;
   }
-  .our-features__section {
-padding: 3em;
+  .features__section {
+    padding: 3em;
     flex-grow: 1;
     width: 33%;
     height: 100px;
