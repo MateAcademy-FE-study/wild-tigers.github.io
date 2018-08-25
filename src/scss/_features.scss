@@ -23,6 +23,9 @@
     text-align: center;
     border: 1px solid $h2-bg-color;
     background-color: $h2-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     //display: block;
   }
