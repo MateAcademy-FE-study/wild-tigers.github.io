@@ -1,31 +1,27 @@
 @import 'variables';
-.header {
-    width: 100vw;
-    &--bgColor {
-        background-color: $color-mainYellow;
-        position: fixed;
-        top: 0;
-    }
-<<<<<<< HEAD
-    &__container {}
-=======
-    &__container {
 
-    }
+.header {
+  width: 100vw;
+  &--bgColor {
+    background-color: $color-mainYellow;
+    position: fixed;
+    top: 0;
+  }
+  &__container {
+  }
 }
 
 .nav {
 
-    &__block {
-        display: inline-block;
-list-style: none;
+  &__block {
+    display: inline-block;
+    list-style: none;
 
-    }
-    &__element {
+  }
+  &__element {
 
-    }
-    &__link {
+  }
+  &__link {
 
-    }
->>>>>>> 92331daadb51531f50b959cb0c6b81c08002a1a2
+  }
 }
