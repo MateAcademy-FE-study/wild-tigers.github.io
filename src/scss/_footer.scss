@@ -1,6 +1,3 @@
-@import 'normalize';
-@import 'variables';
-@import 'general';
 a {
     text-decoration: none;
 }
@@ -9,7 +6,7 @@ ul {
     list-style: none;
 }
 
-footer {
+.footer-wrapper {
     max-width: 1300px;
     background-color: $p-font-color;
     height: 407px;
@@ -19,7 +16,6 @@ footer {
 }
 
 .footer {
-    margin: 0 11.15%;
     &__menu {
         display: flex;
         justify-content: space-between;
