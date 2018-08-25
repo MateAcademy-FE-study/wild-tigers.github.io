@@ -8,6 +8,21 @@
         top: 0;
     }
     &__container {
-        @extend %container;
+
+    }
+}
+
+.nav {
+
+    &__block {
+        display: inline-block;
+list-style: none;
+
+    }
+    &__element {
+
+    }
+    &__link {
+
     }
 }
