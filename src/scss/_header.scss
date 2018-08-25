@@ -6,5 +6,26 @@
         position: fixed;
         top: 0;
     }
+<<<<<<< HEAD
     &__container {}
+=======
+    &__container {
+
+    }
+}
+
+.nav {
+
+    &__block {
+        display: inline-block;
+list-style: none;
+
+    }
+    &__element {
+
+    }
+    &__link {
+
+    }
+>>>>>>> 92331daadb51531f50b959cb0c6b81c08002a1a2
 }
