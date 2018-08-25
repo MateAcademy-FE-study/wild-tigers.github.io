@@ -8,15 +8,30 @@
   //  text-align: center;
   //}
   .features__heading {
+    font-size: $h2-font-size;
+    font-family: $h2-font-family;
+    font-weight: $h2-font-weight;
+    color: $h2-font-color;
     width: 100%;
-    flex-grow: 1;
+    height: 2em;
+
+    vertical-align: middle;
+    box-shadow: $h2-box-shadow;
+    margin: 2em 25em;
+    flex-grow: 3;
     text-align: center;
+    border: 1px solid $h2-bg-color;
+    background-color: $h2-bg-color;
+
     //display: block;
   }
   .features__section {
-    padding: 3em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
     flex-grow: 1;
-    width: 33%;
+    width: 30%;
     height: 100px;
+    margin: 1em;
   }
 }
