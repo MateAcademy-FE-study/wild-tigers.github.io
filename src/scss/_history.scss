@@ -1,0 +1,21 @@
+@import "variables";
+@import "buttons";
+
+.history {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    .history__button {
+      background-color: $color-mainYellow;
+      @extend %btn;
+      color: #3a3a3a;
+      padding: 19px 41px;
+      /* бывает 20px можно пребить модификатором*/
+      font-size: 12px;
+      /* меняется везде */
+      font-weight: $font-weight-700;
+      font-family: $buttons-font-family;
+
+    }
+  }
+}
