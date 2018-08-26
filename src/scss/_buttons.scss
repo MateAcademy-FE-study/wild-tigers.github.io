@@ -1,4 +1,39 @@
-*buttons*/ %btn {
+/*BUTTONS*/
+
+
+/* для заголовков к основному классу прибавлять класс grey-name*/
+
+
+/* для жёлтыхк кнопок основному классу  прибавлять класс grey-name_little*/
+
+.grey-name {
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    font-family: $h2-font-family;
+    background-color: #464646;
+    text-align: center;
+    margin: 0 auto;
+    color: $color-white;
+    height: 55px;
+    white-space: nowrap;
+    width: 446px;
+    border-radius: 2px;
+    padding-top: 10px;
+    /* для маленьких серых заголовков прибавлять класс grey-name_little*/
+    &_little {
+        width: 330px;
+    }
+    /* for history прибавлять класс grey-name_history*/
+    &_history {
+        width: 220px;
+    }
+}
+
+
+/* yellow buttons*/
+
+.yellow-btn {
+    background-color: $color-mainYellow;
     appearance: none;
     border: 0;
     white-space: nowrap;
@@ -6,49 +41,10 @@
     text-decoration: none;
     border-radius: 2px;
     box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-}
-
-
-/* Заголовки grey <div class="name-btn"> <h2>UPDATES & SUPPORT</h2> </div>*/
-
-h2 {
-    font-size: $h2-font-size;
-    font-weight: $h2-font-weight;
-    font-family: $h2-font-family;
-}
-
-.support {
-    position: relative;
-    &__name-btn {
-        background-color: #464646;
-        @extend %btn;
-        color: $color-white;
-        height: 55px;
-        /* variant2  padding:19px 100px; change padding-left-right*/
-        width: 446px;
-        border-radius: 2px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* for litlle grey заголовков */
-        &_little {
-            width: 330px;
-        }
-        /* for history */
-        &_history {
-            width: 220px;
-        }
-    }
-    /* yellow buttons*/
-    &__yellow-btn {
-        background-color: $color-mainYellow;
-        @extend %btn;
-        color: #3a3a3a;
-        padding: 19px 41px;
-        /* бывает 20px можно пребить модификатором*/
-        font-size: 12px;
-        /* меняется везде */
-        font-weight: $font-weight-700;
-        font-family: $buttons-font-family;
-    }
+    color: #3a3a3a;
+    padding: 20px 40px;
+    font-size: 12px;
+    font-weight: $font-weight-700;
+    font-family: $buttons-font-family;
+    margin-top: 15px;
 }
