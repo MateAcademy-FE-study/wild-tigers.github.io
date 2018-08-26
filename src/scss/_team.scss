@@ -1,0 +1,31 @@
+.team {
+    width: 100%;
+    text-align: center;
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: $color-mainYellow;
+        padding-top: 60px;
+        padding-bottom: 27px;
+        margin-bottom: 130px;
+    }
+    &__member {
+        margin-right: 3.5%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.member {
+    color: #f5f5f5;
+    font-family: $body-font-family;
+    font-size: $p-font-size;
+    &__name {
+        font-weight: $font-weight-700;
+    }
+    &__position {
+        font-weight: 200;
+    }
+}
