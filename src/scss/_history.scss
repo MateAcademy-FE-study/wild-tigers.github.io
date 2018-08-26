@@ -2,20 +2,25 @@
 @import "buttons";
 
 .history {
+  //display: flex;
+  //justify-content: space-around;
+  width: 100%;
+  background: #f9f8f8;
   .container {
     display: flex;
     justify-content: space-around;
-    .history__button {
-      background-color: $color-mainYellow;
-      @extend %btn;
-      color: #3a3a3a;
-      padding: 19px 41px;
-      /* бывает 20px можно пребить модификатором*/
-      font-size: 12px;
-      /* меняется везде */
-      font-weight: $font-weight-700;
-      font-family: $buttons-font-family;
+    .history__left {
+      width: 30%;
+    }
 
+    .history__right {
+      width: 30%;
+
+      .history__text {
+        font-size: $p-font-size;
+        color: $p-font-color;
+        font-weight: $p-font-weight;
+      }
     }
   }
 }
