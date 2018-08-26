@@ -1,15 +1,14 @@
 .hire {
-    margin: 90px auto;
-    max-width: 1006px;
+    @extend %container;
     &__content {
         background-color: $color-mainYellow;
         color: $color-white;
         padding: 37px 26px 33px 50px;
         font-family: $buttons-font-family;
         transform: translateY(-50%);
-        h3 {
-            font-size: 22px;
-        }
+    }
+    &__h3 {
+        font-size: 22px;
     }
     &__button {
         float: right;
