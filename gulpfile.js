@@ -12,9 +12,9 @@ gulp.task("sass", function() {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task("", function() {
-  return gulp.src("./src/*.html").pipe(gulp.dest("./build"));
-});
+// gulp.task("", function() {
+//   return gulp.src("./src/*.html").pipe(gulp.dest("./build"));
+// });
 
 gulp.task("nunjucks", function() {
   // Gets .html and .nunjucks files in pages
