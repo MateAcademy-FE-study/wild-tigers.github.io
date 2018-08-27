@@ -1,10 +1,9 @@
-%container {
+.container {
     max-width: 1004px;
     margin: 0 auto;
 }
 
 .hire {
-    @extend %container;
     &__content {
         background-color: $color-mainYellow;
         color: $color-white;
@@ -25,5 +24,9 @@
         background-color: $color-white;
         transform: translateY(-80%);
         font-size: 20px;
+        &:hover {
+            color: $color-white;
+            background-color: $p-font-color;
+        }
     }
 }
