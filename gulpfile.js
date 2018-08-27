@@ -11,7 +11,7 @@ gulp.task("sass", function() {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task("copy:html", function() {
+gulp.task("", function() {
   return gulp.src("./src/*.html").pipe(gulp.dest("./build"));
 });
 
@@ -45,9 +45,8 @@ gulp.task("serv", function() {
   browserSync.watch("./build", browserSync.reload);
 });
 
-gulp.task("default", ["sass", "nunjucks", "copy:html", "copy:img", "serv"], function() {
+gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function() {
   gulp.watch("./src/scss/**/*.scss", ["sass"]);
-  gulp.watch("./src/*.html", ["copy:html"]);
   gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
   gulp.watch("./src/img/**/*", ["copy:img"]);
 });
