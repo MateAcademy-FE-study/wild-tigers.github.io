@@ -1,27 +1,55 @@
 @import 'variables';
-
 .header {
-  width: 100vw;
-  &--bgColor {
-    background-color: $color-mainYellow;
-    position: fixed;
-    top: 0;
-  }
-  &__container {
-  }
+  display: flex;
+    width: 100vw;
+    height: 150px;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    padding-top: 88px;
+    &--minimized {
+        height: 60px !important;
+        padding-top: 5px !important;
+    }
+    &--bgColor {
+        background-color: $color-mainYellow;
+        position: fixed;
+        top: 0;
+    }
+    &__container {}
 }
 
 .nav {
-
-  &__block {
     display: inline-block;
-    list-style: none;
+    &__block {
+        display: inline-block;
+        list-style: none;
+    }
+    &__element {
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-mainGrey;
+        display: inline-block;
+    }
+    &__link {
+        color: $color-mainGrey;
+        text-transform: uppercase;
+    }
+}
 
-  }
-  &__element {
+.logo {
+  color: $color-mainGrey;
 
-  }
-  &__link {
-
-  }
+    font-size: 26px;
+    font-weight: 900;
+    display: inline-block;
+    &__element {
+        display: inline-block;
+        &--bordered {
+            padding: 9px 13px;
+            border: 3px solid $color-logoBorder;
+        }
+        &--light {
+          color: $h1-font-color;
+        }
+    }
 }

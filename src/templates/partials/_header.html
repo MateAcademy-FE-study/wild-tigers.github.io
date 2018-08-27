@@ -1,17 +1,33 @@
 <header class="header header--bgColor">
-    <div class="header__container">
-        <img class="logo">
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">academic</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact us</a><br/>
-                    <a href='tel:#'>(+966-322 322)</a></li>
+    <div class="container">
+        <h1 class="logo">
+            <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
+            <div class="logo__element">TECH</div>
+        </h1>
+        <nav class="nav">
+            <ul class="nav__block">
+                <li class="nav__element"><a class="nav__link" href="#">home</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">services</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">about</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">portfolio</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">academic</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">blog</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">contact us</a><br/>
+                    <a class="nav__link" href='tel:#'>(+966-322 322)</a></li>
             </ul>
         </nav>
     </div>
+
+    <script>
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 100){
+        $('.header').addClass("header--minimized");
+    }
+    else{
+        $('.header').removeClass("header--minimized");
+    }
+});
+
+    </script>
 </header>
