@@ -9,6 +9,8 @@
 }
 
 .footer-inner {
+    width: 100%;
+    color: #aab2bd;
     &__list {
         list-style: none;
     }
@@ -25,12 +27,16 @@
             text-decoration: none;
             color: #aab2bd;
             line-height: 2;
+            &:hover {
+                color: $color-white;
+            }
         }
     }
 }
 
 .footer-inner__social {
     text-align: center;
+    padding-bottom: 33px;
 }
 
 .social {
@@ -44,6 +50,9 @@
         color: $color-white;
         border-radius: 2px;
         position: relative;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     &__icon {
         position: absolute;
