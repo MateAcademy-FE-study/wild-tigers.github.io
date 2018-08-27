@@ -19,7 +19,7 @@ gulp.task("nunjucks", function() {
   // Gets .html and .nunjucks files in pages
   return (
     gulp
-      .src("./src/pages/**/*.njk")
+      .src("./src/pages/**/*.html")
       // Renders template with nunjucks
       .pipe(
         nunjucksRender({
@@ -48,6 +48,6 @@ gulp.task("serv", function() {
 gulp.task("default", ["sass", "nunjucks", "copy:html", "copy:img", "serv"], function() {
   gulp.watch("./src/scss/**/*.scss", ["sass"]);
   gulp.watch("./src/*.html", ["copy:html"]);
-  gulp.watch("./src/**/*.njk", ["nunjucks"]);
+  gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
   gulp.watch("./src/img/**/*", ["copy:img"]);
 });
