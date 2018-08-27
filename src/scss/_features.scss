@@ -8,7 +8,7 @@
   //  display: block;
   //  text-align: center;
   //}
-  .features__heading {
+  .&__heading {
     font-size: $h2-font-size;
     font-family: $h2-font-family;
     font-weight: $h2-font-weight;
@@ -29,7 +29,7 @@
 
     //display: block;
   }
-  .features__section {
+  .&__section {
     display: flex;
     justify-content: space-between;
     padding: 1em;
