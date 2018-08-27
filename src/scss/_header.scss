@@ -1,13 +1,27 @@
 @import 'variables';
 
 .header {
-    width: 100vw;
-    &--bgColor {
-        background-color: $color-mainYellow;
-        position: fixed;
-        top: 0;
-    }
-    &__container {
-        @extend %container;
-    }
+  width: 100vw;
+  &--bgColor {
+    background-color: $color-mainYellow;
+    position: fixed;
+    top: 0;
+  }
+  &__container {
+  }
+}
+
+.nav {
+
+  &__block {
+    display: inline-block;
+    list-style: none;
+
+  }
+  &__element {
+
+  }
+  &__link {
+
+  }
 }

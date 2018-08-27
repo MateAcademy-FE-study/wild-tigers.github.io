@@ -3,6 +3,7 @@ let sass = require("gulp-sass");
 let browserSync = require("browser-sync");
 let nunjucksRender = require("gulp-nunjucks-render");
 
+
 gulp.task("sass", function() {
   gulp
     .src("./src/scss/**/*.scss")
@@ -32,7 +33,7 @@ gulp.task("nunjucks", function() {
 });
 
 gulp.task("copy:img", function() {
-  return gulp.src("./src/img/*").pipe(gulp.dest("./build/img"));
+  return gulp.src("./src/img/**/*").pipe(gulp.dest("./build/img"));
 });
 
 gulp.task("serv", function() {
