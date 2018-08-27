@@ -36,6 +36,5 @@ build
 .gitkeep
 
 package-lock.json
-src/img/png/macbook.png
-src/img/png/macbook.png
-src/img/png/MacBook.png
+
+
