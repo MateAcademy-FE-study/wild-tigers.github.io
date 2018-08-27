@@ -1,10 +1,11 @@
 @import 'variables';
 .header {
+    z-index: 999;
     width: 100vw;
     height: 150px;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    padding-top: 88px;
+    padding-top: 77px;
     &__container {
         display: flex;
         flex-wrap: nowrap;
@@ -12,7 +13,7 @@
         align-items: flex-start;
     }
     &--minimized {
-        height: 60px !important;
+        height: 66px !important;
         padding-top: 5px !important;
     }
     &--bgColor {
