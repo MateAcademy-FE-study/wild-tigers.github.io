@@ -1,7 +1,6 @@
 .footer {
     width: 100vw;
     background-color: $p-font-color;
-<<<<<<< HEAD
     &-inner {
         width: 100%;
         color: #aab2bd;
@@ -21,38 +20,6 @@
                 &:hover {
                     color: $color-white;
                 }
-=======
-}
-
-.container {
-    max-width: 1004px;
-    margin: 0 auto;
-}
-
-
-.footer-inner {
-    width: 100%;
-
-    color: #aab2bd;
-    &__list {
-        list-style: none;
-    }
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        .menu__h3 {
-            font-size: $h3-font-size;
-            font-weight: 500;
-            color: #e6e9ed;
-            padding: 43px 0 28px 0;
-        }
-        .link {
-            text-decoration: none;
-            color: #aab2bd;
-            line-height: 2;
-            &:hover {
-                color: $color-white;
->>>>>>> 0dfdd39e30b9f9e47b3b8194870ab3e744dcb940
             }
         }
         &__social {
