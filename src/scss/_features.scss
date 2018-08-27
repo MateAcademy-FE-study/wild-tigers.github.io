@@ -1,14 +1,12 @@
 @import "variables";
 
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 3em;
-  //h3{
-  //  display: block;
-  //  text-align: center;
-  //}
-  .&__heading {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em;
+  }
+  &__heading {
     font-size: $h2-font-size;
     font-family: $h2-font-family;
     font-weight: $h2-font-weight;
@@ -29,7 +27,7 @@
 
     //display: block;
   }
-  .&__section {
+  &__section {
     display: flex;
     justify-content: space-between;
     padding: 1em;
