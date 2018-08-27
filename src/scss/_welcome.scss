@@ -1,8 +1,8 @@
 @import 'variables';
 .welcome {
     width: 100vw;
-    margin-top: 150px;
-    height: calc(100vh - 150px);
+    padding-top: 150px;
+    height: 100vh;
     &--bgColor {
         background-color: $color-mainYellow;
     }
@@ -30,6 +30,7 @@
         height: calc(100% - 148px);
         overflow: auto;
         margin-bottom: 30px;
+        padding-right: 10px;
     }
     &__more {
         display: table-cell;
