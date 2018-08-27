@@ -1,11 +1,16 @@
 @import 'variables';
 .header {
-  display: flex;
     width: 100vw;
     height: 150px;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
     padding-top: 88px;
+    &__container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
     &--minimized {
         height: 60px !important;
         padding-top: 5px !important;
@@ -19,29 +24,45 @@
 }
 
 .nav {
-    display: inline-block;
+    display: block;
     &__block {
-        display: inline-block;
+        margin-top: 9px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
         list-style: none;
     }
     &__element {
+        padding: 0 16px;
         font-size: 14px;
         font-weight: 700;
         color: $color-mainGrey;
         display: inline-block;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
     &__link {
         color: $color-mainGrey;
         text-transform: uppercase;
+        &--centered {
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 26px;
+        }
     }
 }
 
 .logo {
-  color: $color-mainGrey;
-
+    color: $color-mainGrey;
+    margin: 0;
     font-size: 26px;
     font-weight: 900;
-    display: inline-block;
+    display: block;
     &__element {
         display: inline-block;
         &--bordered {
@@ -49,7 +70,7 @@
             border: 3px solid $color-logoBorder;
         }
         &--light {
-          color: $h1-font-color;
+            color: $h1-font-color;
         }
     }
 }

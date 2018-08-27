@@ -1,5 +1,5 @@
 <header class="header header--bgColor">
-    <div class="container">
+    <div class="container header__container">
         <h1 class="logo">
             <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
             <div class="logo__element">TECH</div>
@@ -13,21 +13,21 @@
                 <li class="nav__element"><a class="nav__link" href="#">academic</a></li>
                 <li class="nav__element"><a class="nav__link" href="#">blog</a></li>
                 <li class="nav__element"><a class="nav__link" href="#">contact us</a><br/>
-                    <a class="nav__link" href='tel:#'>(+966-322 322)</a></li>
+                    <a class="nav__link nav__link--centered" href='tel:#'>(+966-322 322)</a></li>
             </ul>
         </nav>
     </div>
 
     <script>
 
-    $(window).scroll(function() {
-    if ($(this).scrollTop() > 100){
-        $('.header').addClass("header--minimized");
-    }
-    else{
-        $('.header').removeClass("header--minimized");
-    }
-});
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.header').addClass("header--minimized");
+            }
+            else {
+                $('.header').removeClass("header--minimized");
+            }
+        });
 
     </script>
 </header>
