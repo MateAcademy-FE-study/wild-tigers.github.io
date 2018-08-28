@@ -1,6 +1,9 @@
 .projects {
-    &__wrapper {
-        background-color: $h1-font-color;
+    margin: 150px 0 115px 0;
+    /*надо переводить в % (wh) или em и делать одинаковым для каждой section*/
+    text-align: center;
+    &__block {
+        background-color: #f4f4f4;
         padding: 10% 15%;
         /*90px;*/
         display: flex;
@@ -12,5 +15,10 @@
         font-size: $p-font-size;
         font-weight: $font-weight-700;
         color: $grey-text;
+        text-decoration: none;
+    }
+    &__img {
+        height: 135px;
+        padding: 20px;
     }
 }
