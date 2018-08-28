@@ -1,9 +1,4 @@
-@import "variables";
-@import "buttons";
-
 .history {
-  //display: flex;
-  //justify-content: space-around;
   width: 100%;
   background: #f9f8f8;
   &__container {
@@ -14,9 +9,6 @@
   }
   &__left {
     width: 45%;
-    img {
-      //height: 100px;
-    }
   }
   &__image {
     height: 100%;
@@ -31,11 +23,12 @@
       color: $p-font-color;
       line-height: 1.5em;
       font-weight: $p-font-weight;
-    flex-grow: 1;
+      flex-grow: 1;
     }
   }
 
-  &__button{
+  &__button {
     text-transform: uppercase;
-margin-top: auto}
+    margin-top: auto
+  }
 }
