@@ -1,6 +1,8 @@
 @import 'variables';
 .header {
     z-index: 999;
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 150px;
     -webkit-transition: all 0.7s ease;
@@ -18,8 +20,6 @@
     }
     &--bgColor {
         background-color: $color-mainYellow;
-        position: fixed;
-        top: 0;
     }
 }
 
@@ -48,6 +48,7 @@
     }
     &__link {
         color: $color-mainGrey;
+        text-decoration: none;
         text-transform: uppercase;
         &--centered {
             font-size: 12px;
