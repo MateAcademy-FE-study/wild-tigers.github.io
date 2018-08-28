@@ -22,9 +22,14 @@ section-name + section-name--mw220 или section-name--mw330 */
     // height: 55px;
     white-space: nowrap;
     border-radius: 2px;
+    padding: 13px 14px;
+
     &--mw330 {
     min-width: 330px;
     padding: 13px 23px;
+    }
+    &--mw446 {
+        min-width: 446px;
     }
     /* для маленьких серых заголовков прибавлять класс grey-name_little*/
     // &_little {
@@ -34,7 +39,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     // &_history {
     &--mw220 {
         min-width: 220px;
-        padding: 13px 14px;
+        // padding: 13px 14px;
     }
 }
 
