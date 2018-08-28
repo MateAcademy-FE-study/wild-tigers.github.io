@@ -1,11 +1,6 @@
-.container {
-    max-width: 1004px;
-    margin: 0 auto;
-}
-
 .projects {
-    &__container {
-        background-color: #f4f4f4;
+    &__wrapper {
+        background-color: $h1-font-color;
         padding: 10% 15%;
         /*90px;*/
         display: flex;
@@ -16,6 +11,6 @@
         font-family: $body-font-family;
         font-size: $p-font-size;
         font-weight: $font-weight-700;
-        color: #6a6a6a;
+        color: $grey-text;
     }
 }
