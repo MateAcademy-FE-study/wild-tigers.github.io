@@ -6,6 +6,7 @@ section-name + section-name--mw220 или section-name--mw330 */
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
 .section-name {
+    position: relative;
     box-sizing: border-box;
     display: inline-block;
     font-size: $h2-font-size;
