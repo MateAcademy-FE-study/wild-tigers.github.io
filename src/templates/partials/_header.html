@@ -1,9 +1,9 @@
 <header class="header header--bgColor">
     <div class="container header__container">
-        <h1 class="logo">
+        <a href="#" class="logo nav__link">
             <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
             <div class="logo__element">TECH</div>
-        </h1>
+        </a>
         <nav class="nav">
             <ul class="nav__block">
                 <li class="nav__element"><a class="nav__link" href="#">home</a></li>
@@ -21,7 +21,7 @@
     <script>
 
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
+            if ($(this).scrollTop() > 30) {
                 $('.header').addClass("header--minimized");
             }
             else {
