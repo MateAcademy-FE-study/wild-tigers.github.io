@@ -7,13 +7,17 @@
         flex-wrap: wrap;
         background-color: $color-mainYellow;
         padding-top: 60px;
-        padding-bottom: 27px;
+        padding-bottom: 15px;
         margin-bottom: 130px;
     }
     &__member {
         margin-right: 3.5%;
         &:last-child {
             margin-right: 0;
+            margin-left: -1%;
+        }
+        &:nth-child(4) {
+            margin-left: -1%;
         }
     }
 }
@@ -21,9 +25,10 @@
 .member {
     color: #f5f5f5;
     font-family: $body-font-family;
-    font-size: $p-font-size;
+    font-size: 14px;
     &__name {
         font-weight: $font-weight-700;
+        padding: 18px 0;
     }
     &__position {
         font-weight: 200;
