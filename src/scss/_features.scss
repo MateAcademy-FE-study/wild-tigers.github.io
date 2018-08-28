@@ -51,8 +51,14 @@
     }
     &:hover {
       background-color: $color-mainYellow;
+    img{
+      filter: invert(1);
+    }
+
     }
   }
+
+
 
   &__paragraph {
     font-weight: $p-font-weight;
