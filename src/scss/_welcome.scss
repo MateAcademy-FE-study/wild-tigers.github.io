@@ -13,7 +13,6 @@
     height: calc(100vh - 300px);
     &__message {
         width: 42%;
-
     }
     &__title {
         color: $h1-font-color;
@@ -33,8 +32,41 @@
         padding-right: 10px;
     }
     &__sliderBox {
+        position: relative;
         border: 3px solid green;
         width: 58%;
         margin-top: 86px;
+    }
+}
+
+.sliderBox {
+    position: absolute;
+    bottom: 0;
+    &--big {
+        background-image: url('../img/png/MacBook_black_screen.png');
+        width: 601px;
+        height: 365px;
+    }
+    &--small {
+        background-image: url('../img/png/iPhone_black_screen.png');
+        width: 177px;
+        height: 307px;
+        right: 0;
+    }
+}
+
+.slide {
+    position: absolute;
+    &--big {
+        top: ;
+        left: ;
+        width: 431px;
+        height: 274px;
+    }
+    &--small {
+        top: ;
+        left: ;
+        width: 127px;
+        height: 221px;
     }
 }

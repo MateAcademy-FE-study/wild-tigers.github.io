@@ -15,7 +15,51 @@
                     non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                 <a class="button__icon--right" href="#">View More</a>
             </figcaption>
-            <div class="hero__sliderBox"></div>
+            <div class="hero__sliderBox">
+                <div class="sliderBox sliderBox--big">
+                    <div id="mac_slide_01" class="slide slide--big">
+                        <img src="./img/png/macbook_screenOnly.png" alt="">
+                    </div>
+                    <div id="mac_slide_02" class="slide slide--big">
+                        <img src="./img/png/macbook_screenOnly.png" alt="">
+                    </div>
+                    <div id="mac_slide_03" class="slide slide--big">
+                        <img src="./img/png/macbook_screenOnly.png" alt="">
+                    </div>
+                </div>
+                <div class="sliderBox sliderBox--small">
+                    <div id="phone_slide_01" class="slide slide--small">
+                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+                    </div>
+                    <div id="phone_slide_02" class="slide slide--small">
+                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+                    </div>
+                    <div id="phone_slide_03" class="slide slide--small">
+                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+                    </div>
+                </div>
+            </div>
         </figure>
     </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.sliderBox--big').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.sliderBox--small'
+        });
+        $('.sliderBox--small').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.sliderBox--big',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+
+
+
+    </script>
 </section>
