@@ -1,25 +1,27 @@
-$buttons-font-family: 'Open Sans', sans-serif;
-$body-font-family: 'Roboto', sans-serif;
-$h2-font-family: 'Source Sans Pro', sans-serif;
-
+$buttons-font-family: 'Open Sans',
+sans-serif;
+$body-font-family: 'Roboto',
+sans-serif;
+$h2-font-family: 'Source Sans Pro',
+sans-serif;
 $font-weight-700: 700;
 $p-font-weight: 300;
 $h1-font-weight: $font-weight-700;
 $h2-font-weight: $font-weight-700;
 $h3-font-weight: 400;
-
 $color-black: black;
 $color-white: white;
 $color-mainYellow: #ffc038;
-
+$color-logoBorder: #fff200;
+$color-mainGrey: #464646;
 $p-font-color: #363636;
+$grey-text:#6a6a6a;
 $h1-font-color: #fdfcfc;
 $h2-font-color: #ffffff;
 $h3-font-color: $color-black;
-
 $p-font-size: 16px;
 $h1-font-size: 42px;
 $h2-font-size: 26px;
 $h3-font-size: 18px;
-
-$border-radius: 3px;
+$h2-bg-color: #464646;
+$h2-box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);

@@ -1,0 +1,36 @@
+.team {
+    width: 100%;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: $color-mainYellow;
+        padding-top: 60px;
+        padding-bottom: 15px;
+        margin-bottom: 130px;
+    }
+    &__member {
+        margin-right: 3.5%;
+        &:last-child {
+            margin-right: 0;
+            margin-left: -1%;
+        }
+        &:nth-child(4) {
+            margin-left: -1%;
+        }
+    }
+}
+
+.member {
+    color: $h1-font-color;
+    font-family: $body-font-family;
+    font-size: 14px;
+    &__name {
+        font-weight: $font-weight-700;
+        padding: 18px 0;
+    }
+    &__position {
+        font-weight: 200;
+    }
+}

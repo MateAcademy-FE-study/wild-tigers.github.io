@@ -9,12 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gulp-nunjucks-render": "^2.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
-    "browser-sync": "^2.24.6"
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^4.0.1"
   }
 }
