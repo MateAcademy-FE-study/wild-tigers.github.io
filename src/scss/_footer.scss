@@ -1,57 +1,59 @@
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.footer-wrapper {
-    width: 100vw;
-    background-color: $p-font-color;
-    height: 407px;
-    font-weight: $p-font-weight;
-    font-size: $p-font-size;
-    color: #aab2bd;
-}
-
-.footer {
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        h3 {
+    .footer {
+        width: 100vw;
+        background-color: $p-font-color;
+        &-inner {
+            width: 100%;
+            color: #aab2bd;
+            &__list {
+                list-style: none;
+            }
+            &__menu {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__social {
+                text-align: center;
+                padding-bottom: 33px;
+            }
+        }
+    }
+    
+    .menu {
+        &__h3 {
             font-size: $h3-font-size;
             font-weight: 500;
             color: #e6e9ed;
             padding: 43px 0 28px 0;
         }
-        a {
+        &__link {
+            text-decoration: none;
             color: #aab2bd;
             line-height: 2;
+            &:hover {
+                color: $color-white;
+            }
         }
     }
-}
-
-.footer__social {
-    text-align: center;
-}
-
-.social {
-    margin: 40px auto 20px auto;
-    &__block {
-        width: 40px;
-        height: 40px;
-        background-color: $color-mainYellow;
-        margin-right: 1px;
-        display: inline-block;
-        color: $color-white;
-        border-radius: 2px;
-        position: relative;
-        i {
+    
+    .social {
+        margin: 40px auto 20px auto;
+        &__block {
+            width: 40px;
+            height: 40px;
+            background-color: $color-mainYellow;
+            margin-right: 1px;
+            display: inline-block;
+            color: $color-white;
+            border-radius: 2px;
+            position: relative;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &__icon {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
     }
-}
