@@ -1,7 +1,7 @@
 .team {
     width: 100%;
     text-align: center;
-    &__container {
+    &__wrapper {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -23,7 +23,7 @@
 }
 
 .member {
-    color: #f5f5f5;
+    color: $h1-font-color;
     font-family: $body-font-family;
     font-size: 14px;
     &__name {
