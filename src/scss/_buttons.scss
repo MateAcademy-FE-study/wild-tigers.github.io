@@ -1,34 +1,48 @@
 /*BUTTONS*/
 
-
-/* для заголовков к основному классу прибавлять класс grey-name*/
-
+/* для заголовков к основному классу прибавлять класс
+section-name + section-name--mw220 или section-name--mw330 */
 
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
-.grey-name {
+.section-name {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
     font-size: $h2-font-size;
+    line-height: $h2-font-size;
     font-weight: $h2-font-weight;
     font-family: $h2-font-family;
     background-color: #464646;
     text-align: center;
-    margin: 0 auto;
+    text-transform: uppercase;
+    // margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
     color: $color-white;
-    height: 55px;
+    // height: 55px;
     white-space: nowrap;
-    width: 446px;
     border-radius: 2px;
-    padding-top: 10px;
-    /* для маленьких серых заголовков прибавлять класс grey-name_little*/
-    &_little {
-        width: 330px;
+    padding: 13px 14px;
+
+    &--mw330 {
+    min-width: 330px;
+    padding: 13px 23px;
     }
+    &--mw446 {
+        min-width: 446px;
+    }
+    /* для маленьких серых заголовков прибавлять класс grey-name_little*/
+    // &_little {
+    //     width: 330px;
+    // }
     /* for history прибавлять класс grey-name_history*/
-    &_history {
-        width: 220px;
+    // &_history {
+    &--mw220 {
+        min-width: 220px;
+        // padding: 13px 14px;
     }
 }
-
 
 /* yellow buttons*/
 
@@ -46,4 +60,33 @@
     font-size: 12px;
     font-weight: $font-weight-700;
     font-family: $buttons-font-family;
+    margin-top: 15px;
+}
+
+.button__icon--right {
+    text-decoration: none;
+    display: table-cell;
+    position: relative;
+    padding: 18px 24px;
+    padding-right: 66px;
+    color: $h1-font-color;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #464646;
+    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    &:after {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 16px 30px;
+        right: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 27px;
+        background-image: url("../img/png/send.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
