@@ -15,13 +15,14 @@ section-name + section-name--mw220 или section-name--mw330 */
     font-family: $h2-font-family;
     background-color: #464646;
     text-align: center;
-    text-transform: uppercase; // margin: 0 auto;
+    text-transform: uppercase;
     margin-left: 50%;
     transform: translateX(-50%);
-    color: $color-white; // height: 55px;
+    color: $color-white;
     white-space: nowrap;
     border-radius: 2px;
     padding: 13px 14px;
+    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
     &--mw330 {
         min-width: 330px;
         padding: 13px 23px;
@@ -29,68 +30,53 @@ section-name + section-name--mw220 или section-name--mw330 */
     &--mw446 {
         min-width: 446px;
     }
-    /* для маленьких серых заголовков прибавлять класс grey-name_little*/
-    // &_little {
-    //     width: 330px;
-    // }
-    /* for history прибавлять класс grey-name_history*/
-    // &_history {
     &--mw220 {
-        min-width: 220px; // padding: 13px 14px;
+        min-width: 220px;
     }
-    &--arrow-r {
-        &:after {
-            box-sizing: border-box;
-            position: absolute;
-            right: -76px;
-            top: 29px;
-            content: "";
+    &--arrow-l:after,
+    &--arrow-l:before,
+    &--arrow-r:after,
+    &--arrow-r:before {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &--arrow-l:after,
+    &--arrow-r:after,
+        {
             height: 93px;
             width: 56px;
             background-image: url("../img/svg/icons/path_1.svg");
-            background-repeat: no-repeat;
-            background-position: center;
+    }
+    &--arrow-l:before,
+    &--arrow-r:before {
+        height: 28px;
+        width: 32px;
+        background-image: url("../img/svg/icons/send.svg");
+    }
+    &--arrow-r {
+        &:after {
+            right: -76px;
+            top: 29px;
         }
         &:before {
-            box-sizing: border-box;
-            position: absolute;
             right: -33px;
             top: 120px;
             transform: rotate(-160deg);
-            content: "";
-            height: 28px;
-            width: 32px;
-            background-image: url("../img/svg/icons/send.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
     }
     &--arrow-l {
         &:after {
-            box-sizing: border-box;
-            position: absolute;
             left: -76px;
             top: 29px;
             transform: scaleX(-1);
-            content: "";
-            height: 93px;
-            width: 56px;
-            background-image: url("../img/svg/icons/path_1.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
         &:before {
-            box-sizing: border-box;
-            position: absolute;
             left: -33px;
             top: 120px;
             transform: rotate(160deg) scaleX(-1);
-            content: "";
-            height: 28px;
-            width: 32px;
-            background-image: url("../img/svg/icons/send.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
     }
 }
