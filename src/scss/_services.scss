@@ -1,0 +1,7 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  &__block {
+    display: flex;
+  }
+}
