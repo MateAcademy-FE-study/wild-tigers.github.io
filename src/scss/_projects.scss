@@ -1,8 +1,8 @@
 .projects {
-    &__wrapper {
-        background-color: $h1-font-color;
-        padding: 10% 15%;
-        /*90px;*/
+    text-align: center;
+    &__block {
+        background-color: $lite-color;
+        padding: 90px 90px 50px 90px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -12,11 +12,14 @@
         font-size: $p-font-size;
         font-weight: $font-weight-700;
         color: $grey-text;
+        text-decoration: none;
+        margin: 40px auto;
     }
-}
 
-.project {
+    &__caption {
+        margin: 40px auto;
+    }
     &__img {
-        width: 16%;
+        height: 135px;
     }
 }
