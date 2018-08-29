@@ -6,23 +6,25 @@ section-name + section-name--mw220 или section-name--mw330 */
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
 .section-name {
+    display: inline-block;
     position: relative;
     box-sizing: border-box;
-    display: inline-block;
+    background-color: #464646;
+    color: $color-white;
     font-size: $h2-font-size;
     line-height: $h2-font-size;
     font-weight: $h2-font-weight;
     font-family: $h2-font-family;
-    background-color: #464646;
     text-align: center;
-    text-transform: uppercase;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    color: $color-white;
     white-space: nowrap;
-    border-radius: 2px;
+    text-transform: uppercase;
     padding: 13px 14px;
+    margin-top: 130px;
+    margin-bottom: 145px;
+    margin-left: 50%;
+    border-radius: 2px;
     box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    transform: translateX(-50%);
     &--mw330 {
         min-width: 330px;
         padding: 13px 23px;
