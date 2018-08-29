@@ -2,4 +2,11 @@
 .container {
     max-width: 1004px;
     margin: 0 auto;
+    padding-top: 130px;
+    &--no-padding {
+        padding: 0;
+    }
+    &--footer {
+        padding-top: 47px;
+    }
 }
