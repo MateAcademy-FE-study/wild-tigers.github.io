@@ -17,13 +17,14 @@
             }
         }
     }
-    
+
     .menu {
         &__h3 {
             font-size: $h3-font-size;
             font-weight: 500;
             color: #e6e9ed;
-            padding: 43px 0 28px 0;
+            // padding: 43px 0 28px 0;
+            padding-bottom: 28px;
         }
         &__link {
             text-decoration: none;
@@ -34,7 +35,7 @@
             }
         }
     }
-    
+
     .social {
         margin: 40px auto 20px auto;
         &__block {
