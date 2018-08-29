@@ -13,6 +13,8 @@
 1. `git add --all` or choose files to be committed
 2. `git commit -m "*comment to your commit*"`
 3. `git push --set-upstream origin *your branch name*`
-4. switch back to master `git checkout master`
-5. `git pull`
-6. checkout to new branch (step 3 in install section)
+4.  make Pull Request (PR) on GitHub (if your PR resolves registered on GitHub issue, add phrase 'closes #[issue number]' to PR comment).
+5.  wait for **minimum one approve** before merge to master
+6.  switch back to master `git checkout master`
+7. `git pull`
+8. checkout to new branch (step 3 in install section)
