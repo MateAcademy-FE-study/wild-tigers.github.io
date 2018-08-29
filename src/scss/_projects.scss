@@ -1,11 +1,8 @@
 .projects {
-    margin: 150px 0 115px 0;
-    /*надо переводить в % (wh) или em и делать одинаковым для каждой section*/
     text-align: center;
     &__block {
-        background-color: #f4f4f4;
-        padding: 10% 15%;
-        /*90px;*/
+        background-color: $lite-color;
+        padding: 90px 90px 50px 90px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -16,9 +13,12 @@
         font-weight: $font-weight-700;
         color: $grey-text;
         text-decoration: none;
+        margin: 40px auto
+    }
+    &__caption {
+        margin: 40px auto;
     }
     &__img {
         height: 135px;
-        padding: 20px;
     }
 }
