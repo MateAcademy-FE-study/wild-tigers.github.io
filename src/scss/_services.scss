@@ -3,5 +3,52 @@
   flex-direction: column;
   &__block {
     display: flex;
+    justify-content: space-around;
+    padding: 3em 0;
+    margin-top: 2em;
+    //flex-direction: row;
+    height: 100%;
+    //&--reverse{
+    //  display: flex;
+    //  flex-direction: column-reverse;
+    //}
+  }
+
+  &__size{
+    height: 100%;
+  }
+
+  &__image {
+    width: 40%;
+    //height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    //height: 100%;
+    width: 40%;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-weight: $font-weight-700;
+    font-size: $h3-font-size;
+    color: $h3-font-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 1em;
+    font-weight: $p-font-weight;
+    font-size: $p-font-size;
+    color: $h3-font-color;
+    line-height: 1.5em;
+    flex-grow: 1;
+  }
+
+  &__btn{
+    //display: flex;
+    align-self: end;
+    //margin-top: auto;
   }
 }
