@@ -15,19 +15,16 @@ section-name + section-name--mw220 или section-name--mw330 */
     font-family: $h2-font-family;
     background-color: #464646;
     text-align: center;
-    text-transform: uppercase;
-    // margin: 0 auto;
+    text-transform: uppercase; // margin: 0 auto;
     margin-left: 50%;
     transform: translateX(-50%);
-    color: $color-white;
-    // height: 55px;
+    color: $color-white; // height: 55px;
     white-space: nowrap;
     border-radius: 2px;
     padding: 13px 14px;
-
     &--mw330 {
-    min-width: 330px;
-    padding: 13px 23px;
+        min-width: 330px;
+        padding: 13px 23px;
     }
     &--mw446 {
         min-width: 446px;
@@ -39,8 +36,62 @@ section-name + section-name--mw220 или section-name--mw330 */
     /* for history прибавлять класс grey-name_history*/
     // &_history {
     &--mw220 {
-        min-width: 220px;
-        // padding: 13px 14px;
+        min-width: 220px; // padding: 13px 14px;
+    }
+    &--arrow-r {
+        &:after {
+            box-sizing: border-box;
+            position: absolute;
+            right: -76px;
+            top: 29px;
+            content: "";
+            height: 93px;
+            width: 56px;
+            background-image: url("../img/svg/icons/path_1.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &:before {
+            box-sizing: border-box;
+            position: absolute;
+            right: -33px;
+            top: 120px;
+            transform: rotate(-160deg);
+            content: "";
+            height: 28px;
+            width: 32px;
+            background-image: url("../img/svg/icons/send.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &--arrow-l {
+        &:after {
+            box-sizing: border-box;
+            position: absolute;
+            left: -76px;
+            top: 29px;
+            transform: scaleX(-1);
+            content: "";
+            height: 93px;
+            width: 56px;
+            background-image: url("../img/svg/icons/path_1.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &:before {
+            box-sizing: border-box;
+            position: absolute;
+            left: -33px;
+            top: 120px;
+            transform: rotate(160deg) scaleX(-1);
+            content: "";
+            height: 28px;
+            width: 32px;
+            background-image: url("../img/svg/icons/send.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
 
