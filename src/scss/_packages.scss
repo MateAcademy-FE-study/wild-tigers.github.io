@@ -73,6 +73,7 @@
         white-space: nowrap;
         user-select: none;
         text-decoration: none;
+        margin-top: 50px;
         &--grey {
             background-color: $color-liteGrey;
         }
@@ -82,8 +83,8 @@
         &--yellow {
             background-color: $color-mainYellow;
         }
-        &:hover {
+        /*&:hover {
             transform: scale(1.2);
-        }
+        }*/
     }
 }
