@@ -1,7 +1,9 @@
 /*BUTTONS*/
 
+
 /* для заголовков к основному классу прибавлять класс
 section-name + section-name--mw220 или section-name--mw330 */
+
 
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
@@ -22,7 +24,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     white-space: nowrap;
     border-radius: 2px;
     padding: 13px 14px;
-    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    box-shadow: $h2-box-shadow;
     &--mw330 {
         min-width: 330px;
         padding: 13px 23px;
@@ -45,10 +47,10 @@ section-name + section-name--mw220 или section-name--mw330 */
     }
     &--arrow-l:after,
     &--arrow-r:after,
-        {
-            height: 93px;
-            width: 56px;
-            background-image: url("../img/svg/icons/path_1.svg");
+    {
+        height: 93px;
+        width: 56px;
+        background-image: url("../img/svg/icons/path_1.svg");
     }
     &--arrow-l:before,
     &--arrow-r:before {
@@ -81,6 +83,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     }
 }
 
+
 /* yellow buttons*/
 
 .yellow-btn {
@@ -91,7 +94,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     user-select: none;
     text-decoration: none;
     border-radius: 2px;
-    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    box-shadow: $h2-box-shadow;
     color: #3a3a3a;
     padding: 20px 40px;
     font-size: 12px;
@@ -112,7 +115,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     text-align: left;
     border-radius: 2px;
     background-color: #464646;
-    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    box-shadow: $h2-box-shadow;
     &:after {
         box-sizing: border-box;
         position: absolute;
