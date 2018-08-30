@@ -8,21 +8,24 @@ section-name + section-name--mw220 или section-name--mw330 */
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
 .section-name {
+    display: inline-block;
     position: relative;
     box-sizing: border-box;
-    display: inline-block;
+    background-color: #464646;
+    color: $color-white;
     font-size: $h2-font-size;
     line-height: $h2-font-size;
     font-weight: $h2-font-weight;
     font-family: $h2-font-family;
-    background-color: #464646;
     text-align: center;
-    text-transform: uppercase;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    color: $color-white;
     white-space: nowrap;
+    text-transform: uppercase;
+    padding: 13px 14px;
+    margin-top: 130px;
+    margin-bottom: 145px;
+    margin-left: 50%;
     border-radius: 2px;
+    transform: translateX(-50%);
     padding: 13px 14px;
     box-shadow: $h2-box-shadow;
     &--mw330 {
@@ -87,7 +90,7 @@ section-name + section-name--mw220 или section-name--mw330 */
 /* yellow buttons*/
 
 .yellow-btn {
-// <<<<<<< k_buttonsAddons
+  text-transform: uppercase;
   background-color: $color-mainYellow;
   appearance: none;
   border: 0;

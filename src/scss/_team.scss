@@ -1,24 +1,24 @@
 .team {
-    width: 100%;
-    text-align: center;
+    // text-align: center;
     &__wrapper {
+        background-color: $color-mainYellow;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        background-color: $color-mainYellow;
         padding-top: 60px;
         padding-bottom: 15px;
-        margin-bottom: 130px;
+        // margin-bottom: 130px;
     }
     &__member {
-        margin-right: 3.5%;
-        &:last-child {
-            margin-right: 0;
-            margin-left: -1%;
-        }
-        &:nth-child(4) {
-            margin-left: -1%;
-        }
+        padding: 0 23px;
+        // margin-right: 3.5%;
+        // &:last-child {
+        //     margin-right: 0;
+        //     margin-left: -1%;
+        // }
+        // &:nth-child(4) {
+        //     margin-left: -1%;
+        // }
     }
 }
 
@@ -26,6 +26,7 @@
     color: $h1-font-color;
     font-family: $body-font-family;
     font-size: 14px;
+    text-align: center;
     &__name {
         font-weight: $font-weight-700;
         padding: 18px 0;
