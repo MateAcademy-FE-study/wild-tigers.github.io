@@ -1,0 +1,8 @@
+@import 'variables';
+
+.process {
+    background-color: $color-process;
+    &__content {
+        background-image: url("../img/svg/big_pic/map.svg");
+    }
+}
