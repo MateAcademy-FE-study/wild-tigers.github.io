@@ -87,46 +87,117 @@ section-name + section-name--mw220 или section-name--mw330 */
 /* yellow buttons*/
 
 .yellow-btn {
-    background-color: $color-mainYellow;
-    appearance: none;
-    border: 0;
-    white-space: nowrap;
-    user-select: none;
-    text-decoration: none;
-    border-radius: 2px;
-    box-shadow: $h2-box-shadow;
-    color: #3a3a3a;
-    padding: 20px 40px;
-    font-size: 12px;
-    font-weight: $font-weight-700;
-    font-family: $buttons-font-family;
-    margin-top: 15px;
+// <<<<<<< k_buttonsAddons
+  background-color: $color-mainYellow;
+  appearance: none;
+  border: 0;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  color: #3a3a3a;
+  padding: 20px 40px;
+  font-size: 12px;
+  font-weight: $font-weight-700;
+  font-family: $buttons-font-family;
+  margin-top: 15px;
+
+  &:hover {
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+  }
 }
 
 .button__icon--right {
-    text-decoration: none;
-    display: table-cell;
-    position: relative;
-    padding: 18px 24px;
-    padding-right: 66px;
-    color: $h1-font-color;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    border-radius: 2px;
-    background-color: #464646;
-    box-shadow: $h2-box-shadow;
-    &:after {
-        box-sizing: border-box;
-        position: absolute;
-        padding: 16px 30px;
-        right: 0;
-        top: 0;
-        content: "";
-        height: 100%;
-        width: 27px;
-        background-image: url("../img/png/send.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  text-decoration: none;
+  display: table-cell;
+  position: relative;
+  padding: 18px 24px;
+  padding-right: 66px;
+  color: $h1-font-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 2px;
+  background-color: #464646;
+  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  &:after {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 16px 30px;
+    right: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 27px;
+    background-image: url("../img/png/send.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+// =======
+//     background-color: $color-mainYellow;
+//     appearance: none;
+//     border: 0;
+//     white-space: nowrap;
+//     user-select: none;
+//     text-decoration: none;
+//     border-radius: 2px;
+//     box-shadow: $h2-box-shadow;
+//     color: #3a3a3a;
+//     padding: 20px 40px;
+//     font-size: 12px;
+//     font-weight: $font-weight-700;
+//     font-family: $buttons-font-family;
+//     margin-top: 15px;
+// }
+
+// .button__icon--right {
+//     text-decoration: none;
+//     display: table-cell;
+//     position: relative;
+//     padding: 18px 24px;
+//     padding-right: 66px;
+//     color: $h1-font-color;
+//     font-size: 16px;
+//     font-weight: 400;
+//     text-align: left;
+//     border-radius: 2px;
+//     background-color: #464646;
+//     box-shadow: $h2-box-shadow;
+//     &:after {
+//         box-sizing: border-box;
+//         position: absolute;
+//         padding: 16px 30px;
+//         right: 0;
+//         top: 0;
+//         content: "";
+//         height: 100%;
+//         width: 27px;
+//         background-image: url("../img/png/send.png");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//     }
+// >>>>>>> master
 }
