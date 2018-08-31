@@ -7,10 +7,13 @@
         color: #aab2bd;
         &__list {
             list-style: none;
+            margin-right: 20px;
         }
         &__menu {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            padding-right: 30px;
         }
         &__social {
             text-align: center;
