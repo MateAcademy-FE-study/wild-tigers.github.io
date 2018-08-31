@@ -1,27 +1,33 @@
 /*BUTTONS*/
 
+
 /* для заголовков к основному классу прибавлять класс
 section-name + section-name--mw220 или section-name--mw330 */
+
 
 /* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
 
 .section-name {
+    display: inline-block;
     position: relative;
     box-sizing: border-box;
-    display: inline-block;
+    background-color: #464646;
+    color: $color-white;
     font-size: $h2-font-size;
     line-height: $h2-font-size;
     font-weight: $h2-font-weight;
     font-family: $h2-font-family;
-    background-color: #464646;
     text-align: center;
-    text-transform: uppercase; // margin: 0 auto;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    color: $color-white; // height: 55px;
     white-space: nowrap;
-    border-radius: 2px;
+    text-transform: uppercase;
     padding: 13px 14px;
+    margin-top: 130px;
+    margin-bottom: 145px;
+    margin-left: 50%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    padding: 13px 14px;
+    box-shadow: $h2-box-shadow;
     &--mw330 {
         min-width: 330px;
         padding: 13px 23px;
@@ -29,115 +35,172 @@ section-name + section-name--mw220 или section-name--mw330 */
     &--mw446 {
         min-width: 446px;
     }
-    /* для маленьких серых заголовков прибавлять класс grey-name_little*/
-    // &_little {
-    //     width: 330px;
-    // }
-    /* for history прибавлять класс grey-name_history*/
-    // &_history {
     &--mw220 {
-        min-width: 220px; // padding: 13px 14px;
+        min-width: 220px;
+    }
+    &--arrow-l:after,
+    &--arrow-l:before,
+    &--arrow-r:after,
+    &--arrow-r:before {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &--arrow-l:after,
+    &--arrow-r:after,
+    {
+        height: 93px;
+        width: 56px;
+        background-image: url("../img/svg/icons/path_1.svg");
+    }
+    &--arrow-l:before,
+    &--arrow-r:before {
+        height: 28px;
+        width: 32px;
+        background-image: url("../img/svg/icons/send.svg");
     }
     &--arrow-r {
         &:after {
-            box-sizing: border-box;
-            position: absolute;
             right: -76px;
             top: 29px;
-            content: "";
-            height: 93px;
-            width: 56px;
-            background-image: url("../img/svg/icons/path_1.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
         &:before {
-            box-sizing: border-box;
-            position: absolute;
             right: -33px;
             top: 120px;
             transform: rotate(-160deg);
-            content: "";
-            height: 28px;
-            width: 32px;
-            background-image: url("../img/svg/icons/send.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
     }
     &--arrow-l {
         &:after {
-            box-sizing: border-box;
-            position: absolute;
             left: -76px;
             top: 29px;
             transform: scaleX(-1);
-            content: "";
-            height: 93px;
-            width: 56px;
-            background-image: url("../img/svg/icons/path_1.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
         &:before {
-            box-sizing: border-box;
-            position: absolute;
             left: -33px;
             top: 120px;
             transform: rotate(160deg) scaleX(-1);
-            content: "";
-            height: 28px;
-            width: 32px;
-            background-image: url("../img/svg/icons/send.svg");
-            background-repeat: no-repeat;
-            background-position: center;
         }
     }
 }
+
 
 /* yellow buttons*/
 
 .yellow-btn {
-    background-color: $color-mainYellow;
-    appearance: none;
-    border: 0;
-    white-space: nowrap;
-    user-select: none;
-    text-decoration: none;
-    border-radius: 2px;
-    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-    color: #3a3a3a;
-    padding: 20px 40px;
-    font-size: 12px;
-    font-weight: $font-weight-700;
-    font-family: $buttons-font-family;
-    margin-top: 15px;
+  text-transform: uppercase;
+  background-color: $color-mainYellow;
+  appearance: none;
+  border: 0;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  color: #3a3a3a;
+  padding: 20px 40px;
+  font-size: 12px;
+  font-weight: $font-weight-700;
+  font-family: $buttons-font-family;
+  margin-top: 15px;
+
+  &:hover {
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+
+    @keyframes shake {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+  }
 }
 
 .button__icon--right {
-    text-decoration: none;
-    display: table-cell;
-    position: relative;
-    padding: 18px 24px;
-    padding-right: 66px;
-    color: $h1-font-color;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    border-radius: 2px;
-    background-color: #464646;
-    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-    &:after {
-        box-sizing: border-box;
-        position: absolute;
-        padding: 16px 30px;
-        right: 0;
-        top: 0;
-        content: "";
-        height: 100%;
-        width: 27px;
-        background-image: url("../img/png/send.png");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  text-decoration: none;
+  display: table-cell;
+  position: relative;
+  padding: 18px 24px;
+  padding-right: 66px;
+  color: $h1-font-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 2px;
+  background-color: #464646;
+  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  &:after {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 16px 30px;
+    right: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 27px;
+    background-image: url("../img/png/send.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+// =======
+//     background-color: $color-mainYellow;
+//     appearance: none;
+//     border: 0;
+//     white-space: nowrap;
+//     user-select: none;
+//     text-decoration: none;
+//     border-radius: 2px;
+//     box-shadow: $h2-box-shadow;
+//     color: #3a3a3a;
+//     padding: 20px 40px;
+//     font-size: 12px;
+//     font-weight: $font-weight-700;
+//     font-family: $buttons-font-family;
+//     margin-top: 15px;
+// }
+
+// .button__icon--right {
+//     text-decoration: none;
+//     display: table-cell;
+//     position: relative;
+//     padding: 18px 24px;
+//     padding-right: 66px;
+//     color: $h1-font-color;
+//     font-size: 16px;
+//     font-weight: 400;
+//     text-align: left;
+//     border-radius: 2px;
+//     background-color: #464646;
+//     box-shadow: $h2-box-shadow;
+//     &:after {
+//         box-sizing: border-box;
+//         position: absolute;
+//         padding: 16px 30px;
+//         right: 0;
+//         top: 0;
+//         content: "";
+//         height: 100%;
+//         width: 27px;
+//         background-image: url("../img/png/send.png");
+//         background-repeat: no-repeat;
+//         background-position: center;
+//     }
+// >>>>>>> master
 }

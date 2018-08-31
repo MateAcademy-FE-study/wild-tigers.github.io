@@ -9,8 +9,31 @@
 }
 
 .hero {
+    position: relative;
     display: flex;
     height: calc(100vh - 300px);
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    &:before {
+        background-image: url("../img/svg/icons/send.svg");
+        width: 30px;
+        height: 29px;
+        top: 42px;
+        left: 668px;
+        transform: scaleX(-1) rotate(-161deg);
+    }
+    &:after {
+        background-image: url("../img/svg/icons/path_2.svg");
+        width: 365px;
+        height: 50px;
+        top: 19px;
+        left: 308px;
+    }
     &__message {
         width: 42%;
     }
