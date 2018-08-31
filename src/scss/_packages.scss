@@ -1,90 +1,168 @@
-.packages {
-    &__table {
-        width: 80%;
-        border-collapse: collapse;
-        border: 4px solid white;
-        margin: 0 auto;
-        text-align: center;
-        font-family: $body-font-family;
-        font-size: $p-font-size;
-        font-weight: $h4-font-weight;
-        color: $color-liteGrey;
-    }
-    &__coll {
-        border: 2px solid $color-darkYellow;
-        &:hover,
-        &:nth-child(2) {
-            font-size: 18px;
-            color: $p-font-color;
-            .coll {
-                &__name {
-                    font-size: $h2-font-size;
-                }
-                &__price {
-                    font-size: $h1-font-size;
-                }
-                &__btn {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-    &--grey {
-        color: $color-liteGrey;
-    }
-    &--red {
-        color: $color-red;
-    }
-    &--yellow {
-        color: $color-mainYellow;
-    }
-    &__order {
-        display: flex;
-        width: 80%;
-        margin: 0 auto;
-        justify-content: space-between;
-        margin-top: 50px;
-    }
-}
-
-.coll {
-    &__li {
-        display: block;
-        border-bottom: 2px solid $color-darkYellow;
-        padding: 15px 0;
-    }
-    &__price {
-        list-style: none;
-        font-size: 35px;
-        padding-top: 50px;
-    }
-    &__name {
-        font-size: 22px;
-        padding-bottom: 50px;
-    }
-    &__btn {
-        border-radius: 3px;
-        box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
-        width: 192px;
-        height: 45px;
-        appearance: none;
-        color: $color-white;
-        border: 0;
-        white-space: nowrap;
-        user-select: none;
-        text-decoration: none;
-        margin-top: 50px;
-        &--grey {
-            background-color: $color-liteGrey;
-        }
-        &--red {
-            background-color: $color-red;
-        }
-        &--yellow {
-            background-color: $color-mainYellow;
-        }
-        /*&:hover {
-            transform: scale(1.2);
-        }*/
-    }
-}
+                                    .packages {
+                                        &__table {
+                                            width: 90%;
+                                            margin: 0 auto;
+                                            text-align: center;
+                                            font-size: $p-font-size;
+                                            font-weight: $h4-font-weight;
+                                            color: $color-liteGrey;
+                                            display: flex;
+                                            position: relative;
+                                            &::before {
+                                                @extend %pse;
+                                                left: 33%;
+                                            }
+                                            &::after {
+                                                @extend %pse;
+                                                right: 33%;
+                                            }
+                                        }
+                                        &__coll {
+                                            width: 33%;
+                                            padding-bottom: 50px;
+                                            &:hover .coll {
+                                                &__span {
+                                                    transform: scale(1.1);
+                                                    transform-origin: bottom;
+                                                    color: $p-font-color;
+                                                }
+                                                &__price {
+                                                    padding: 33px 0;
+                                                    b {
+                                                        font-size: 68px;
+                                                    }
+                                                }
+                                                &__btn,
+                                                &__name,
+                                                &__price {
+                                                    transform: scale(1.1);
+                                                    transform-origin: bottom;
+                                                }
+                                            }
+                                        }
+                                        &--grey {
+                                            color: $color-liteGrey;
+                                        }
+                                        &--red {
+                                            color: $color-red;
+                                        }
+                                        &--yellow {
+                                            color: $color-mainYellow;
+                                        }
+                                    }
+                                    
+                                    .coll {
+                                        &__span {
+                                            display: block;
+                                            transition: transform 0.25s linear 0.25s;
+                                        }
+                                        &__li {
+                                            display: block;
+                                            border-bottom: 1px solid $color-darkYellow;
+                                            padding: 15px 0;
+                                        }
+                                        &__price {
+                                            list-style: none;
+                                            font-size: 35px;
+                                            padding: 50px 0;
+                                            display: block;
+                                            transition: transform 0.25s linear 0.5s;
+                                        }
+                                        &__name {
+                                            font-size: 22px;
+                                            padding-bottom: 35px;
+                                            display: block;
+                                            transition: transform 0.25s linear;
+                                        }
+                                        &__btn {
+                                            border-radius: 3px;
+                                            box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+                                            width: 192px;
+                                            height: 45px;
+                                            appearance: none;
+                                            color: $color-white;
+                                            border: 0;
+                                            white-space: nowrap;
+                                            user-select: none;
+                                            text-decoration: none;
+                                            transition: transform 0.75s linear 0.5s;
+                                            &--grey {
+                                                background-color: $color-liteGrey;
+                                            }
+                                            &--red {
+                                                background-color: $color-red;
+                                            }
+                                            &--yellow {
+                                                background-color: $color-mainYellow;
+                                            }
+                                            &:hover {
+                                                animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
+                                                transform: translate3d(0, 0, 0);
+                                                backface-visibility: hidden;
+                                                perspective: 1000px;
+                                                cursor: pointer;
+                                                @keyframes shake {
+                                                    10%,
+                                                    90% {
+                                                        transform: translate3d(-1px, 0, 0);
+                                                    }
+                                                    20%,
+                                                    80% {
+                                                        transform: translate3d(2px, 0, 0);
+                                                    }
+                                                    30%,
+                                                    50%,
+                                                    70% {
+                                                        transform: translate3d(-4px, 0, 0);
+                                                    }
+                                                    40%,
+                                                    60% {
+                                                        transform: translate3d(4px, 0, 0);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    %pse {
+                                        content: " ";
+                                        width: 1px;
+                                        position: absolute;
+                                        background-color: $color-darkYellow;
+                                        height: 330px;
+                                        z-index: -1;
+                                        top: 10px;
+                                    }
+                                    /*
+                                    @keyframes tada {
+                                        from {
+                                          
+                                          transform: scale3d(1, 1, 1);
+                                        }
+                                      
+                                        10%,
+                                        20% {
+                                         
+                                          transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+                                        }
+                                      
+                                        30%,
+                                        50%,
+                                        70%,
+                                        90% {
+                                          
+                                          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                                        }
+                                      
+                                        40%,
+                                        60%,
+                                        80% {
+                                         
+                                          transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                                        }
+                                      
+                                        to {
+                                         
+                                          transform: scale3d(1, 1, 1);
+                                        }}
+                                      */
