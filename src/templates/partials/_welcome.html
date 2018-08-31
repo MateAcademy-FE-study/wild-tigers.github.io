@@ -16,38 +16,37 @@
                 <a class="button__icon--right" href="#">View More</a>
             </figcaption>
             <div class="hero__image">
-                <img class="slider--big__background" src="./img/png/MacBook_black_screen.png" alt="">
-                <div class="slider--big">
-                    <!-- <div> -->
-                    <div class="slider--big__slide">
 
+                <img class="slider--big__background" src="./img/png/MacBook_black_screen.png" alt="">
+
+                <div class="slider--big">
+                    <div class="slider--big__slide">
                         <img src="./img/png/macbook_slide_01.png" alt="">
                     </div>
                     <div class="slider--big__slide">
                         <img src="./img/png/macbook_slide_02.png" alt="">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="slider--big__slide" src="./img/png/macbook_slide_03.png" alt="">
+                        <img src="./img/png/macbook_slide_03.png" alt="">
                     </div>
-                    <!-- </div> -->
-                    <!-- <div id="" class="slider-big__slide">
-                        <img src="./img/png/macbook_slide_02.png" alt="">
-                    </div>
-                    <div id="" class="slider-big__slide">
-                        <img src="./img/png/macbook_slide_01.png" alt="">
-                    </div> -->
                 </div>
-                <!-- <div class="sliderBox sliderBox--small">
-                    <div id="phone_slide_01" class="slide slide--small">
-                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+
+                <img class="slider--small__background" src="./img/png/iPhone_black_screen.png" alt="">
+
+                <div class="slider--small">
+                    <div class="slider--small__slide">
+                        <img src="./img/png/iphone_slide_01.png" alt="">
                     </div>
-                    <div id="phone_slide_02" class="slide slide--small">
-                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+                    <div class="slider--big__slide">
+                        <img src="./img/png/iphone_slide_02.png" alt="">
                     </div>
-                    <div id="phone_slide_03" class="slide slide--small">
-                        <img src="./img/png/iPhone_screenOnly.png" alt="">
+                    <div class="slider--big__slide">
+                        <img src="./img/png/iphone_slide_03.png" alt="">
                     </div>
-                </div> -->
+                </div>
+
+
+
                 <div class="slider__dots"></div>
             </div>
         </figure>
@@ -59,21 +58,23 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            // dots: true,
+            arrows: false,
+            fade: true,
+            dotsClass: 'slider__dots',
+            asNavFor: '.slider--small'
+        });
+        $('.slider--small').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             dots: true,
             arrows: false,
             fade: true,
-            // asNavFor: '.slider--big',
+            asNavFor: '.slider--big',
             dotsClass: 'slider__dots',
-            // asNavFor: '.slider--small'
         });
-        // $('.slider--small').slick({
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     asNavFor: '.slider--big',
-        //     dots: true,
-        //     centerMode: true,
-        //     focusOnSelect: true
-        // });
 
 
 

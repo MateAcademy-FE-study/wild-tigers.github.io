@@ -56,7 +56,7 @@
     }
     &__image {
         position: relative;
-        border: 3px solid green;
+        // border: 3px solid green;
         width: 58%;
         margin-top: 86px;
     }
@@ -97,7 +97,26 @@
         &__slide {
             position: absolute;
             display: block;
+        }
+    }
+    &--small {
+        position: absolute;
+        width: 127px;
+        height: 221px;
+        bottom: 45px;
+        right: -7px;
 
+        &__background {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: -15px;
+            width: 177px;
+            height: 307px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
         }
     }
             &__dots {
