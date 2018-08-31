@@ -15,19 +15,29 @@
                     non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                 <a class="button__icon--right" href="#">View More</a>
             </figcaption>
-            <div class="hero__sliderBox">
-                <div class="sliderBox sliderBox--big">
-                    <div id="mac_slide_01" class="slide slide--big">
-                        <img src="./img/png/macbook_screenOnly.png" alt="">
+            <div class="hero__image">
+                <img class="slider--big__background" src="./img/png/MacBook_black_screen.png" alt="">
+                <div class="slider--big">
+                    <!-- <div> -->
+                    <div class="slider--big__slide">
+
+                        <img src="./img/png/macbook_slide_01.png" alt="">
                     </div>
-                    <div id="mac_slide_02" class="slide slide--big">
-                        <img src="./img/png/macbook_screenOnly.png" alt="">
+                    <div class="slider--big__slide">
+                        <img src="./img/png/macbook_slide_02.png" alt="">
                     </div>
-                    <div id="mac_slide_03" class="slide slide--big">
-                        <img src="./img/png/macbook_screenOnly.png" alt="">
+                    <div class="slider--big__slide">
+                        <img class="slider--big__slide" src="./img/png/macbook_slide_03.png" alt="">
                     </div>
+                    <!-- </div> -->
+                    <!-- <div id="" class="slider-big__slide">
+                        <img src="./img/png/macbook_slide_02.png" alt="">
+                    </div>
+                    <div id="" class="slider-big__slide">
+                        <img src="./img/png/macbook_slide_01.png" alt="">
+                    </div> -->
                 </div>
-                <div class="sliderBox sliderBox--small">
+                <!-- <div class="sliderBox sliderBox--small">
                     <div id="phone_slide_01" class="slide slide--small">
                         <img src="./img/png/iPhone_screenOnly.png" alt="">
                     </div>
@@ -37,27 +47,33 @@
                     <div id="phone_slide_03" class="slide slide--small">
                         <img src="./img/png/iPhone_screenOnly.png" alt="">
                     </div>
-                </div>
+                </div> -->
+                <div class="slider__dots"></div>
             </div>
         </figure>
     </div>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('.sliderBox--big').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
+        $('.slider--big').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            dots: true,
             arrows: false,
             fade: true,
-            asNavFor: '.sliderBox--small'
+            asNavFor: '.slider--big',
+            dotsClass: 'slider__dots',
+            // asNavFor: '.slider--small'
         });
-        $('.sliderBox--small').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            asNavFor: '.sliderBox--big',
-            dots: true,
-            centerMode: true,
-            focusOnSelect: true
-        });
+        // $('.slider--small').slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     asNavFor: '.slider--big',
+        //     dots: true,
+        //     centerMode: true,
+        //     focusOnSelect: true
+        // });
 
 
 

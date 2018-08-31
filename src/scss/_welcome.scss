@@ -54,7 +54,7 @@
         margin-bottom: 30px;
         padding-right: 10px;
     }
-    &__sliderBox {
+    &__image {
         position: relative;
         border: 3px solid green;
         width: 58%;
@@ -62,34 +62,63 @@
     }
 }
 
-.sliderBox {
-    position: absolute;
-    bottom: 0;
+// .sliderBox {
+//     position: absolute;
+//     &--big {
+//         // background-image: url('../img/png/MacBook_black_screen.png');
+//         width: 431px;
+//         height: 274px;
+//         // bottom: -20px;
+//         // right: 0;
+//     }
+//     &--small {
+//         // background-image: url('../img/png/iPhone_black_screen.png');
+//         // width: 177px;
+//         // height: 307px;
+//         // right: 0;
+//     }
+// }
+.slider {
     &--big {
-        background-image: url('../img/png/MacBook_black_screen.png');
-        width: 601px;
-        height: 365px;
-    }
-    &--small {
-        background-image: url('../img/png/iPhone_black_screen.png');
-        width: 177px;
-        height: 307px;
-        right: 0;
-    }
-}
-
-.slide {
-    position: absolute;
-    &--big {
-        top: ;
-        left: ;
+        position: absolute;
         width: 431px;
         height: 274px;
+        bottom: 44px;
+        right: 85px;
+
+        &__background {
+            position: absolute;
+            display: block;
+            bottom: -18px;
+            right: 0;
+            width: 601px;
+            height: 365px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
+
+        }
     }
-    &--small {
-        top: ;
-        left: ;
-        width: 127px;
-        height: 221px;
-    }
+            &__dots {
+                position: absolute;
+                bottom: -96px;
+                right: 212px;
+            }
 }
+
+// __slide {
+//     position: absolute;
+//     &--big {
+//         top: 0;
+//         left: 0;
+//         width: 431px;
+//         height: 274px;
+//     }
+//     &--small {
+//         top: 0;
+//         left: 0;
+//         width: 127px;
+//         height: 221px;
+//     }
+// }
