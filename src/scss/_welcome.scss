@@ -55,29 +55,12 @@
         padding-right: 10px;
     }
     &__image {
-        position: relative;
-        // border: 3px solid green;
+        position: relative; // border: 3px solid green;
         width: 58%;
         margin-top: 86px;
     }
 }
 
-// .sliderBox {
-//     position: absolute;
-//     &--big {
-//         // background-image: url('../img/png/MacBook_black_screen.png');
-//         width: 431px;
-//         height: 274px;
-//         // bottom: -20px;
-//         // right: 0;
-//     }
-//     &--small {
-//         // background-image: url('../img/png/iPhone_black_screen.png');
-//         // width: 177px;
-//         // height: 307px;
-//         // right: 0;
-//     }
-// }
 .slider {
     &--big {
         position: absolute;
@@ -85,7 +68,6 @@
         height: 274px;
         bottom: 44px;
         right: 85px;
-
         &__background {
             position: absolute;
             display: block;
@@ -105,7 +87,6 @@
         height: 221px;
         bottom: 45px;
         right: -7px;
-
         &__background {
             position: absolute;
             display: block;
@@ -119,25 +100,36 @@
             display: block;
         }
     }
-            &__dots {
-                position: absolute;
-                bottom: -96px;
-                right: 212px;
-            }
+    &__dots {
+        position: absolute;
+        bottom: -88px;
+        right: 225px;
+    }
 }
 
-// __slide {
-//     position: absolute;
-//     &--big {
-//         top: 0;
-//         left: 0;
-//         width: 431px;
-//         height: 274px;
-//     }
-//     &--small {
-//         top: 0;
-//         left: 0;
-//         width: 127px;
-//         height: 221px;
-//     }
-// }
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    ul {
+        display: inherit;
+        li {
+            margin: 0 0.25rem;
+            button {
+                display: block;
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                text-indent: -9999px;
+                background-color: $color-mainGrey; // text-indent: -9999px;
+            }
+        }
+    }
+    li.slick-active button {
+        background-color: white;
+    }
+}

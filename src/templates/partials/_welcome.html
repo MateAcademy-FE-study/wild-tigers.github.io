@@ -44,9 +44,6 @@
                         <img src="./img/png/iphone_slide_03.png" alt="">
                     </div>
                 </div>
-
-
-
                 <div class="slider__dots"></div>
             </div>
         </figure>
@@ -58,10 +55,10 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            // dots: true,
+            autoplaySpeed: 1000,
             arrows: false,
             fade: true,
-            dotsClass: 'slider__dots',
+            // dotsClass: 'slider__dots',
             asNavFor: '.slider--small'
         });
         $('.slider--small').slick({
@@ -69,14 +66,13 @@
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplaySpeed: 1000,
             dots: true,
             arrows: false,
             fade: true,
             asNavFor: '.slider--big',
-            dotsClass: 'slider__dots',
+            appendDots: $('.slider__dots'),
+            // dotsClass: 'slider__dots',
         });
-
-
-
     </script>
 </section>
