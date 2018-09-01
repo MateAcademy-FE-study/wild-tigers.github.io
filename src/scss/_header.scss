@@ -1,6 +1,6 @@
 @import 'variables';
 .header {
-    z-index: 999;
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -27,6 +27,7 @@
 .nav {
     display: block;
     &__burger {
+        z-index: 999;
         display: none;
     }
     &__block {
@@ -86,21 +87,42 @@
         padding-top: 5px;
     }
     .nav {
-        display: none;
+        // display: none;
+        visibility: hidden;
         position: absolute;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        background-color: $color-white;
+        box-shadow: -41px 0px 80px -13px rgba(0,0,0,0.5);
+
         &__burger {
+            color: $color-mainGrey;
+            font-size: 30px;
             position: absolute;
             display: block;
-            right: 40px;
+            right: 32px;
+            top: 12px;
             border: none;
             background: none;
             .hide {
                 display: none;
             }
         }
+        &__block {
+            line-height: 4;
+            flex-direction: column;
+            padding: 60px;
+        }
+        &__element {
+            padding: 0;
+        }
     }
+
+
     // class to show and hide menu on small screens
     .show.nav {
-        display: block;
+        // display: block;
+        visibility: visible;
     }
 }

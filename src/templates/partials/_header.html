@@ -5,8 +5,8 @@
             <div class="logo__element">TECH</div>
         </a>
         <button class="nav__burger">
-            <i class="open fas fa-bars"></i>
-            <i class="close hide fas fa-times"></i>
+            <i class="nav__burger--open fas fa-bars"></i>
+            <i class="nav__burger--close hide fas fa-times"></i>
         </button>
 
         <nav class="nav">
@@ -37,23 +37,22 @@
     </script>
 
     <script>
-        function makeVisible() {
-            document.querySelector('.open').classList.toggle('hide');
+        function onOff() {
+            document.querySelector('.nav__burger--open').classList.toggle('hide');
             document.querySelector('.nav').classList.toggle('show');
-            document.querySelector('.close').classList.toggle('hide');
-            // document.querySelector('.modal_window').classList.add('visible');
-            // document.querySelector('.overlay').addEventListener('click', hide);
-            // document.querySelector('.close').addEventListener('click', hide);
+            document.querySelector('.nav__burger--close').classList.toggle('hide');
             // document.querySelector('.close').focus();
+
         }
 
         // function hide() {
-        // document.querySelector('.visible').classList.remove('visible');
-        // document.querySelector('.visible').classList.remove('visible');
-        // document.querySelector('#click_me').focus();
+        //     document.querySelector('.nav').classList.remove('show');
+        //     // document.querySelector('#click_me').focus();
         // }
+
         window.onload = function () {
-            document.querySelector('.nav__burger').addEventListener('click', makeVisible);
+            document.querySelector('.nav__burger').addEventListener('click', onOff);
+            // document.querySelector('.nav__link').addEventListener('click', hide);
         }
     </script>
 </header>
