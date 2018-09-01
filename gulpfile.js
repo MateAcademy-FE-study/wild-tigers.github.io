@@ -46,4 +46,5 @@ gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function() {
   gulp.watch("./src/scss/**/*.scss", ["sass"]);
   gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
   gulp.watch("./src/img/**/*", ["copy:img"]);
+  gulp.watch('./build', browserSync.reload);
 });
