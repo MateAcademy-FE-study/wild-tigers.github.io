@@ -81,14 +81,26 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .header {
+        height: 66px;
+        padding-top: 5px;
+    }
     .nav {
         display: none;
+        position: absolute;
         &__burger {
             position: absolute;
             display: block;
             right: 40px;
             border: none;
             background: none;
+            .hide {
+                display: none;
+            }
         }
+    }
+    // class to show and hide menu on small screens
+    .show.nav {
+        display: block;
     }
 }
