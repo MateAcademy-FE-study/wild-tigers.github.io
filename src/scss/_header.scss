@@ -26,6 +26,9 @@
 
 .nav {
     display: block;
+    &__burger {
+        display: none;
+    }
     &__block {
         margin-top: 9px;
         display: flex;
@@ -73,6 +76,19 @@
         }
         &--light {
             color: $h1-font-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        display: none;
+        &__burger {
+            position: absolute;
+            display: block;
+            right: 40px;
+            border: none;
+            background: none;
         }
     }
 }
