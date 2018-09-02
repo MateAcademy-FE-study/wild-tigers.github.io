@@ -45,6 +45,7 @@ gulp.task("serv", function () {
     browserSync.watch("./build", browserSync.reload);
 });
 
+
 let jsFiles = './src/js/**/*.js',
     jsDest = './build/scripts';
 
@@ -58,8 +59,9 @@ gulp.task('scripts', function() {
 //     .pipe(uglify())
 //     .pipe(gulp.dest(jsDest));
 
-gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function () {
-    gulp.watch("./src/scss/**/*.scss", ["sass"]);
-    gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
-    gulp.watch("./src/img/**/*", ["copy:img"]);
+gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function() {
+  gulp.watch("./src/scss/**/*.scss", ["sass"]);
+  gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
+  gulp.watch("./src/img/**/*", ["copy:img"]);
+  gulp.watch('./build', browserSync.reload);
 });
