@@ -54,9 +54,82 @@
         margin-bottom: 30px;
         padding-right: 10px;
     }
-    &__sliderBox {
-        border: 3px solid green;
+    &__image {
+        position: relative; // border: 3px solid green;
         width: 58%;
         margin-top: 86px;
+    }
+}
+
+.slider {
+    &--big {
+        position: absolute;
+        width: 431px;
+        height: 274px;
+        bottom: 44px;
+        right: 85px;
+        &__background {
+            position: absolute;
+            display: block;
+            bottom: -18px;
+            right: 0;
+            width: 601px;
+            height: 365px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
+        }
+    }
+    &--small {
+        position: absolute;
+        width: 127px;
+        height: 221px;
+        bottom: 45px;
+        right: -7px;
+        &__background {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: -15px;
+            width: 177px;
+            height: 307px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
+        }
+    }
+    &__dots {
+        position: absolute;
+        bottom: -88px;
+        right: 225px;
+    }
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    ul {
+        display: inherit;
+        li {
+            margin: 0 0.25rem;
+            button {
+                display: block;
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                text-indent: -9999px;
+                background-color: $color-mainGrey; // text-indent: -9999px;
+            }
+        }
+    }
+    li.slick-active button {
+        background-color: white;
     }
 }
