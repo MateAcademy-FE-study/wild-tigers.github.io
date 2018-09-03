@@ -62,3 +62,25 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media screen and (min-width:480px) and (max-width:568px) {
+    .menu__h3 {
+        padding: 10px 0;
+    }
+    .footer-inner__list {
+        margin: 0px 50px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    /* Target portrait smartphones */
+    .menu__h3 {
+        padding: 10px 0;
+    }
+    .footer-inner__menu {
+        padding: 10px;
+    }
+    .container--footer {
+        padding: 0;
+    }
+}
