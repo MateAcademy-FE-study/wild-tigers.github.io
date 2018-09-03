@@ -49,19 +49,21 @@ gulp.task("serv", function () {
 let jsFiles = './src/js/**/*.js',
     jsDest = './build/scripts';
 
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
     return gulp.src(jsFiles)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest(jsDest));
+    // .pipe(concat('scripts.js'))
+        .pipe(gulp.dest(jsDest))
+        .pipe(uglify());
+    // .pipe(rename('scripts.min.js'))
 });
 
 // .pipe(rename('scripts.min.js')) //todo check exception on uglify
 //     .pipe(uglify())
 //     .pipe(gulp.dest(jsDest));
 
-gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function() {
-  gulp.watch("./src/scss/**/*.scss", ["sass"]);
-  gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
-  gulp.watch("./src/img/**/*", ["copy:img"]);
-  gulp.watch('./build', browserSync.reload);
+gulp.task("default", ["sass", "nunjucks", "copy:img", "serv"], function () {
+    gulp.watch("./src/scss/**/*.scss", ["sass"]);
+    gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
+    gulp.watch("./src/img/**/*", ["copy:img"]);
+    gulp.watch('./build', browserSync.reload);
 });
