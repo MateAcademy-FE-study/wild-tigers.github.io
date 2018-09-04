@@ -14,7 +14,7 @@
     //}
   }
 
-  &__size{
+  &__size {
     height: 100%;
   }
 
@@ -38,17 +38,14 @@
   }
 
   &__text {
-    margin-top: 1em;
     font-weight: $p-font-weight;
     font-size: $p-font-size;
     color: $h3-font-color;
-    line-height: 1.5em;
+    line-height: $p-line-height;
     flex-grow: 1;
   }
 
-  &__btn{
-    //display: flex;
+  &__btn {
     align-self: end;
-    //margin-top: auto;
   }
 }
