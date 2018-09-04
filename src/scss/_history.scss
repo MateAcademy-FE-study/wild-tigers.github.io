@@ -1,39 +1,57 @@
 @import 'variables';
-
 .history {
-  width: 100%;
-  background: #f9f8f8;
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__left {
-    width: 45%;
-    background-color: $color-white;
-  }
-  &__image {
-    height: 100%;
     width: 100%;
-  }
-  &__right {
-    width: 45%;
-  }
-  &__title {
-    &--no-space {
-      margin: 0;
-      transform: none;
+    background: #f9f8f8;
+    &__container {
+        padding-top: 65px;
+        padding-bottom: 65px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
     }
-  }
-  &__text {
-    font-size: $p-font-size;
-    color: $p-font-color;
-    line-height: $p-line-height;
-    font-weight: $p-font-weight;
-    flex-grow: 1;
-  }
-  &__button {
-    text-transform: uppercase;
-    margin-top: auto
-  }
+    &__right,
+    &__left {
+        width: 50%;
+        min-width: 480px;
+    }
+    &__left {
+        background-color: $color-white;
+    }
+    &__right {
+        padding-left: 20px;
+    }
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+    &__title {
+        &--no-space {
+            margin: 0;
+            transform: none;
+        }
+    }
+    &__text {
+        padding-top: 18px;
+        padding-bottom: 14px;
+        font-size: $p-font-size;
+        color: $p-font-color;
+        line-height: $p-line-height;
+        font-weight: $p-font-weight;
+        flex-grow: 1;
+    }
+    &__button {
+        text-transform: uppercase;
+        margin-top: auto
+    }
+}
+
+@media screen and (max-width:959px) {
+    .history {
+        &__left {
+            display: none;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
 }
