@@ -58,11 +58,10 @@
     //fill: #000099;
   }
 
-
-
   &__paragraph {
     font-weight: $p-font-weight;
     font-size: $p-font-size;
     color: $p-font-color;
+    line-height: $p-line-height;
   }
 }

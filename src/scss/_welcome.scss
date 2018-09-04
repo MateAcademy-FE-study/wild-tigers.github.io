@@ -126,6 +126,10 @@
                 border-radius: 100%;
                 text-indent: -9999px;
                 background-color: $color-mainGrey; // text-indent: -9999px;
+
+                &:focus{
+                    outline: none;
+                }
             }
         }
     }

@@ -26,7 +26,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     margin-left: 50%;
     border-radius: 2px;
     transform: translateX(-50%);
-    padding: 13px 14px;
+    //padding: 13px 14px; //duplicate, remove
     box-shadow: $h2-box-shadow;
     &--mw330 {
         min-width: 330px;
@@ -45,11 +45,10 @@ section-name + section-name--mw220 или section-name--mw330 */
         content: "";
         position: absolute;
         box-sizing: border-box;
-        background-repeat: no-repeat;
-        background-position: center;
+      background: no-repeat center; //optimized
     }
     &--arrow-l:after,
-    &--arrow-r:after,
+    &--arrow-r:after // come deleted
     {
         height: 93px;
         width: 56px;
@@ -137,8 +136,7 @@ section-name + section-name--mw220 или section-name--mw330 */
   text-decoration: none;
   display: table-cell;
   position: relative;
-  padding: 18px 24px;
-  padding-right: 66px;
+  padding: 18px 66px 18px 24px; //optimized
   color: $h1-font-color;
   font-size: 16px;
   font-weight: 400;
@@ -155,9 +153,7 @@ section-name + section-name--mw220 или section-name--mw330 */
     content: "";
     height: 100%;
     width: 27px;
-    background-image: url("../img/png/send.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/png/send.png") no-repeat center; //optimized
   }
 // =======
 //     background-color: $color-mainYellow;
