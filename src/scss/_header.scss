@@ -94,8 +94,7 @@
         right: 0;
         top: 0;
         background-color: $color-white;
-        box-shadow: -41px 0px 80px -13px rgba(0,0,0,0.5);
-
+        box-shadow: -41px 0px 80px -13px rgba(0, 0, 0, 0.5);
         &__burger {
             color: $color-mainGrey;
             font-size: 30px;
@@ -117,12 +116,21 @@
         &__element {
             padding: 0;
         }
-    }
-
-
-    // class to show and hide menu on small screens
+    } // class to show and hide menu on small screens
     .show.nav {
         // display: block;
         visibility: visible;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .nav {
+        &__block {
+            margin-top: 0;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 2.5;
+        }
     }
 }

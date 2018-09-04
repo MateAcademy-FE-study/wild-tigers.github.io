@@ -11,9 +11,13 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "aos": "^3.0.0-beta.5",
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-nunjucks-render": "^2.2.2",
-    "gulp-sass": "^4.0.1"
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
   }
 }
