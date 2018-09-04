@@ -15,11 +15,15 @@
         text-decoration: none;
         margin: 40px auto;
     }
-
     &__caption {
         margin: 40px auto;
     }
     &__img {
         height: 135px;
     }
+}
+
+#Objects:hover .st6 {
+    fill: black;
+    transition: all ease 0.3s;
 }
