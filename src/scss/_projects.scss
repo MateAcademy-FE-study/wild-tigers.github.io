@@ -23,8 +23,33 @@
     }
 }
 
-.img__1:hover .st6 {
+
+/*animation*/
+
+.img--1:hover .st6 {
     transform: rotate(720deg);
     transform-origin: 80% 80%;
+    transition: all ease 2s;
+}
+
+.img--2:hover .st6 {
+    transform: translateY(50px);
+    transition: all ease 2s;
+}
+
+.img--2:hover .st7 {
+    transform: translateY(50px);
+    transition: all ease 2s;
+}
+
+.img--3:hover {
+    transform: scale(1.1);
+    transform-origin: top;
+    transition: all ease 2s;
+}
+
+.img--4:hover .money {
+    transform: translateY(50px);
+    opacity: 0.1;
     transition: all ease 2s;
 }
