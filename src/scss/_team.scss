@@ -12,6 +12,8 @@
     &__member {
         padding: 0 23px;
         width: 171px;
+        transition: all 0.3s ease;
+
         &:hover {
             transform: scale(1.2);
         }
