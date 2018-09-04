@@ -49,7 +49,13 @@
 }
 
 .img--4:hover .money {
-    transform: translateY(50px);
+    transform: translateY(30px);
     opacity: 0.1;
+    transition: all ease 2s;
+}
+
+.img--5:hover {
+    transform: scale(1.1);
+    transform-origin: top;
     transition: all ease 2s;
 }
