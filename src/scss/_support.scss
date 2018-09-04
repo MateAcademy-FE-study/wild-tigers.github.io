@@ -2,6 +2,7 @@
     &__img {
         float: right;
         padding-top: 5px;
+        max-width: 100%;
     }
     &__text {
         font-family: $body-font-family;
