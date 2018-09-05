@@ -34,11 +34,17 @@
     text-decoration: none;
     color: #aab2bd;
     line-height: 2;
-    &:hover {
-      animation-duration: 1s;
-      animation-fill-mode: both;
+    transition: all 1s ease;
 
+    &:hover {
       color: $color-mainYellow;
+    }
+  }
+
+  &__item {
+    transition: all 1s ease;
+    &:hover {
+      transform: rotateX(360deg) scale(1.4);
     }
   }
 }
