@@ -4,8 +4,8 @@
   &__block {
     display: flex;
     justify-content: space-around;
-    padding: 3em 0;
-    margin-top: 2em;
+    padding: 100px 0;
+    // margin-top: 2em;
     //flex-direction: row;
     height: 100%;
     //&--reverse{
@@ -20,28 +20,34 @@
 
   &__image {
     width: 40%;
+    margin-bottom: -12px;
     //height: 100%;
   }
 
   &__content {
     display: flex;
     //height: 100%;
-    width: 40%;
+    width: 47%;
     flex-direction: column;
   }
 
   &__header {
     font-weight: $font-weight-700;
     font-size: $h3-font-size;
+    line-hight: 1;
     color: $h3-font-color;
     text-transform: uppercase;
   }
 
   &__text {
     font-weight: $p-font-weight;
-    font-size: $p-font-size;
+    // font-size: $p-font-size;
+    font-size: 14px;
     color: $h3-font-color;
-    line-height: $p-line-height;
+    // line-height: $p-line-height;
+    line-height: 22.4px;
+    margin-top: 14px;
+    margin-bottom: 12px;
     flex-grow: 1;
   }
 
