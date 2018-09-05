@@ -1,12 +1,3 @@
-/*BUTTONS*/
-
-
-/* для заголовков к основному классу прибавлять класс
-section-name + section-name--mw220 или section-name--mw330 */
-
-
-/* для жёлтыхк кнопок основному классу  прибавлять класс yellow-btn*/
-
 .section-name {
     display: inline-block;
     position: relative;
@@ -26,7 +17,6 @@ section-name + section-name--mw220 или section-name--mw330 */
     margin-left: 50%;
     border-radius: 2px;
     transform: translateX(-50%);
-    //padding: 13px 14px; //duplicate, remove
     box-shadow: $h2-box-shadow;
     &--mw330 {
         min-width: 330px;
@@ -45,11 +35,10 @@ section-name + section-name--mw220 или section-name--mw330 */
         content: "";
         position: absolute;
         box-sizing: border-box;
-      background: no-repeat center; //optimized
+        background: no-repeat center;
     }
     &--arrow-l:after,
-    &--arrow-r:after // come deleted
-    {
+    &--arrow-r:after {
         height: 93px;
         width: 56px;
         background-image: url("../img/svg/icons/path_1.svg");
@@ -85,118 +74,91 @@ section-name + section-name--mw220 или section-name--mw330 */
     }
 }
 
-
-/* yellow buttons*/
-
 .yellow-btn {
-  text-transform: uppercase;
-  background-color: $color-mainYellow;
-  appearance: none;
-  border: 0;
-  white-space: nowrap;
-  user-select: none;
-  text-decoration: none;
-  border-radius: 2px;
-  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-  color: #3a3a3a;
-  padding: 20px 40px;
-  font-size: 12px;
-  font-weight: $font-weight-700;
-  font-family: $buttons-font-family;
-  margin-top: 15px;
-
-  &:hover {
-    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-    cursor: pointer;
-
-    @keyframes shake {
-      10%, 90% {
-        transform: translate3d(-1px, 0, 0);
-      }
-
-      20%, 80% {
-        transform: translate3d(2px, 0, 0);
-      }
-
-      30%, 50%, 70% {
-        transform: translate3d(-4px, 0, 0);
-      }
-
-      40%, 60% {
-        transform: translate3d(4px, 0, 0);
-      }
+    text-transform: uppercase;
+    background-color: $color-mainYellow;
+    appearance: none;
+    border: 0;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    color: #3a3a3a;
+    padding: 20px 40px;
+    font-size: 12px;
+    font-weight: $font-weight-700;
+    font-family: $buttons-font-family;
+    margin-top: 15px;
+    &:hover {
+        animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        cursor: pointer;
+        @keyframes shake {
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
     }
-  }
 }
 
 .button__icon--right {
-  text-decoration: none;
-  display: table-cell;
-  position: relative;
-  padding: 18px 66px 18px 24px; //optimized
-  color: $h1-font-color;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  border-radius: 2px;
-  background-color: #464646;
-  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
-  &:after {
-    box-sizing: border-box;
-    position: absolute;
-    padding: 16px 30px;
-    right: 0;
-    top: 0;
-    content: "";
-    height: 100%;
-    width: 27px;
-    background: url("../img/png/send.png") no-repeat center; //optimized
-  }
-// =======
-//     background-color: $color-mainYellow;
-//     appearance: none;
-//     border: 0;
-//     white-space: nowrap;
-//     user-select: none;
-//     text-decoration: none;
-//     border-radius: 2px;
-//     box-shadow: $h2-box-shadow;
-//     color: #3a3a3a;
-//     padding: 20px 40px;
-//     font-size: 12px;
-//     font-weight: $font-weight-700;
-//     font-family: $buttons-font-family;
-//     margin-top: 15px;
-// }
+    text-decoration: none;
+    display: table-cell;
+    position: relative;
+    padding: 18px 66px 18px 24px; //optimized
+    color: $h1-font-color;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 2px;
+    background-color: #464646;
+    box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    &:after {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 16px 30px;
+        right: 0;
+        top: 0;
+        content: "";
+        height: 100%;
+        width: 27px;
+        background: url("../img/png/send.png") no-repeat center;
+    }
+}
 
-// .button__icon--right {
-//     text-decoration: none;
-//     display: table-cell;
-//     position: relative;
-//     padding: 18px 24px;
-//     padding-right: 66px;
-//     color: $h1-font-color;
-//     font-size: 16px;
-//     font-weight: 400;
-//     text-align: left;
-//     border-radius: 2px;
-//     background-color: #464646;
-//     box-shadow: $h2-box-shadow;
-//     &:after {
-//         box-sizing: border-box;
-//         position: absolute;
-//         padding: 16px 30px;
-//         right: 0;
-//         top: 0;
-//         content: "";
-//         height: 100%;
-//         width: 27px;
-//         background-image: url("../img/png/send.png");
-//         background-repeat: no-repeat;
-//         background-position: center;
-//     }
-// >>>>>>> master
+@media only screen and (max-width: 900px) {
+    .section-name {
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-name {
+        margin-top: 60px;
+        margin-bottom: 45px;
+        &--arrow-l:after,
+        &--arrow-l:before,
+        &--arrow-r:after,
+        &--arrow-r:before {
+            content: none;
+        }
+    }
 }
