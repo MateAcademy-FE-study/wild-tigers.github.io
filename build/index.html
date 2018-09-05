@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:100,300,400,500,700,900|Source+Sans+Pro:700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>Unique-tech</title>
+</head>
+
+<body>
+
+
+
+    <header class="header header--bgColor">
+    <div class="container header__container">
+        <a href="#" class="logo nav__link">
+            <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
+            <div class="logo__element">TECH</div>
+        </a>
+        <button class="nav__burger">
+            <i class="nav__burger--open fas fa-bars"></i>
+            <i class="nav__burger--close hide fas fa-times"></i>
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__block">
+                <li class="nav__element"><a class="nav__link" href="#">home</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">services</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">about</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">portfolio</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">academic</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">blog</a></li>
+                <li class="nav__element"><a class="nav__link" href="#">contact us</a><br/>
+                    <a class="nav__link nav__link--centered" href='tel:#'>(+966-322 322)</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 30) {
+                $('.header').addClass("header--minimized");
+            }
+            else {
+                $('.header').removeClass("header--minimized");
+            }
+        });
+
+    </script>
+
+    <script>
+        function onOff() {
+            document.querySelector('.nav__burger--open').classList.toggle('hide');
+            document.querySelector('.nav').classList.toggle('show');
+            document.querySelector('.nav__burger--close').classList.toggle('hide');
+            // document.querySelector('.close').focus();
+
+        }
+
+        // function hide() {
+        //     document.querySelector('.nav').classList.remove('show');
+        //     // document.querySelector('#click_me').focus();
+        // }
+
+        window.onload = function () {
+            document.querySelector('.nav__burger').addEventListener('click', onOff);
+            // document.querySelector('.nav__link').addEventListener('click', hide);
+        }
+    </script>
+</header>
+    <section class="welcome welcome--bgColor">
+    <div class="container container--no-padding" data-aos="fade-down-right">
+        <figure class="hero">
+            <figcaption class="hero__message">
+                <h1 class="hero__title">unique-tech<br> app development</h1>
+                <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit. laborum. Sed ut perspiciatis unde omnis iste. natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. voluptatem sequi. nesciunt.
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                <a class="button__icon--right" href="#">View More</a>
+            </figcaption>
+            <div class="hero__image">
+
+                <img class="slider--big__background" src="./img/png/MacBook_black_screen.png" alt="">
+
+                <div class="slider--big">
+                    <div class="slider--big__slide">
+                        <img src="./img/png/macbook_slide_01.png" alt="">
+                    </div>
+                    <div class="slider--big__slide">
+                        <img src="./img/png/macbook_slide_02.png" alt="">
+                    </div>
+                    <div class="slider--big__slide">
+                        <img src="./img/png/macbook_slide_03.png" alt="">
+                    </div>
+                </div>
+
+                <img class="slider--small__background" src="./img/png/iPhone_black_screen.png" alt="">
+
+                <div class="slider--small">
+                    <div class="slider--small__slide">
+                        <img src="./img/png/iphone_slide_01.png" alt="">
+                    </div>
+                    <div class="slider--big__slide">
+                        <img src="./img/png/iphone_slide_02.png" alt="">
+                    </div>
+                    <div class="slider--big__slide">
+                        <img src="./img/png/iphone_slide_03.png" alt="">
+                    </div>
+                </div>
+                <div class="slider__dots"></div>
+            </div>
+        </figure>
+    </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider--big').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 1000,
+            arrows: false,
+            fade: true,
+            // dotsClass: 'slider__dots',
+            asNavFor: '.slider--small'
+        });
+        $('.slider--small').slick({
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 1000,
+            dots: true,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider--big',
+            appendDots: $('.slider__dots'),
+            // dotsClass: 'slider__dots',
+        });
+    </script>
+</section>
+    <section class="services">
+    <div class="container services__container" data-aos="fade-right">
+        <h2 class="section-name section-name--mw330 section-name--arrow-r">what we do</h2>
+        <div class="services__block">
+            <img class="services__image services__size" src="img/png/macbook_1.png">
+            <article class="services__content">
+                <h3 class="services__header">web design</h3>
+                <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam
+                    enim totam recusandae. Ratione
+                    aliquid excepturi qui eveniet alias nemo vel, quod quis commodi voluptates, aliquam nostrum rerum
+                    molestiae
+                    hic!
+                </p>
+                <a href="#" class="yellow-btn services__btn">view more </a>
+            </article>
+        </div>
+        <div class="services__block services__block--reverse">
+            <article class="services__content">
+                <h3 class="services__header">search engine optimization</h3>
+                <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam
+                    enim totam recusandae. Ratione
+                    aliquid excepturi qui eveniet alias nemo vel, quod quis commodi voluptates, aliquam nostrum rerum
+                    molestiae
+                    hic!
+                </p>
+                <a href="#" class="yellow-btn services__btn">view more </a>
+            </article>
+            <img class="services__image services__size" src="img/png/macbook_1.png">
+
+        </div>
+        <div class="services__block">
+            <img class="services__image services__size" src="img/png/macbook_1.png">
+            <article class="services__content">
+                <h3 class="services__header">affiliate marketting</h3>
+                <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quibusdam
+                    enim totam recusandae. Ratione
+                    aliquid excepturi qui eveniet alias nemo vel, quod quis commodi voluptates, aliquam nostrum rerum
+                    molestiae
+                    hic!
+                </p>
+                <a href="#" class="yellow-btn services__btn">view more </a>
+            </article>
+        </div>
+
+    </div>
+</section>
+    <section class="process">
+    <div class="container" data-aos="fade-up">
+        <h2 class="section-name section-name--mw330 section-name--arrow-l">how we work</h2>
+        <div class="process__content">
+            <img src="./img/svg/big_pic/big_pic.svg" alt="process scheme">
+        </div>
+    </div>
+</section>
+    <section class="features">
+    <div class="container features__container" data-aos="fade-right">
+        <h2 class="features__heading section-name section-name--mw330  section-name--arrow-r">our features</h2>
+        <div class="features__content">
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/notes27.svg">
+                <div>
+                    <h3 class="features__head">Visual Composer</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or
+                        to
+                        remember any shortcodes with our. </p></div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/lcd2.svg">
+
+                <div>
+                    <h3 class="features__head">Responsive</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/notebook79.svg">
+                <div>
+                    <h3 class="features__head">Retina Ready</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/pencil124.svg">
+                <div>
+                    <h3 class="features__head">Typography</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/wallet35.svg">
+                <div>
+                    <h3 class="features__head">VTheme Options Pannel</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/hand224.svg">
+                <div>
+                    <h3 class="features__head">Dummy Content</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/globe32.svg">
+                <div>
+                    <h3 class="features__head">Many Style Available</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/cropping4.svg">
+                <div>
+                    <h3 class="features__head">Header Style</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/bag45.svg">
+                <div>
+                    <h3 class="features__head">10000+ icons</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/dish7.svg">
+                <div>
+                    <h3 class="features__head">Support</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/wealth.svg">
+                <div>
+                    <h3 class="features__head">Update</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+            <div class="features__section">
+                <img class="features__img" src="img/svg/icons/soft4.svg">
+                <div>
+                    <h3 class="features__head">SEO Ready</h3>
+                    <p class="features__paragraph">TheFox comes with the Visual Composer Plugin. You won’t need to
+                        code
+                        or to
+                        remember any shortcodes with our. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="packages">
+    <div class="container" data-aos="fade-up-right">
+        <h2 class="section-name section-name--mw330  section-name--arrow-l">OUR PACKAGES</h2>
+        <div class="packages__table">
+            <div class="packages__coll">
+                <ul>
+                    <h4 class="coll__name packages--grey">BASIC</h4>
+                    <li class="coll__li"><span class="coll__span"> web sites</span></li>
+                    <li class="coll__li"><span class="coll__span"> e-mails</span></li>
+                    <li class="coll__li"><span class="coll__span">l databases</span></li>
+                    <li class="coll__li"><span class="coll__span">storage</span></li>
+                    <li class="coll__price packages--grey"><b>$5</b>/mo.</li>
+                    <button class="coll__btn coll__btn--grey" form="">ORDER NOW</button>
+                </ul>
+            </div>
+            <div class="packages__coll">
+                <ul>
+                    <h4 class="coll__name packages--red">STANDART</h4>
+                    <li class="coll__li"><span class="coll__span"> web sites</span></li>
+                    <li class="coll__li"><span class="coll__span">40 e-mails</span></li>
+                    <li class="coll__li"><span class="coll__span">20 MySql databases</span></li>
+                    <li class="coll__li"><span class="coll__span">50 Gb storage</span></li>
+                    <li class="coll__price packages--red"><b>$12</b>/mo.</li>
+                    <button class="coll__btn coll__btn--red" form="">ORDER NOW</button>
+                </ul>
+            </div>
+            <div class="packages__coll">
+                <ul>
+                    <h4 class="coll__name packages--yellow">PREMIUM</h4>
+                    <li class="coll__li"><span class="coll__span">30 web sites</span></li>
+                    <li class="coll__li"><span class="coll__span">50 e-mails</span></li>
+                    <li class="coll__li"><span class="coll__span">40 MySql databases</span></li>
+                    <li class="coll__li"><span class="coll__span">100 Gb storage</span></li>
+                    <li class="coll__price packages--yellow"><b>$19</b>/mo.</li>
+                    <button class="coll__btn coll__btn--yellow" form="">ORDER NOW</button>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+    <section class="history">
+    <div class="container history__container" data-aos="fade-right">
+        <div class="history__left">
+            <img class="history__image" src="img/svg/happy_clerk.svg">
+        </div>
+
+        <div class="history__right">
+            <h2 class="history__title--no-space section-name section-name--mw220">OUR HISTORY</h2>
+            <p class="history__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae lacus justo. Ut ullamcorper
+                fermentum ex. Nullam mollis diam id orci volutpat malesuada. Duis quis interdum justo, ac ultricies
+                justo. Sed luctus aliquet egestas. Fusce in mi ut ante pulvinar elementum vel ut nibh. In hac habitasse
+                platea dictumst. Vestibulum hendrerit neque nec ex mollis tristique. Sed faucibus augue dui, non
+                porttitor purus sodales nec.
+
+                Duis a purus odio. Curabitur commodo iaculis egestas. Suspendisse viverra tellus at placerat
+                condimentum. Nam ac malesuada metus. Nam at accumsan nulla, vestibulum elementum ipsum. Suspendisse
+                blandit sed libero ac efficitur. Proin interdum rhoncus elit, vel placerat dui accumsan at. Pellentesque
+                lacus augue, volutpat quis porttitor a, placerat in lacus.
+            </p>
+
+            <button type="button" href="#" class="history__button yellow-btn">browse our story</button>
+        </div>
+
+    </div>
+</section>
+
+    <section class="projects">
+    <div class="container" data-aos="fade-up-left">
+        <h2 class="projects__name section-name section-name--mw446 section-name--arrow-r">OUR BUSINESS RELATED PROJECTS</h2>
+        <!-- <svg class="airplane"></svg> -->
+        <div class="projects__block">
+            <figure>
+                <img class="projects__img" src="img/svg/technical_aid.svg" alt="TECHNICAL AID">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">TECHNICAL AID</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/secure_access.svg" alt="SECURE ACCES">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">SECURE ACCES</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/market_research.svg" alt="MARKET RESEARCH">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">MARKET RESEARCH</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/credit.svg" alt="CREDIT">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">CREDIT</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/targetting.svg" alt="TARGETING">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">TARGETING</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/insurance.svg" alt="INSURANCE">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">INSURANCE</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/ecommerce.svg" alt="ECOMERSE">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">ECOMERSE</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="projects__img" src="img/svg/office.svg" alt="OFFICE">
+                <figcaption class="projects__caption">
+                    <a href="#" class="projects__link">OFFICE</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+    <section class="team screen-width">
+    <h2 class="team__name section-name section-name--mw446  section-name--arrow-l">OUR TEAM MEMBERS</h2>
+    <div class="screen-width brand-yellow">
+        <div class="team__wrapper container">
+            <figure class="team__member">
+                <img class="team__img" src="img/svg/team1.svg" alt="Foto of member">
+                <figcaption class="member">
+                    <h3 class="member__name">SYED MIRAJ</h3>
+                    <p class="member__position">UI & UX DESINER</p>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
+                <img class="team__img" src="img/svg/team2.svg" alt="Foto of member">
+                <figcaption class="member">
+                    <h3 class="member__name">PENY HUSTON</h3>
+                    <p class="member__position">DEVELOPER</p>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
+                <img class="team__img" src="img/svg/team3.svg" alt="Foto of member">
+                <figcaption class="member">
+                    <h3 class="member__name">LENNERD SHELLY</h3>
+                    <p class="member__position">REWIEWER</p>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
+                <img class="team__img" src="img/svg/team4.svg" alt="Foto of member">
+                <figcaption class="member">
+                    <h3 class="member__name">SHALDON CUPPER</h3>
+                    <p class="member__position">MARKETTER</p>
+                </figcaption>
+            </figure>
+            <figure class="team__member">
+                <img class="team__img" src="img/svg/team5.svg" alt="Foto of member">
+                <figcaption class="member">
+                    <h3 class="member__name">ASHLEY COLE</h3>
+                    <p class="member__position">MANAGEMENT</p>
+                </figcaption>
+            </figure>
+        </div>
+</section>
+    <section class="support">
+    <div class="container" data-aos="fade-down-left">
+        <h2 class="support__name section-name section-name--mw446  section-name--arrow-r">UPDATES & SUPPORT</h2>
+        <!-- <svg class="airplane"></svg> -->
+        <div class="suppport__inner">
+            <img class="support__img" src="img/png/macbook_2.png">
+            <article class="support__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+            </article>
+            <button class="support_button yellow-btn">SUPPORT CENTER</button>
+        </div>
+    </div>
+</section>
+    <section class="hire_us">
+    <div class="container" data-aos="fade-left">
+        <div class="hire">
+            <img class="hire__img" src="img/png/hire.png">
+            <div class="hire__content">
+                <h3 class="hire__h3">NEED CREATIVE WORKERS?</h3>
+                <button class="hire__button" form=""><b>HIRE US</b></button>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container container--footer">
+        <div class="footer-inner">
+            <nav class="footer-inner__menu">
+                <ul class="footer-inner__list">
+                    <h3 class="menu__h3">PORTFOLIO</h3>
+                    <li><a class="menu__link" href="#">Web Design</a></li>
+                    <li><a class="menu__link" href="#">Branding & Idefinity</a></li>
+                    <li><a class="menu__link" href="#">Mobile Design</a></li>
+                    <li><a class="menu__link" href="#">Print</a></li>
+                    <li><a class="menu__link" href="#">User Interfase</a></li>
+                </ul>
+                <ul class="footer-inner__list">
+                    <h3 class="menu__h3">ABOUT</h3>
+                    <li><a class="menu__link" href="#">The Company</a></li>
+                    <li><a class="menu__link" href="#">History</a></li>
+                    <li><a class="menu__link" href="#">Vision</a></li>
+                </ul>
+                <ul class="footer-inner__list">
+                    <h3 class="menu__h3">GALLERY</h3>
+                    <li><a class="menu__link" href="#">Flickr</a></li>
+                    <li><a class="menu__link" href="#">Picasa</a></li>
+                    <li><a class="menu__link" href="#">iStickPhoto</a></li>
+                    <li><a class="menu__link" href="#">PhotoDune</a></li>
+
+                </ul>
+                <ul class="footer-inner__list">
+                    <h3 class="menu__h3">CONTACT</h3>
+                    <li><a class="menu__link" href="#">Basic Info</a></li>
+                    <li><a class="menu__link" href="#">Map</a></li>
+                    <li><a class="menu__link" href="#">Contact Form</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-inner__social">
+                <div class="social">
+                    <!-- <div class="social__block"> -->
+                        <a class="social__block" href="#">
+                            <!-- <img class="social__icon" src="img/svg/icons/fb.svg"> -->
+                            <i class="social__icon fab fa-facebook-f"></i>
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="social__block"> -->
+                        <a class="social__block" href="#">
+                            <!-- <img class="social__icon" src="img/svg/icons/tw.svg"> -->
+                            <i class="social__icon fab fa-twitter"></i>
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="social__block"> -->
+                        <a class="social__block" href="#">
+                            <!-- <img class="social__icon" src="img/svg/icons/g-plus.svg"> -->
+                            <i class="social__icon fab fa-google-plus-g"></i>
+                        </a>
+                    <!-- </div> -->
+                    <!-- <div class="social__block"> -->
+                        <a class="social__block" href="#">
+                            <!-- <img class="social__icon" src="img/svg/icons/lin.svg"> -->
+                            <i class="social__icon fab fa-linkedin-in"></i>
+                        </a>
+                    <!-- </div> -->
+                </div>
+                <p>Copiyright © 2015 Syed Miraj.All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="./scripts/_AOSconfig.js"></script>
+<script src="./scripts/aos.js"></script>
+
+</body>
+</html>
