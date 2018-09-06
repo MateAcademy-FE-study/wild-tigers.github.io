@@ -12,17 +12,11 @@
     &__member {
         padding: 0 23px;
         width: 171px;
+        transition: all 0.3s ease;
+
         &:hover {
             transform: scale(1.2);
         }
-        // margin-right: 3.5%;
-        // &:last-child {
-        //     margin-right: 0;
-        //     margin-left: -1%;
-        // }
-        // &:nth-child(4) {
-        //     margin-left: -1%;
-        // }
     }
 }
 
