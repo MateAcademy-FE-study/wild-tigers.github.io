@@ -91,6 +91,7 @@
 @media screen and (max-width:768px) {
     .projects__block {
         padding: 20px;
+        justify-content: space-evenly;
     }
 }
 
@@ -107,14 +108,12 @@
             padding: 5px;
         }
         &__img {
-            height: 65px;
-            width: 75px;
+            height: 75px;
+            width: 95px;
         }
         &__caption {
             margin: 10px auto;
-        }
-        &__link {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 }
