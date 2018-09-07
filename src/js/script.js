@@ -19,8 +19,14 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 console.clear();
 
 let body = document.body;
-let modal = createModal(document.querySelector("#modal-1"));
-let openButton = document.querySelector("#open-button");
+let modal = createModal(document.querySelector(".modal-1"));
+let openButton = document.querySelectorAll(".open-button");
+
+openButton.forEach(function (elem) {
+    elem.addEventListener("click", function () {
+        modal.open();
+    })
+})
 
 openButton.addEventListener("click", function() {
     modal.open();
