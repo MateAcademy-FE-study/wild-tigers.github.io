@@ -1,51 +1,59 @@
-.team {
-    // text-align: center;
-    &__wrapper {
-        background-color: $color-mainYellow;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-top: 60px;
-        padding-bottom: 25px;
-        // margin-bottom: 130px;
-    }
-    &__member {
-        padding: 0 23px;
-        width: 171px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all 0.3s ease;
-        &:hover {
-            transform: scale(1.2);
+        .team {
+            // text-align: center;
+            &__wrapper {
+                background-color: $color-mainYellow;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 60px;
+                padding-bottom: 25px;
+                // margin-bottom: 130px;
+            }
+            &__member {
+                padding: 0 23px;
+                width: 171px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: all 0.3s ease;
+                &:first-child:hover {
+                    background-image: url(../img/png/Yura.jpeg);
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    background-image: url(../img/png/Val.jpeg);
+                    background-size: cover;
+                    .team__img {
+                        opacity: 0.05;
+                    }
+                }
+            }
         }
-    }
-}
-
-.member {
-    color: $h1-font-color;
-    font-family: $body-font-family;
-    font-size: 14px;
-    text-align: center;
-    &__name {
-        font-weight: $font-weight-700;
-        padding: 13px 0;
-        white-space: nowrap;
-    }
-    &__position {
-        font-weight: 200;
-    }
-}
-
-@media screen and (max-width:479px) {
-    /* Target portrait smartphones */
-    .team {
-        &__wrapper {
-            padding: 20px;
+        
+        .member {
+            color: $h1-font-color;
+            font-family: $body-font-family;
+            font-size: 14px;
+            text-align: center;
+            &__name {
+                font-weight: $font-weight-700;
+                padding: 13px 0;
+                white-space: nowrap;
+            }
+            &__position {
+                font-weight: 200;
+            }
         }
-        &__member {
-            width: 50%;
-            padding: 10px;
+        
+        @media screen and (max-width:479px) {
+            /* Target portrait smartphones */
+            .team {
+                &__wrapper {
+                    padding: 20px;
+                }
+                &__member {
+                    width: 50%;
+                    padding: 10px;
+                }
+            }
         }
-    }
-}
