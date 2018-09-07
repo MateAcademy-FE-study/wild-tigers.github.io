@@ -63,6 +63,7 @@
     }
 }
 
+
 .logo {
     color: $color-mainGrey;
     margin: 0;
@@ -78,6 +79,17 @@
         &--light {
             color: $h1-font-color;
         }
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .nav__link--decorated:hover {
+        color: $color-white;
+        border: 3px solid $color-logoBorder;
+        padding-right: 3px;
+        padding-left: 3px;
+        margin-left: -6px;
+        margin-right: -6px;
     }
 }
 
