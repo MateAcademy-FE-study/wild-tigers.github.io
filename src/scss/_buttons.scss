@@ -88,8 +88,7 @@
     padding: 20px 40px;
     font-size: 12px;
     font-weight: $font-weight-700;
-    font-family: $buttons-font-family;
-    margin-top: 15px;
+    font-family: $buttons-font-family; //   margin-top: 15px;
     &:hover {
         animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
         transform: translate3d(0, 0, 0);
