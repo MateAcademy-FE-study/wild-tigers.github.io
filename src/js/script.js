@@ -1,14 +1,14 @@
 // ===== Scroll to Top ====
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
     } else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').click(function () {      // When arrow is clicked
     $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
+        scrollTop: 0                       // Scroll to top of body
     }, 500);
 });
 
@@ -19,25 +19,25 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 console.clear();
 
 let body = document.body;
-let modal = createModal(document.querySelector(".modal-1"));
+let modal = createModal(document.querySelector(".modal"));
 let openButton = document.querySelectorAll(".open-button");
 
 openButton.forEach(function (elem) {
     elem.addEventListener("click", function () {
         modal.open();
     })
-})
-
-openButton.addEventListener("click", function() {
-    modal.open();
 });
+//
+// openButton.addEventListener("click", function () {
+//     modal.open();
+// });
 
 function createModal(container) {
 
-    let content = container.querySelector(".modal-content");
-    let dialog = container.querySelector(".modal-dialog");
-    let polygon = container.querySelector(".modal-polygon");
-    let svg = container.querySelector(".modal-svg");
+    let content = container.querySelector(".modal__content");
+    let dialog = container.querySelector(".modal__dialog");
+    let polygon = container.querySelector(".modal__polygon");
+    let svg = container.querySelector(".modal__svg");
 
     let point1 = createPoint(45, 45);
     let point2 = createPoint(55, 45);
