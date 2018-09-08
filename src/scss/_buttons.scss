@@ -115,6 +115,9 @@
             }
         }
     }
+    &:focus{
+        outline: none;
+    }
 }
 
 .button__icon--right {
