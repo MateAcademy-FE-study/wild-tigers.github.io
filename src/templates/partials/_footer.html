@@ -31,36 +31,44 @@
                     <li class="menu__item"><a class="menu__link" href="#">Contact Form</a></li>
                 </ul>
             </nav>
-
+            <div class="footer-inner__mobile"><button class="yellow-btn">view more&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right fa-lg"></i></button></div>
             <div class="footer-inner__social">
                 <div class="social">
                     <!-- <div class="social__block"> -->
-                        <a class="social__block" href="#">
-                            <!-- <img class="social__icon" src="img/svg/icons/fb.svg"> -->
-                            <i class="social__icon fab fa-facebook-f"></i>
-                        </a>
+                    <a class="social__block" href="#">
+                        <!-- <img class="social__icon" src="img/svg/icons/fb.svg"> -->
+                        <i class="social__icon fab fa-facebook-f"></i>
+                    </a>
                     <!-- </div> -->
                     <!-- <div class="social__block"> -->
-                        <a class="social__block" href="#">
-                            <!-- <img class="social__icon" src="img/svg/icons/tw.svg"> -->
-                            <i class="social__icon fab fa-twitter"></i>
-                        </a>
+                    <a class="social__block" href="#">
+                        <!-- <img class="social__icon" src="img/svg/icons/tw.svg"> -->
+                        <i class="social__icon fab fa-twitter"></i>
+                    </a>
                     <!-- </div> -->
                     <!-- <div class="social__block"> -->
-                        <a class="social__block" href="#">
-                            <!-- <img class="social__icon" src="img/svg/icons/g-plus.svg"> -->
-                            <i class="social__icon fab fa-google-plus-g"></i>
-                        </a>
+                    <a class="social__block" href="#">
+                        <!-- <img class="social__icon" src="img/svg/icons/g-plus.svg"> -->
+                        <i class="social__icon fab fa-google-plus-g"></i>
+                    </a>
                     <!-- </div> -->
                     <!-- <div class="social__block"> -->
-                        <a class="social__block" href="#">
-                            <!-- <img class="social__icon" src="img/svg/icons/lin.svg"> -->
-                            <i class="social__icon fab fa-linkedin-in"></i>
-                        </a>
+                    <a class="social__block" href="#">
+                        <!-- <img class="social__icon" src="img/svg/icons/lin.svg"> -->
+                        <i class="social__icon fab fa-linkedin-in"></i>
+                    </a>
                     <!-- </div> -->
                 </div>
                 <p>Copiyright © 2015 Syed Miraj.All rights reserved.</p>
             </div>
         </div>
     </div>
+    <script>
+        $(".footer-inner__mobile").on("click", function() {
+            $(".footer-inner__mobile").css("display", "none");
+            $(".footer-inner__menu").css("display", "block");
+
+
+        })
+    </script>
 </footer>
