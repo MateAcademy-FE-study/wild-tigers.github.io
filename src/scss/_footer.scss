@@ -1,96 +1,100 @@
-@import 'variables';
-
-.footer {
-  width: 100vw;
-  background-color: $p-font-color;
-  &-inner {
-    width: 100%;
-    color: #aab2bd;
-    &__list {
-      list-style: none;
-      margin-right: 20px;
-    }
-    &__menu {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-right: 30px;
-    }
-    &__social {
-      text-align: center;
-      padding-bottom: 33px;
-    }
-  }
-}
-
-.menu {
-  &__h3 {
-    font-size: $h3-font-size;
-    font-weight: 500;
-    color: #e6e9ed; // padding: 43px 0 28px 0;
-    padding-bottom: 28px;
-  }
-  &__link {
-    text-decoration: none;
-    color: #aab2bd;
-    line-height: 2;
-    transition: all 1s ease;
-
-    &:hover {
-      color: $color-mainYellow;
-    }
-  }
-
-  &__item {
-    transition: all 1s ease;
-    &:hover {
-      transform: rotateX(360deg) scale(1.4);
-    }
-  }
-}
-
-.social {
-  margin: 40px auto 20px auto;
-  &__block {
-    width: 40px;
-    height: 40px;
-    background-color: $color-mainYellow;
-    margin-right: 1px;
-    display: inline-block;
-    color: $color-white;
-    border-radius: 2px;
-    position: relative;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-  &__icon {
-    color: $color-white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 568px) {
-  .menu__h3 {
-    padding: 10px 0;
-  }
-  .footer-inner__list {
-    margin: 0px 50px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  /* Target portrait smartphones */
-  .menu__h3 {
-    padding: 10px 0;
-  }
-  .footer-inner__menu {
-    padding: 10px;
-  }
-  .container--footer {
-    padding: 0;
-  }
-}
+        @import 'variables';
+        .footer {
+            width: 100vw;
+            background-color: $p-font-color;
+            &-inner {
+                width: 100%;
+                color: #aab2bd;
+                &__list {
+                    list-style: none;
+                    margin-right: 20px;
+                }
+                &__menu {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding-right: 30px;
+                }
+                &__social {
+                    text-align: center;
+                    padding-bottom: 33px;
+                }
+                &__mobile {
+                    text-align: center;
+                    display: none;
+                    padding-top: 20px;
+                }
+            }
+        }
+        
+        .menu {
+            &__h3 {
+                font-size: $h3-font-size;
+                font-weight: 500;
+                color: #e6e9ed; // padding: 43px 0 28px 0;
+                padding-bottom: 28px;
+            }
+            &__link {
+                text-decoration: none;
+                color: #aab2bd;
+                line-height: 2;
+                transition: all 1s ease;
+                &:hover {
+                    color: $color-mainYellow;
+                }
+            }
+            &__item {
+                transition: all 1s ease;
+                &:hover {
+                    transform: rotateX(360deg) scale(1.4);
+                }
+            }
+        }
+        
+        .social {
+            margin: 40px auto 20px auto;
+            &__block {
+                width: 40px;
+                height: 40px;
+                background-color: $color-mainYellow;
+                margin-right: 1px;
+                display: inline-block;
+                color: $color-white;
+                border-radius: 2px;
+                position: relative;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            &__icon {
+                color: $color-white;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @media screen and (max-width: 568px) {
+            .menu__h3 {
+                padding: 10px 0;
+            }
+            .footer-inner__list {
+                margin: 0px 50px;
+            }
+            .container--footer {
+                padding: 0;
+            }
+        }
+        
+        @media screen and (max-width: 479px) {
+            /* Target portrait smartphones */
+            .footer-inner {
+                &__menu {
+                    display: none;
+                }
+                &__mobile {
+                    display: block;
+                }
+            }
+        }
