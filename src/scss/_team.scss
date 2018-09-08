@@ -1,27 +1,27 @@
 .team {
-        // text-align: center;
-        &__wrapper {
-            background-color: $color-mainYellow;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-top: 60px;
-            padding-bottom: 25px;
-            // margin-bottom: 130px;
-        }
-        &__member {
-            padding: 0 23px;
-            width: 171px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            transition: all 0.3s ease;
-            &:hover {
-                transform: scale(1.1);
-            }
+    // text-align: center;
+    &__wrapper {
+        background-color: $color-mainYellow;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-bottom: 25px;
+        // margin-bottom: 130px;
+    }
+    &__member {
+        padding: 0 23px;
+        width: 171px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
+
 .member {
     color: $h1-font-color;
     font-family: $body-font-family;
@@ -32,14 +32,13 @@
         padding: 13px 0;
         white-space: nowrap;
     }
-    
     &__position {
         font-weight: 200;
     }
 }
+
 @media screen and (max-width:479px) {
     /* Target portrait smartphones */
-    
     .team {
         &__wrapper {
             padding: 20px;
