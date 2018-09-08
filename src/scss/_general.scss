@@ -1,5 +1,4 @@
 @import 'variables';
-
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +7,9 @@
 
 body {
     font-family: $body-font-family;
+}
+
+*:focus {
+    box-shadow: 2px 2px 5px $color-mainGrey;
+    outline: none;
 }
