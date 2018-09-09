@@ -3,29 +3,32 @@
         <h2 class="section-name section-name--mw330  section-name--arrow-l">OUR PACKAGES</h2>
         <div class="packages__table">
             <div class="packages__coll">
+                <h3 class="coll__name--mobile coll__btn--grey">BASIC</h3>
                 <ul>
                     <h4 class="coll__name packages--grey">BASIC</h4>
-                    <li class="coll__li"><span class="coll__span"> web sites</span></li>
-                    <li class="coll__li"><span class="coll__span"> e-mails</span></li>
+                    <li class="coll__li"><span class="coll__span"> 5 web sites</span></li>
+                    <li class="coll__li"><span class="coll__span">15 e-mails</span></li>
                     <li class="coll__li"><span class="coll__span">l databases</span></li>
                     <li class="coll__li"><span class="coll__span">storage</span></li>
-                    <li class="coll__price packages--grey"><b class="coll__price__dol">$5</b>/mo.</li>
+                    <li class="coll__price packages--grey"><b class="coll__price--dol">$5</b>/mo.</li>
                     <button class="coll__btn coll__btn--grey" form="">ORDER NOW</button>
                 </ul>
             </div>
             <div class="packages__coll">
+                <h3 class="coll__name--mobile coll__btn--red">STANDART</h3>
                 <ul>
                     <h4 class="coll__name packages--red">STANDART</h4>
-                    <li class="coll__li"><span class="coll__span"> web sites</span></li>
+                    <li class="coll__li"><span class="coll__span"> 15 web sites</span></li>
                     <li class="coll__li"><span class="coll__span">40 e-mails</span></li>
                     <li class="coll__li"><span class="coll__span">20 MySql databases</span></li>
                     <li class="coll__li"><span class="coll__span">50 Gb storage</span></li>
                     <li class="coll__price packages--red">
-                        <b class="coll__price__dol">$12</b>/mo.</li>
+                        <b class="coll__price--dol">$12</b>/mo.</li>
                     <button class="coll__btn coll__btn--red" form="">ORDER NOW</button>
                 </ul>
             </div>
             <div class="packages__coll">
+                <h3 class="coll__name--mobile coll__btn--yellow">PREMIUM</h3>
                 <ul>
                     <h4 class="coll__name packages--yellow">PREMIUM</h4>
                     <li class="coll__li"><span class="coll__span">30 web sites</span></li>
@@ -33,18 +36,21 @@
                     <li class="coll__li"><span class="coll__span">40 MySql databases</span></li>
                     <li class="coll__li"><span class="coll__span">100 Gb storage</span></li>
                     <li class="coll__price packages--yellow">
-                        <b class="coll__price__dol">$19</b>/mo.</li>
+                        <b class="coll__price--dol">$19</b>/mo.</li>
                     <button class="coll__btn coll__btn--yellow" form="">ORDER NOW</button>
+
                 </ul>
             </div>
 
         </div>
         <script>
-            $('.coll__name').next().hide();
-            $('.coll__name').click(function() {
-                $(this).next().slideToggle();
-                $('.coll__name').not(this).next().stop(true, true).slideUp();
-            });
+            if (window.matchMedia('(max-width: 480px)').matches) {
+                $('.coll__name--mobile').next().hide();
+                $('.coll__name--mobile').click(function() {
+                    $(this).next().slideToggle();
+                    $('.coll__name--mobile').not(this).next().stop(true, true).slideUp();
+                });
+            }
         </script>
     </div>
 </section>
