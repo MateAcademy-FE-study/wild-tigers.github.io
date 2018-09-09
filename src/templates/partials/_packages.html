@@ -39,6 +39,12 @@
             </div>
 
         </div>
-
+        <script>
+            $('.coll__name').next().hide();
+            $('.coll__name').click(function() {
+                $(this).next().slideToggle();
+                $('.coll__name').not(this).next().stop(true, true).slideUp();
+            });
+        </script>
     </div>
 </section>
