@@ -1,13 +1,149 @@
-@import 'variables';
-.process {
-    background-color: $color-process;
-    &__content {
-        background-image: url("../img/svg/big_pic/map.svg");
+    @import 'variables';
+    .process {
+        background-color: $color-process;
+        &__content {
+            background-image: url("../img/svg/big_pic/map.svg");
+        }
     }
-}
-
-g#start {
-    fill: red;
-    color: red;
-    transform: scale(1.5);
-}
+    
+    .start {
+        transition: 0.5s ease-in;
+    }
+    
+    .start:hover {
+        transform: scale(1.1);
+    }
+    
+    .start:hover .cls-17 {
+        fill: $color-mainYellow;
+    }
+    
+    .start:hover .cls-20 {
+        fill: $color-mainYellow;
+    }
+    
+    .start:hover .cls-21 {
+        fill: $color-mainYellow;
+    }
+    
+    .lamp {
+        opacity: 0;
+        animation: fadel 15s forwards;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes fadel {
+        0% {
+            opacity: 0;
+        }
+        20%,
+        80% {
+            opacity: 1;
+        }
+    }
+    
+    .cls-29 {
+        fill: #6ec6d3;
+        animation: colort 15s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes colort {
+        0%,
+        40%,
+        100% {
+            fill: #6ec6d3;
+        }
+        20% {
+            fill: #fcc83b;
+        }
+    }
+    
+    .lupa {
+        animation: colort 15s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .hands {
+        animation: hand 15s;
+        animation-delay: 6s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes hand {
+        0%,
+        80% {
+            fill: #f8c3aa;
+        }
+        20% {
+            fill: #e34856;
+        }
+    }
+    
+    .team-up {
+        fill: #f28f32;
+        transform-origin: bottom center;
+        animation: scalet 15s;
+        animation-delay: 8s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes scalet {
+        0%,
+        30% {
+            transform: scale(1);
+            fill: #f28f32;
+        }
+        20% {
+            transform: scale(1.1);
+            fill: #fedd01;
+        }
+    }
+    
+    @keyframes swing {
+        2% {
+            -webkit-transform: rotate3d(0, 0, 1, 15deg);
+            transform: rotate3d(0, 0, 1, 15deg);
+        }
+        4% {
+            -webkit-transform: rotate3d(0, 0, 1, -10deg);
+            transform: rotate3d(0, 0, 1, -10deg);
+        }
+        6% {
+            -webkit-transform: rotate3d(0, 0, 1, 5deg);
+            transform: rotate3d(0, 0, 1, 5deg);
+        }
+        8% {
+            -webkit-transform: rotate3d(0, 0, 1, -5deg);
+            transform: rotate3d(0, 0, 1, -5deg);
+        }
+        to {
+            -webkit-transform: rotate3d(0, 0, 1, 0deg);
+            transform: rotate3d(0, 0, 1, 0deg);
+        }
+    }
+    
+    @keyframes skew {
+        0%,
+        20%,
+        100% {
+            transform: skew(0);
+        }
+        10% {
+            transform: skew(20deg);
+        }
+    }
+    
+    @keyframes scale2 {
+        0%,
+        20%,
+        100% {
+            transform: scale(1);
+        }
+        10% {
+            transform: scale(1.2) translateY(-200px);
+        }
+    }
