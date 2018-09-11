@@ -1,7 +1,7 @@
 @import 'variables';
 .history {
     width: 100%;
-    background: #f9f8f8;
+    background: url('../img/png/pattern.png');
     &__container {
         padding-top: 65px;
         padding-bottom: 65px;
@@ -21,8 +21,20 @@
         padding-left: 20px;
     }
     &__image {
-        height: 100%;
-        width: 100%;
+        position: relative; // height: 100%;
+        &--background {
+            width: 100%;
+        }
+        &--hover {
+            visibility: hidden;
+            position: absolute;
+            width: 108px;
+            top: 121px;
+            left: 206px;
+        }
+        &:hover &--hover {
+            visibility: visible;
+        }
     }
     &__title {
         &--no-space {
