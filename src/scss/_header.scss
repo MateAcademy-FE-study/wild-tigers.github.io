@@ -39,7 +39,7 @@
         list-style: none;
     }
     &__element {
-        padding: 0 18px;
+        padding: 0 15px;
         font-size: 14px;
         font-weight: 700;
         color: $color-mainGrey;
@@ -63,7 +63,6 @@
     }
 }
 
-
 .logo {
     color: $color-mainGrey;
     margin: 0;
@@ -73,7 +72,7 @@
     &__element {
         display: inline-block;
         &--bordered {
-            padding: 9px 13px;
+            padding: 2px 11px;
             border: 3px solid $color-logoBorder;
         }
         &--light {
