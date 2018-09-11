@@ -85,9 +85,12 @@
   border-radius: 3px;
   font-weight: 300;
   position: relative;
+  //opacity: 1;
   &__background {
     display: table-cell;
-    background: rgba(0, 0, 0, .8);
+    //background: rgba(0, 0, 0, .8);
+    background: $color-mainYellow;
+    //opacity: 0.7;
     text-align: center;
     vertical-align: middle;
   }
@@ -130,15 +133,58 @@
   }
 
   &__form {
-    width: 50vw;
+    width: 40vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
   }
   &__email {
+    padding: 10px;
+    border: none;
+    margin-bottom: 5%;
+    &:focus {
+      outline: none;
+    }
   }
   &__name {
+    margin-bottom: 5%;
+    border: none;
+    padding: 10px;
+    &:focus {
+      outline: none;
+    }
   }
+  &__textarea {
+    margin-bottom: 5%;
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__submit {
+    transition: all 0.1s;
+    position: relative;
+    padding: 1% 4%;
+    margin: auto 10px 10px 0;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+    align-self: center;
+    width: 30%;
+    background-color: #F2CF66;
+    border-bottom: 5px solid #D1B358;
+    text-shadow: 0px -2px #D1B358;
+    &:hover {
+      transform: translate(0px, 5px);
+      border-bottom: 1px solid;
+    }
+  }
+
 }
 
 @keyframes unfoldIn {

@@ -46,9 +46,10 @@ $border-radius: 2px;
       transform-origin: left bottom;
       transform: rotateX(90deg) translateY(-80%);
     }
+    //TODO css for hover
     &:hover {
-      transform-origin: center bottom;
-      transform: rotateX(-90deg) translateY(-180%);
+      //transform-origin: center bottom;
+      //transform: rotateX(-90deg) translateY(-180%);
     }
     &:focus {
       outline: none;
