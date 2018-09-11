@@ -26,17 +26,14 @@
                                 transform-origin: bottom;
                                 color: $p-font-color;
                             }
-                            &__price {
-                                padding: 33px 0;
-                                b {
-                                    font-size: 68px;
-                                }
-                            }
                             &__btn,
-                            &__name,
-                            &__price {
+                            &__name {
                                 transform: scale(1.1);
                                 transform-origin: bottom;
+                            }
+                            &__price--dol {
+                                transform: scale(2);
+                                transform-origin: right;
                             }
                         }
                     }
@@ -61,12 +58,11 @@
                         border-bottom: 1px solid $color-darkYellow;
                         padding: 15px 0;
                     }
-                    &__price {
-                        list-style: none;
+                    &__price--dol {
+                        display: inline-block;
                         font-size: 35px;
                         padding: 50px 0;
-                        display: block;
-                        transition: transform 0.25s linear 0.5s;
+                        transition: transform 0.75s linear;
                     }
                     &__name {
                         font-size: 22px;
