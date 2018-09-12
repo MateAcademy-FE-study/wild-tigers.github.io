@@ -137,13 +137,25 @@ function createModal(container) {
 
 
 //=============== Modal Sec VARIANT ========
-$('.button').click(function(){
+$('.button').click(function () {
     var buttonId = $(this).attr('id');
     $('#modal-container').removeAttr('class').addClass(buttonId);
     $('body').addClass('modal-active');
 })
 
-$('#modal__close').click(function(){
+$('#modal__close').click(function () {
     $('#modal-container').addClass('out');
     $('body').removeClass('modal-active');
 });
+
+
+//==========test for form
+
+
+// function sendMail() {
+//
+//     let link = "mailto:" + formData["email"]
+//         + "&subject=" + escape("Hire us")
+//         + "&body=" + escape(formData["message"]);
+//
+// }

@@ -3,7 +3,6 @@ $font-size: 20px;
 $border-radius: 2px;
 
 .hire {
-  // margin: 130px 0 90px 0;
   padding: 130px 0;
   &__content {
     background-color: $color-mainYellow;
@@ -11,6 +10,9 @@ $border-radius: 2px;
     padding: 3%;
     font-family: $buttons-font-family;
     transform: translateY(-50%);
+    //display: flex;
+    //justify-content: space-between;
+    width: 100%;
   }
   &__h3 {
     font-size: 22px;
@@ -48,11 +50,20 @@ $border-radius: 2px;
     }
     //TODO css for hover
     &:hover {
+      background-color: $color-black;
+      color: $color-white;
       //transform-origin: center bottom;
       //transform: rotateX(-90deg) translateY(-180%);
     }
     &:focus {
       outline: none;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hire__button,
+  .hire__h3 {
+    font-size: 18px;
   }
 }
