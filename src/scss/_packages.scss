@@ -52,21 +52,23 @@
             &__span {
                 display: block;
                 transition: transform 0.25s ease-in 0.25s;
+                font-weight: $h4-font-weight;
             }
             &__li {
                 display: block;
                 border-bottom: 1px solid $color-darkYellow;
-                padding: 15px 0;
+                padding: 14px 0;
             }
             &__price--dol {
                 display: inline-block;
                 font-size: 35px;
-                padding: 50px 0;
+                padding: 55px 0 48px 0;
                 transition: transform 0.75s ease-in;
             }
             &__name {
                 font-size: 22px;
-                padding-bottom: 35px;
+                font-weight: $h3-font-weight;
+                padding-bottom: 28px;
                 display: block;
                 transition: transform 0.25s ease-in;
                 &--mobile {
