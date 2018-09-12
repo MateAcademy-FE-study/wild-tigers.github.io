@@ -7,7 +7,7 @@
     height: 150px;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    padding-top: 77px;
+    padding-top: 76px;
     &__container {
         display: flex;
         flex-wrap: nowrap;
@@ -39,7 +39,7 @@
         list-style: none;
     }
     &__element {
-        padding: 0 15px;
+        padding: 0 17px;
         font-size: 14px;
         font-weight: 700;
         color: $color-mainGrey;
@@ -74,6 +74,8 @@
         &--bordered {
             padding: 2px 11px;
             border: 3px solid $color-logoBorder;
+            margin-right: -3px;
+
         }
         &--light {
             color: $h1-font-color;
