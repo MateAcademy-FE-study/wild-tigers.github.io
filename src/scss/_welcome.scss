@@ -149,3 +149,20 @@
         }
     }
 }
+
+
+@media (max-width: 600px), (max-height: 600px) {
+
+    .hero {
+        &__image {
+            display: none;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__message {
+            min-width: unset;
+            width: unset;
+        }
+    }
+}
