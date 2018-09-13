@@ -1,4 +1,5 @@
 .modal {
+  max-height: calc(100vh - 66px);
   margin-top: 60px;
   &__container {
     margin-top: 66px;

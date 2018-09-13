@@ -9,14 +9,15 @@
     transition: all 0.7s ease;
     padding-top: 76px;
     &__container {
+        position: relative;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: flex-start; // padding: 0;
     }
     &--minimized {
-        height: 66px !important;
-        padding-top: 5px !important;
+        height: 66px;
+        padding-top: 12px;
     }
     &--bgColor {
         background-color: $color-mainYellow;
@@ -26,6 +27,7 @@
 .nav {
     display: block;
     &__burger {
+        height: 100%;
         z-index: 999;
         display: none;
     }
@@ -97,12 +99,12 @@
 @media only screen and (max-width: 900px) {
     .header {
         height: 66px;
-        padding-top: 5px;
+        padding-top: 12px;
     }
     .nav {
         // display: none;
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         height: 100vh;
         right: 0;
         top: 0;
@@ -114,7 +116,7 @@
             position: absolute;
             display: block;
             right: 32px;
-            top: 12px;
+            // top: 12px;
             border: none;
             background: none;
             .hide {
