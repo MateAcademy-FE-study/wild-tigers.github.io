@@ -6,3 +6,10 @@
 padding-bottom: 110px;
     }
 }
+@media (max-width: 650px) {
+    .process {
+        &__content {
+            margin: 0 -45px;
+        }
+    }
+}

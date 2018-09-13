@@ -2,7 +2,7 @@
 .welcome {
     width: 100vw;
     padding-top: 150px;
-    height: 100vh;
+    min-height: 100vh;
     &--bgColor {
         background-color: $color-mainYellow;
     }
@@ -11,7 +11,8 @@
 .hero {
     position: relative;
     display: flex;
-    height: calc(100vh - 300px);
+    flex-wrap: wrap-reverse;
+    // height: calc(100vh - 300px);
     &:after,
     &:before {
         content: "";
@@ -46,6 +47,9 @@
         font-weight: 700;
         line-height: 1.2;
         margin: 33px 0 30px;
+        &--nowrap {
+            white-space: nowrap;
+        }
     }
     &__text {
         color: $h1-font-color;
@@ -62,6 +66,9 @@
         position: relative;
         width: 58%;
         margin-top: 92px;
+        &--static {
+            display: none;
+        }
     }
 }
 
@@ -76,8 +83,7 @@
             position: absolute;
             display: block;
             right: 19px;
-            width: 601px;
-            height: 365px;
+            width: 601px; // height: 365px;
         }
         &__slide {
             position: absolute;
@@ -139,23 +145,74 @@
     }
 }
 
-
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 1000px) {
     .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-bottom: 50px;
+        &__image {
+            margin: 15px auto;
+            height: 380px;
+            width: 600px;
+        }
+        &__message {
+            width: unset;
+            min-width: unset;
+        }
+        &__title {
+            margin-bottom: 6px;
+        }
+        &__text {
+            line-height: 24px;
+            min-height: unset;
+            margin-bottom: 30px;
+        }
         &:before,
         &:after {
             content: none;
         }
     }
+    .slider {
+        &__dots {
+            padding: 0;
+        }
+        &--big {
+
+            &__background {
+
+            }
+        }
+    }
 }
 
+@media only screen and (max-width: 900px) {
+.welcome {
+    padding-top: 100px;
+}
 
-@media (max-width: 600px), (max-height: 600px) {
+}
 
+@media only screen and (max-width: 768px) {
+    .hero {
+
+    }
+}
+
+@media (max-width: 650px),
+(max-height: 650px) {
     .hero {
         &__image {
-            display: none;
+            width: 100%;
+            height: unset;
+            text-align: center;
+
+            & * {
+                display: none;
+            }
+            &--static {
+                display: inline;
+                width: 100%;
+            }
         }
         &__title {
             font-size: 30px;

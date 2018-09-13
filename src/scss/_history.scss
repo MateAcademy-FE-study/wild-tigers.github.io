@@ -59,6 +59,10 @@
 
 @media screen and (max-width:959px) {
     .history {
+        &__container {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
         &__left {
             display: none;
         }

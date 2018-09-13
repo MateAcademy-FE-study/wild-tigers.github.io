@@ -1,81 +1,91 @@
 $box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
 $font-size: 20px;
 $border-radius: 2px;
-
 .hire {
-  margin: 130px 0;
-  &__content {
-    background-color: $color-mainYellow;
-    color: $color-white;
-    padding: 3%;
-    font-family: $buttons-font-family;
-    transform: translateY(-50%);
-    //display: flex;
-    //justify-content: space-between;
-    width: 100%;
-  }
-  &__h3 {
-    font-size: 22px;
-  }
-  &__wrap {
-    position: relative;
-  }
-  &__img {
-    width: 100%;
-    &--overlay {
-      transition: all 1s ease-in-out;
-      background-color: #ffc03880;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    margin: 130px 0;
+    &__content {
+        background-color: $color-mainYellow;
+        color: $color-white;
+        padding: 3%;
+        font-family: $buttons-font-family;
+        transform: translateY(-50%); //display: flex;
+        //justify-content: space-between;
+        width: 100%;
     }
-  }
-  &__button {
-    float: right;
-    color: #3a3a3a;
-    border: none;
-    white-space: nowrap;
-    border-radius: 2px;
-    box-shadow: $box-shadow;
-    padding: 1.5% 4%;
-    background-color: $color-white;
-    transform: translateY(-80%);
-    font-size: $font-size;
-    transition: all 500ms ease;
-    transform-style: preserve-3d;
-    &:after {
-      text-align: center;
-      //top: -100%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      font-size: $font-size;
-      position: absolute;
-      background: green;
-      border-radius: $border-radius;
-      box-shadow: $box-shadow;
-      content: 'Click to hire';
-      transform-origin: left bottom;
-      transform: rotateX(90deg) translateY(-80%);
+    &__h3 {
+        font-size: 22px;
     }
-    &:hover {
-      background-color: $color-mainGrey;
-      color: $color-white;
+    &__wrap {
+        position: relative;
     }
-    &:focus {
-      outline: none;
+    &__img {
+        width: 100%;
+        &--overlay {
+            transition: all 1s ease-in-out;
+            background-color: #ffc03880;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
-  }
-  &:hover &__img--overlay {
-    background: unset;
-  }
+    &__button {
+        float: right;
+        color: #3a3a3a;
+        border: none;
+        white-space: nowrap;
+        border-radius: 2px;
+        box-shadow: $box-shadow;
+        padding: 1.5% 4%;
+        background-color: $color-white;
+        transform: translateY(-80%);
+        font-size: $font-size;
+        transition: all 500ms ease;
+        transform-style: preserve-3d;
+        &:after {
+            text-align: center; //top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: $font-size;
+            position: absolute;
+            background: green;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            content: 'Click to hire';
+            transform-origin: left bottom;
+            transform: rotateX(90deg) translateY(-80%);
+        }
+        &:hover {
+            background-color: $color-mainGrey;
+            color: $color-white;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &:hover &__img--overlay {
+        background: unset;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  .hire__button,
-  .hire__h3 {
-    font-size: 18px;
-  }
+    .hire__button,
+    .hire__h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .hire {
+        margin: 65px -20px;
+        &__content {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        &__img {
+          width: 120%;
+        }
+    }
 }
