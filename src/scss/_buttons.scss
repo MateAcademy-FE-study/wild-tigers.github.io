@@ -180,7 +180,7 @@
             background: url("../img/png/send.png") no-repeat center;
         }
         &:hover{
-            filter: invert(1) brightness(130%);
+            filter: brightness(130%);
         }
     }
 }

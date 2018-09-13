@@ -3,7 +3,7 @@ $font-size: 20px;
 $border-radius: 2px;
 
 .hire {
-  padding: 130px 0;
+  margin: 130px 0;
   &__content {
     background-color: $color-mainYellow;
     color: $color-white;
@@ -23,6 +23,7 @@ $border-radius: 2px;
   &__img {
     width: 100%;
     &--overlay {
+      transition: all 1s ease-in-out;
       background-color: #ffc03880;
       position: absolute;
       top: 0;
@@ -69,7 +70,6 @@ $border-radius: 2px;
   }
   &:hover &__img--overlay {
     background: unset;
-    transition: all 1s ease;
   }
 }
 
