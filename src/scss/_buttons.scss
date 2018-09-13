@@ -5,7 +5,7 @@
     background-color: #464646;
     color: $color-white;
     font-size: $h2-font-size;
-    line-height: $h2-font-size;
+    line-height: 28px;
     font-weight: $h2-font-weight;
     font-family: $h2-font-family;
     text-align: center;
@@ -51,25 +51,25 @@
     }
     &--arrow-r {
         &:after {
-            right: -76px;
+            right: -71px;
             top: 29px;
         }
         &:before {
-            right: -33px;
-            top: 120px;
-            transform: rotate(-160deg);
+            right: -29px;
+            top: 119px;
+            transform: rotate(-163deg);
         }
     }
     &--arrow-l {
         &:after {
-            left: -76px;
+            left: -71px;
             top: 29px;
             transform: scaleX(-1);
         }
         &:before {
-            left: -33px;
-            top: 120px;
-            transform: rotate(160deg) scaleX(-1);
+            left: -29px;
+            top: 119px;
+            transform: rotate(163deg) scaleX(-1);
         }
     }
 }

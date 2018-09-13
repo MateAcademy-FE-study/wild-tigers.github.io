@@ -1,23 +1,28 @@
 .services {
     display: flex;
     flex-direction: column;
+    &__container {
+        margin-top: -63px;
+    }
     &__block {
         display: flex;
-        justify-content: space-around;
-        padding: 103px 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 104px 31px;
         height: 100%;
     }
     &__size {
         height: 100%;
     }
     &__image {
-        width: 41%;
-        margin-bottom: -11px;
-        margin-right: 21px;
+        // width: 41%;
+        // margin-bottom: -11px;
+        // margin-right: 21px;
     }
     &__content {
         display: flex;
-        width: 47%;
+        max-width: 460px;
+        width: 50%;
         flex-direction: column;
     }
     &__header {
