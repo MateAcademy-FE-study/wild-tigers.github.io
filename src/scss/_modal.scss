@@ -44,7 +44,6 @@
     padding: 24px;
     visibility: hidden;
     opacity: 0;
-    //color: rgba(255,255,255,0.87);
   }
 }
 
@@ -87,12 +86,9 @@
   border-radius: 3px;
   font-weight: 300;
   position: relative;
-  //opacity: 1;
   &__background {
     display: table-cell;
     background: rgba(0, 0, 0, .8);
-    //background: $color-mainYellow;
-    //opacity: 0.7;
     text-align: center;
     vertical-align: middle;
   }
@@ -121,24 +117,20 @@
     width: 24px;
     height: 24px;
     color: $color-mainGrey;
-    // font: 14px/100% arial, sans-serif;
     position: absolute;
     right: 10px;
-    // text-decoration: none;
     text-shadow: 0 1px 0 #fff;
     top: 10px;
     border: none;
-    // background: white;
     &:after {
-      // content: '✖'; /* UTF-8 symbol */
     }
     &:focus {
-      // outline: none;
     }
   }
 
   &__form {
     min-width: 240px;
+    max-width: 400px;
     min-height: 400px;
     width: 40vw;
     height: 50vh;
@@ -161,7 +153,6 @@
 
   }
   &__submit {
-    // width: 30%;
     align-self: center;
     transition: all 0.3s;
     text-align: center;
