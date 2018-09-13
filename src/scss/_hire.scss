@@ -81,14 +81,25 @@ $border-radius: 2px;
     .hire {
         margin: 65px -20px;
         &__content {
-          padding-left: 20px;
-          padding-right: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
         &__img {
-          width: 120%;
+            width: 120%;
         }
         &__wrap {
-          overflow: hidden;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .hire {
+        &__h3 {
+            max-width: calc(100vw - 140px);
+        }
+        &__button {
+          transform: translateY(-120%);
         }
     }
 }
