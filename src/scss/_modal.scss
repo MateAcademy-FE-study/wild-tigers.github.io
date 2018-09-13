@@ -1,0 +1,207 @@
+.modal {
+  margin-top: 60px;
+  &__container {
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__dialog {
+    width: 70vmin;
+    height: 70vmin;
+    position: fixed;
+    overflow: hidden;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__polygon {
+    fill: $color-mainYellow;
+    opacity: 0.8;
+  }
+
+  &__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+  &.one {
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    .modal-background {
+      .modal {
+        transform: scale(0);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+    &.out {
+      transform: scale(1);
+      animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      .modal-background {
+        .modal {
+          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
+}
+
+// =========== MODAL VAR 2 ==============
+
+.modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+  &__background {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__head {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    rect {
+      stroke: #fff;
+      stroke-width: 2px;
+      stroke-dasharray: 778;
+      stroke-dashoffset: 778;
+    }
+  }
+  &__close {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: $color-mainGrey;
+    position: absolute;
+    right: 10px;
+    text-shadow: 0 1px 0 #fff;
+    top: 10px;
+    border: none;
+    &:after {
+    }
+    &:focus {
+    }
+  }
+
+  &__form {
+    min-width: 240px;
+    max-width: 400px;
+    min-height: 400px;
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &__email,
+  &__name,
+  &__textarea {
+    border: 1px solid $color-mainYellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__textarea {
+    flex-grow: 1;
+
+  }
+  &__submit {
+    align-self: center;
+    transition: all 0.3s;
+    text-align: center;
+    &:hover {
+      transform: translate(0px, 5px);
+      border-bottom: 1px solid;
+    }
+  }
+
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

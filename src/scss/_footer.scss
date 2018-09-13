@@ -7,10 +7,13 @@
         color: #aab2bd;
         &__list {
             list-style: none;
+            margin-right: 20px;
         }
         &__menu {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            margin-right: -20px;
         }
         &__social {
             text-align: center;
@@ -23,15 +26,23 @@
     &__h3 {
         font-size: $h3-font-size;
         font-weight: 500;
-        color: #e6e9ed; // padding: 43px 0 28px 0;
+        color: #e6e9ed;
         padding-bottom: 28px;
     }
     &__link {
         text-decoration: none;
         color: #aab2bd;
         line-height: 2;
+        transition: all .15s ease;
         &:hover {
-            color: $color-white;
+            color: white;
+        }
+    }
+    &__item {
+        transition: all 0.15s ease;
+        &:hover {
+            transform: scale(1.01);
+            transform-origin: left;
         }
     }
 }
@@ -47,6 +58,7 @@
         color: $color-white;
         border-radius: 2px;
         position: relative;
+        transition: all 0.3s ease-in;
         &:hover {
             transform: scale(1.2);
         }
@@ -57,5 +69,42 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 1044px) {
+    .footer-inner__list {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 568px) {
+    .menu__h3 {
+        padding: 10px 0;
+    }
+    .footer-inner__list {
+        // margin: 0px 30px;
+    }
+}
+
+
+@media (max-width: 520px) {
+    .footer-inner__list {
+        width: 45%;
+    }
+}
+
+
+
+
+@media  (max-width: 479px) {
+    .footer-inner__list {
+        padding-top: 20px;
+    }
+    .footer-inner__menu {
+        padding: 10px;
+    }
+    .container--footer {
+        padding: 0;
     }
 }

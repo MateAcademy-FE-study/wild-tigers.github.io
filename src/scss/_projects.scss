@@ -7,19 +7,113 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    &__link {
+    &__caption {
+        margin: 40px auto;
+    }
+    &__figure {
+        padding: 0 10px;
         font-family: $body-font-family;
         font-size: $p-font-size;
         font-weight: $font-weight-700;
         color: $grey-text;
         text-decoration: none;
-        margin: 40px auto;
-    }
-
-    &__caption {
-        margin: 40px auto;
     }
     &__img {
         height: 135px;
+        width: 180px;
+    }
+}
+
+
+/*animation*/
+
+%rotate {
+    transform: rotate(720deg);
+    transform-origin: 80% 80%;
+    transition: all ease 2s;
+    transform-box: fill-box;
+    opacity: 0.95;
+}
+
+.img--1:hover .st6 {
+    @extend %rotate;
+}
+
+.img--2:hover .card {
+    transform: translateY(50px);
+}
+
+.img--3:hover .zoom {
+    transform: scale(1.1);
+    transform-origin: top;
+}
+
+.img--4:hover .money {
+    transform: translateY(30px);
+    opacity: 0.1;
+}
+
+.target,
+.money,
+.card,
+.img--3,
+.zoom,
+.dollar,
+.down,
+.bag {
+    transition: all ease 1s;
+}
+
+.img--5:hover .target {
+    transform: scale(1.1);
+}
+
+.img--6:hover .dollar {
+    transform: translateY(-20px);
+}
+
+.img--7:hover .down {
+    transform: translateY(10px);
+}
+
+.img--7:hover .bag {
+    fill: $color-logoBorder;
+}
+
+.bag {
+    transition-delay: 0.25s;
+}
+
+.img--8:hover .pencil {
+    @extend %rotate;
+}
+
+@media screen and (max-width:768px) {
+    .projects__block {
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .projects__img {
+        height: 105px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .projects {
+        &__block {
+            padding: 5px;
+        }
+        &__img {
+            height: 75px;
+            width: 95px;
+        }
+        &__caption {
+            margin: 10px auto;
+            font-size: 12px;
+        }
     }
 }

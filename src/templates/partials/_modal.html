@@ -1,0 +1,34 @@
+<section class="modal modal__container">
+    <div class="modal__dialog">
+        <svg class="modal__svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon class="modal__polygon" points=""/>
+        </svg>
+
+        <div class="modal__content">
+            <h2>I'm a modal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi ut inventore consectetur quos
+                rerum quibusdam accusamus, labore itaque assumenda consequatur cum saepe velit quidem ipsa facilis.
+                Repellendus, reiciendis quam?</p>
+        </div>
+
+    </div>
+</section>
+
+<div id="modal-container">
+    <div class="modal__background">
+        <div class="modal">
+            <h2 class="modal__head">Hire Us</h2>
+            <form class="modal__form" name="hire_us">
+                <input type="email" name="email" id="email" class="modal__email" placeholder="Your email" required>
+                <input type="text" name="full-name" id="full-name" class="modal__name" placeholder="Your Name" required>
+                <textarea name="message" class="modal__textarea" placeholder="Your message"></textarea>
+                <!--<input type="submit" name="submit" class="modal__submit" value="SEND" onclick="sendMail()">-->
+                <button class="button__icon--right modal__submit">Send</button>
+
+            </form>
+            <button class="modal__close" id="modal__close">
+                    <i class="nav__burger--close fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+</div>

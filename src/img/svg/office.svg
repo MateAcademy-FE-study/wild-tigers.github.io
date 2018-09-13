@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../../css/main.css"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Objects" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" class="img--8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 168.6 133.2" style="enable-background:new 0 0 168.6 133.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#335E59;}
@@ -72,7 +73,7 @@
 		<rect x="111" y="81.9" class="st8" width="13.2" height="4"/>
 		<rect x="111" y="88.7" class="st3" width="13.2" height="4"/>
 	</g>
-	<g>
+	<g class="pencil">
 		<path class="st1" d="M129.4,98.5l-6.8,2.4l2.8-6.6l38.8-36.9c0.6-0.6,1.6-0.6,2.2,0.1l1.8,1.9c0.6,0.6,0.6,1.6-0.1,2.2L129.4,98.5
 			z"/>
 		<path class="st0" d="M129.4,98.5l-6.8,2.4l4.9-4.7l39.8-37.8l0.9,1c0.6,0.6,0.6,1.6-0.1,2.2L129.4,98.5z"/>
@@ -101,4 +102,6 @@
 			s1.5,3.4,3.4,3.4V125.6z"/>
 	</g>
 </g>
+<a xmlns="http://www.w3.org/2000/svg" id="anchor" xlink:href="/#" xmlns:xlink="http://www.w3.org/1999/xlink" target="_top">
+    <rect x="0" y="0" width="100%" height="100%" fill-opacity="0"/></a>
 </svg>

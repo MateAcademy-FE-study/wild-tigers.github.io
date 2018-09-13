@@ -1,40 +1,78 @@
 @import 'variables';
-
 .history {
     width: 100%;
-    background: #f9f8f8;
+    background: url('../img/png/pattern.png');
     &__container {
+        padding-top: 65px;
+        padding-bottom: 65px;
         display: flex;
+        flex-wrap: wrap-reverse;
         justify-content: space-between;
-        padding: 3em 0;
+    }
+    &__right,
+    &__left {
+        width: 50%;
+        min-width: 480px;
     }
     &__left {
-        width: 45%;
         background-color: $color-white;
     }
-    &__image {
-        height: 100%;
-        width: 100%;
-    }
     &__right {
-        width: 45%;
+        padding-left: 20px;
+    }
+    &__image {
+        position: relative; // height: 100%;
+        &--background {
+            width: 100%;
+        }
+        &--hover {
+            visibility: hidden;
+            position: absolute;
+            width: 108px;
+            top: 121px;
+            left: 206px;
+        }
+        &:hover &--hover {
+            visibility: visible;
+        }
     }
     &__title {
         &--no-space {
-          margin: 0;
-          transform: none;
+            margin: 0;
+            transform: none;
         }
     }
     &__text {
-        padding: 1.5em 0;
+        padding-top: 18px;
+        padding-bottom: 14px;
         font-size: $p-font-size;
         color: $p-font-color;
-        line-height: 1.5em;
+        line-height: 30px;
         font-weight: $p-font-weight;
         flex-grow: 1;
     }
     &__button {
         text-transform: uppercase;
         margin-top: auto
+    }
+}
+
+@media screen and (max-width:959px) {
+    .history {
+        &__left {
+            display: none;
+        }
+        &__right {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .history {
+        &__right {
+            min-width: unset;
+        }
     }
 }

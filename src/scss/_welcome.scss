@@ -21,42 +21,148 @@
     }
     &:before {
         background-image: url("../img/svg/icons/send.svg");
-        width: 30px;
-        height: 29px;
-        top: 42px;
-        left: 668px;
-        transform: scaleX(-1) rotate(-161deg);
+        background-size: 36px 36px;
+        width: 35px;
+        height: 34px;
+        top: 48px;
+        left: 647px;
+        transform: scaleX(-1) rotate(-155deg);
     }
     &:after {
         background-image: url("../img/svg/icons/path_2.svg");
         width: 365px;
         height: 50px;
-        top: 19px;
-        left: 308px;
+        top: 28px;
+        left: 291px;
     }
     &__message {
         width: 42%;
+        min-width: 392px;
     }
     &__title {
         color: $h1-font-color;
         text-transform: uppercase;
         font-size: 42px;
-        /* Приближение из-за подстановки шрифтов */
         font-weight: 700;
+        line-height: 1.2;
+        margin: 33px 0 30px;
     }
     &__text {
         color: $h1-font-color;
         font-size: 16px;
         font-weight: 300;
         line-height: 30px;
-        height: calc(100% - 148px);
+        min-height: 240px;
+        max-height: calc(100vh - 490px);
         overflow: auto;
-        margin-bottom: 30px;
+        margin-bottom: 54px;
         padding-right: 10px;
     }
-    &__sliderBox {
-        border: 3px solid green;
+    &__image {
+        position: relative;
         width: 58%;
-        margin-top: 86px;
+        margin-top: 92px;
+    }
+}
+
+.slider {
+    &--big {
+        position: absolute;
+        width: 431px;
+        height: 274px;
+        top: 27px;
+        right: 101px;
+        &__background {
+            position: absolute;
+            display: block;
+            right: 19px;
+            width: 601px;
+            height: 365px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
+        }
+    }
+    &--small {
+        position: absolute;
+        width: 125px;
+        top: 86px;
+        right: 9px;
+        &__background {
+            position: absolute;
+            display: block;
+            top: 41px;
+            right: 0;
+            width: 177px;
+            height: 307px;
+        }
+        &__slide {
+            position: absolute;
+            display: block;
+        }
+    }
+    &__dots {
+        position: absolute;
+        top: 370px;
+        right: 267px;
+    }
+}
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    ul {
+        display: inherit;
+        li {
+            margin: 0 3px;
+            button {
+                display: block;
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                text-indent: -9999px;
+                background-color: $color-mainGrey;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+    li.slick-active button {
+        background-color: white;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .hero {
+        &:before,
+        &:after {
+            content: none;
+        }
+    }
+}
+
+
+@media (max-width: 600px), (max-height: 600px) {
+
+    .hero {
+        &__image {
+            display: none;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__message {
+            min-width: unset;
+            width: unset;
+        }
     }
 }

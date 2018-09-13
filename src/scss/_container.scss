@@ -18,3 +18,9 @@
 .brand-yellow {
     background-color: $color-mainYellow;
 }
+
+@media (max-width:1044px) {
+    .container {
+        padding: 0 20px;
+    }
+}
