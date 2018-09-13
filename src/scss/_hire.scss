@@ -87,5 +87,8 @@ $border-radius: 2px;
         &__img {
           width: 120%;
         }
+        &__wrap {
+          overflow: hidden;
+        }
     }
 }
