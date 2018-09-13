@@ -45,3 +45,166 @@
     //color: rgba(255,255,255,0.87);
   }
 }
+
+#modal-container {
+  position: fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  z-index: 1;
+  &.one {
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    .modal-background {
+      .modal {
+        transform: scale(0);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+    &.out {
+      transform: scale(1);
+      animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      .modal-background {
+        .modal {
+          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
+}
+
+// =========== MODAL VAR 2 ==============
+
+.modal {
+  background: white;
+  padding: 50px;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 300;
+  position: relative;
+  //opacity: 1;
+  &__background {
+    display: table-cell;
+    background: rgba(0, 0, 0, .8);
+    //background: $color-mainYellow;
+    //opacity: 0.7;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &__head {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    rect {
+      stroke: #fff;
+      stroke-width: 2px;
+      stroke-dasharray: 778;
+      stroke-dashoffset: 778;
+    }
+  }
+  &__close {
+    color: #777;
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+    border: none;
+    background: white;
+    &:after {
+      content: '✖'; /* UTF-8 symbol */
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &__email,
+  &__name,
+  &__textarea {
+    border: 1px solid $color-mainYellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__textarea {
+    flex-grow: 1;
+
+  }
+  &__submit {
+    width: 30%;
+    align-self: center;
+    transition: all 0.3s;
+    text-align: center;
+    &:hover {
+      transform: translate(0px, 5px);
+      border-bottom: 1px solid;
+    }
+  }
+
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(.005) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
