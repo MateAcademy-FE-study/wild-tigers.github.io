@@ -9,3 +9,9 @@
 body {
     font-family: $body-font-family;
 }
+
+@media (any-hover: none) {
+    * {
+outline: none;
+    }
+ }

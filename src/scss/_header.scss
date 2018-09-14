@@ -9,15 +9,15 @@
     transition: all 0.7s ease;
     padding-top: 76px;
     &__container {
+        position: relative;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        align-items: flex-start;
-        padding: 0;
+        align-items: flex-start; // padding: 0;
     }
     &--minimized {
-        height: 66px !important;
-        padding-top: 5px !important;
+        height: 66px;
+        padding-top: 12px;
     }
     &--bgColor {
         background-color: $color-mainYellow;
@@ -27,6 +27,7 @@
 .nav {
     display: block;
     &__burger {
+        height: 100%;
         z-index: 999;
         display: none;
     }
@@ -44,6 +45,9 @@
         font-weight: 700;
         color: $color-mainGrey;
         display: inline-block;
+        &:hover {
+            transform: scale(1.05);
+        }
         &:first-child {
             padding-left: 0;
         }
@@ -75,34 +79,32 @@
             padding: 2px 11px;
             border: 3px solid $color-logoBorder;
             margin-right: -3px;
-
         }
         &--light {
             color: $h1-font-color;
         }
+    }
+    &:hover {
+        filter: contrast(100);
+        transform: scale(1.05);
     }
 }
 
 @media only screen and (min-width: 901px) {
     .nav__link--decorated:hover {
         color: $color-white;
-        border: 3px solid $color-logoBorder;
-        padding-right: 3px;
-        padding-left: 3px;
-        margin-left: -6px;
-        margin-right: -6px;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .header {
         height: 66px;
-        padding-top: 5px;
+        padding-top: 12px;
     }
     .nav {
         // display: none;
         visibility: hidden;
-        position: absolute;
+        position: fixed;
         height: 100vh;
         right: 0;
         top: 0;
@@ -114,7 +116,7 @@
             position: absolute;
             display: block;
             right: 32px;
-            top: 12px;
+            // top: 12px;
             border: none;
             background: none;
             .hide {

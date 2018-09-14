@@ -1,5 +1,8 @@
 .modal {
+  max-height: calc(100vh - 66px);
+  margin-top: 60px;
   &__container {
+    margin-top: 66px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +45,6 @@
     padding: 24px;
     visibility: hidden;
     opacity: 0;
-    //color: rgba(255,255,255,0.87);
   }
 }
 
@@ -85,12 +87,9 @@
   border-radius: 3px;
   font-weight: 300;
   position: relative;
-  //opacity: 1;
   &__background {
     display: table-cell;
     background: rgba(0, 0, 0, .8);
-    //background: $color-mainYellow;
-    //opacity: 0.7;
     text-align: center;
     vertical-align: middle;
   }
@@ -115,24 +114,25 @@
     }
   }
   &__close {
-    color: #777;
-    font: 14px/100% arial, sans-serif;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: $color-mainGrey;
     position: absolute;
-    right: 5px;
-    text-decoration: none;
+    right: 10px;
     text-shadow: 0 1px 0 #fff;
-    top: 5px;
+    top: 10px;
     border: none;
-    background: white;
     &:after {
-      content: '✖'; /* UTF-8 symbol */
     }
     &:focus {
-      outline: none;
     }
   }
 
   &__form {
+    min-width: 240px;
+    max-width: 400px;
+    min-height: 400px;
     width: 40vw;
     height: 50vh;
     display: flex;
@@ -154,7 +154,6 @@
 
   }
   &__submit {
-    width: 30%;
     align-self: center;
     transition: all 0.3s;
     text-align: center;
@@ -207,4 +206,3 @@
     transform: scale(0);
   }
 }
-

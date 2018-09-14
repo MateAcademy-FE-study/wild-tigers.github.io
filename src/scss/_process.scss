@@ -2,7 +2,16 @@
 
 .process {
     background: url('../img/png/pattern.png');
+    overflow: hidden;
     &__content {
-        // background-image: url("../img/svg/big_pic/map.svg");
+padding-bottom: 110px;
+    }
+}
+@media (max-width: 650px) {
+    .process {
+        &__content {
+            margin: 0 -45px;
+            padding-bottom: 60px;
+        }
     }
 }
