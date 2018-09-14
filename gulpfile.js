@@ -2,9 +2,12 @@ let gulp = require("gulp");
 let sass = require("gulp-sass");
 let browserSync = require("browser-sync");
 let nunjucksRender = require("gulp-nunjucks-render");
-let concat = require('gulp-concat');
-let rename = require('gulp-rename');
-let uglify = require('gulp-uglify');
+// let concat = require('gulp-concat');
+// let rename = require('gulp-rename');
+// let uglify = require('gulp-uglify');
+
+let jsFiles = './src/js/**/*.js';
+let jsDest = './build/scripts/';
 
 
 gulp.task("sass", function () {
@@ -46,9 +49,6 @@ gulp.task("serv", function () {
 });
 
 
-let jsFiles = './src/js/**/*.js',
-    jsDest = './build/scripts/';
-
 gulp.task('scripts', function () {
     return gulp.src(jsFiles)
         // .pipe(concat('scripts.js'))
@@ -66,5 +66,5 @@ gulp.task("default", ["sass", "nunjucks", "copy:img", "serv", "scripts"], functi
     gulp.watch("./src/templates/**/*.html", ["nunjucks"]);
     gulp.watch("./src/img/**/*", ["copy:img"]);
     gulp.watch(jsFiles, ["scripts"]);
-    gulp.watch('./build', browserSync.reload);
+    gulp.watch("./build/**/*", browserSync.reload);
 });
