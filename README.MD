@@ -1,3 +1,6 @@
+[Click me for browser preview](https://mateacademy-fe-study.github.io/wild-tigers.github.io/)
+
+
 # WILD-TIGERS
 
 ## How to **install** project
