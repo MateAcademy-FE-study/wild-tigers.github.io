@@ -1116,7 +1116,7 @@ body {
   display: inline-block;
   font-size: 35px;
   padding: 55px 0 48px 0;
-  transition: transform 0.75s ease-in; }
+  transition: all 0.75s ease-in; }
 
 .coll__name {
   font-size: 22px;
