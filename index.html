@@ -4,13 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page was made by team of Svitlana, Nikolay and Valentyn during Front-end contest to show up knowledge and skills of HTML, CSS and JS">
+    <meta name="robots" content="index, nofollow">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7cRoboto:100,300,400,500,700,900%7cSource+Sans+Pro:700&amp;subset=cyrillic-ext"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Unique-tech</title>
@@ -109,13 +111,13 @@
 
                 <div class="slider--big">
                     <div class="slider--big__slide">
-                        <img src="./img/png/macbook_slide_01.png" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif" alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img src="./img/png/macbook_slide_02.png" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif" alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img src="./img/png/macbook_slide_03.png" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif" alt="macbook screen">
                     </div>
                 </div>
 
@@ -172,7 +174,7 @@
         </div>
         <div class="services__container">
             <div class="services__block">
-                <img class="services__image services__size" src="img/png/macbook_1.png" alt="macbook">
+                <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
                     <h3 class="services__header">web design</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -186,7 +188,7 @@
                 </article>
             </div>
             <div class="services__block">
-                <img class="services__image services__size" src="img/png/macbook_1.png" alt="macbook">
+                <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
                     <h3 class="services__header">search engine optimization</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -201,7 +203,7 @@
 
             </div>
             <div class="services__block">
-                <img class="services__image services__size" src="img/png/macbook_1.png" alt="macbook">
+                <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
                     <h3 class="services__header">affiliate marketting</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -226,7 +228,7 @@
             <h2 class="section-name section-name--mw330 section-name--arrow-l">how we work</h2>
         </div>
         <div class="process__content">
-            <img src="./img/svg/big_pic/big_pic.svg" alt="process scheme">
+            <img class="b-lazy" src="./img/svg/big_pic/big_pic_small.gif" data-src="./img/svg/big_pic/big_pic.svg" alt="process scheme">
         </div>
     </div>
 </section>
@@ -402,8 +404,8 @@
     <div class="container history__container" data-aos="fade-up">
         <div class="history__left">
             <div class="history__image">
-                <img class="history__image--background" src="img/png/happy_clerk.gif" alt="happy clerk">
-                <img class="history__image--hover" src="img/svg/happy_clerk_lamp.svg" alt="lamp">
+                <img class="history__image--background b-lazy" data-src="./img/svg/happy_clerk.svg" src="./img/png/happy_clerk.gif" alt="happy clerk">
+                <img class="history__image--hover" src="./img/svg/happy_clerk_lamp.svg" alt="lamp">
             </div>
         </div>
 
@@ -554,7 +556,7 @@
             <h2 class="support__name section-name section-name--mw446  section-name--arrow-r">UPDATES & SUPPORT</h2>
         </div>
         <div class="suppport__inner">
-            <img class="support__img" src="img/png/macbook_2.png" alt="macbook">
+            <img class="b-lazy" class="support__img" data-src="img/png/macbook_2.png" src="img/png/macbook_2_small.gif" alt="macbook">
             <div class="support__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -573,7 +575,7 @@
         <div class="hire">
             <div class="hire__wrap">
 
-                <img class="hire__img" src="img/png/hire_clean.png" alt="hand work">
+                <img class="hire__img b-lazy" src="./img/png/hire_clean_small.jpg" data-src="./img/png/hire_clean.png" alt="hand work">
                 <div class="hire__img--overlay"></div>
             </div>
             <div class="hire__content">
@@ -685,26 +687,26 @@
     <script src="./scripts/aos.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-            AOS.init();
-     // You can also pass an optional settings object
-    // below listed default settings
-    AOS.init({
-        // Global settings
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-         // Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 400, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-    });
-            </script>
+        AOS.init();
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            // Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 
 
     <script src="./scripts/script.js"></script>
