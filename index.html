@@ -28,7 +28,7 @@
             <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
             <div class="logo__element">TECH</div>
         </a>
-        <button class="nav__burger">
+        <button class="nav__burger" aria-label="open or close navigation panel">
             <i class="nav__burger--open fas fa-bars"></i>
             <i class="nav__burger--close hide fas fa-times"></i>
         </button>
@@ -218,7 +218,7 @@
             </div>
         </div>
     </div>
-    <a href="javascript:" id="return-to-top" class="button--round">
+    <a href="javascript:" id="return-to-top" class="button--round" aria-label="return to top">
         <i class="icon fas fa-chevron-up"></i>
     </a>
 </section>
@@ -627,16 +627,16 @@
             </nav>
             <div class="footer-inner__social">
                 <div class="social">
-                    <a class="social__block" href="#">
+                    <a class="social__block" href="#" aria-label="facebook">
                         <i class="social__icon fab fa-facebook-f"></i>
                     </a>
-                    <a class="social__block" href="#">
+                    <a class="social__block" href="#" aria-label="twitter">
                         <i class="social__icon fab fa-twitter"></i>
                     </a>
-                    <a class="social__block" href="#">
+                    <a class="social__block" href="#" aria-label="google">
                         <i class="social__icon fab fa-google-plus-g"></i>
                     </a>
-                    <a class="social__block" href="#">
+                    <a class="social__block" href="#" aria-label="linkedin">
                         <i class="social__icon fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -666,14 +666,14 @@
         <div class="modal">
             <h2 class="modal__head">Hire Us</h2>
             <form class="modal__form" name="hire_us">
-                <input type="email" name="email" id="email" class="modal__email" placeholder="Your email" required>
-                <input type="text" name="full-name" id="full-name" class="modal__name" placeholder="Your Name" required>
-                <textarea name="message" class="modal__textarea" placeholder="Your message"></textarea>
+                <input type="email" name="email" id="email" class="modal__email" placeholder="Your email" required aria-label="email">
+                <input type="text" name="full-name" id="full-name" class="modal__name" placeholder="Your Name" required aria-label="your name">
+                <textarea name="message" class="modal__textarea" placeholder="Your message" aria-label="your message"></textarea>
                 <!--<input type="submit" name="submit" class="modal__submit" value="SEND" onclick="sendMail()">-->
                 <button class="button__icon--right modal__submit">Send</button>
 
             </form>
-            <button class="modal__close" id="modal__close">
+            <button class="modal__close" id="modal__close" aria-label="Close">
                     <i class="nav__burger--close fas fa-times"></i>
             </button>
         </div>
@@ -715,7 +715,7 @@
 
         $(document).ready(function () {
             var bLazy = new Blazy();
-        })();
+        });
 
 
     </script>
