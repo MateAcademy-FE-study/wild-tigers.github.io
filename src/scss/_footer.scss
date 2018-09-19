@@ -7,10 +7,6 @@
 .footer {
     width: 100vw;
     background-color: $p-font-color;
-    &__list {
-        list-style: none;
-        margin-right: 20px;
-    }
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -24,6 +20,8 @@
 }
 
 .menu {
+    list-style: none;
+    margin-right: 20px;
     &__h3 {
         font-size: $h3-font-size;
         font-weight: 500;
@@ -74,7 +72,7 @@
 }
 
 @media (max-width: 1044px) {
-    .footer__list {
+    .menu {
         padding-top: 45px;
     }
 }
@@ -89,13 +87,13 @@
 }
 
 @media (max-width: 520px) {
-    .footer-__list {
+    .menu {
         width: calc(50vw - 40px);
     }
 }
 
 @media (max-width: 479px) {
-    .footer__list {
+    .menu {
         padding-top: 20px;
     }
     .footer__menu {
