@@ -21,3 +21,13 @@
 6.  switch back to master `git checkout master`
 7. `git pull`
 8. checkout to new branch (step 3 in install section)
+
+## How to deploy
+
+1. make sure PR is merged to master branch
+2. in master branch `git pull`
+3. run `gulp` to rebuild content in "build" folder
+4. make sure there is no uncommited changes (files)
+5. execute script deploy.sh in root folder by typing `./deploy.sh` to update branch gh-pages
+6. after couple of minutes check result here https://mateacademy-fe-study.github.io/wild-tigers.github.io/
+7. enjoy updated page 
