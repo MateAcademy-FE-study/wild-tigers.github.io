@@ -1,24 +1,25 @@
 @import 'variables';
+.container--footer {
+    width: 100%;
+    color: #aab2bd;
+}
+
 .footer {
     width: 100vw;
     background-color: $p-font-color;
-    &-inner {
-        width: 100%;
-        color: #aab2bd;
-        &__list {
-            list-style: none;
-            margin-right: 20px;
-        }
-        &__menu {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-right: -20px;
-        }
-        &__social {
-            text-align: center;
-            padding-bottom: 33px;
-        }
+    &__list {
+        list-style: none;
+        margin-right: 20px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: -20px;
+    }
+    &__social {
+        text-align: center;
+        padding-bottom: 33px;
     }
 }
 
@@ -73,7 +74,7 @@
 }
 
 @media (max-width: 1044px) {
-    .footer-inner__list {
+    .footer__list {
         padding-top: 45px;
     }
 }
@@ -82,26 +83,22 @@
     .menu__h3 {
         padding: 10px 0;
     }
-    .footer-inner__list {
+    .footer__list {
         // margin: 0px 30px;
     }
 }
 
-
 @media (max-width: 520px) {
-    .footer-inner__list {
+    .footer-__list {
         width: calc(50vw - 40px);
     }
 }
 
-
-
-
-@media  (max-width: 479px) {
-    .footer-inner__list {
+@media (max-width: 479px) {
+    .footer__list {
         padding-top: 20px;
     }
-    .footer-inner__menu {
+    .footer__menu {
         padding: 10px;
         max-width: 100vw;
     }
