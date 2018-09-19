@@ -1,7 +1,7 @@
 $box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
 $font-size: 20px;
 $border-radius: 2px;
-.hire {
+.hire-us {
     margin: 130px 0;
     &__content {
         background-color: $color-mainYellow;
@@ -71,14 +71,14 @@ $border-radius: 2px;
 }
 
 @media only screen and (max-width: 600px) {
-    .hire__button,
-    .hire__h3 {
+    .hire-us__button,
+    .hire-us__h3 {
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 470px) {
-    .hire {
+    .hire-us {
         margin: 65px -20px;
         &__content {
             padding-left: 20px;
@@ -94,12 +94,12 @@ $border-radius: 2px;
 }
 
 @media (max-width: 400px) {
-    .hire {
+    .hire-us {
         &__h3 {
             max-width: calc(100vw - 140px);
         }
         &__button {
-          transform: translateY(-120%);
+            transform: translateY(-120%);
         }
     }
 }
