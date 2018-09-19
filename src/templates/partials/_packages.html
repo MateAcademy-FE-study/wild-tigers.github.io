@@ -1,24 +1,24 @@
 <section class="packages">
     <div class="container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="section-name section-name--mw330  section-name--arrow-l">OUR PACKAGES</h2>
+            <h2 class="section-name section-name--mw330  section-name--arrow-l">our packages</h2>
         </div>
         <div class="packages__table">
-            <div class="packages__coll">
+            <div class="coll">
                 <h3 class="coll__name--mobile coll__btn--grey">BASIC</h3>
                 <div>
                     <h4 class="coll__name packages--grey">Basic</h4>
                     <ul>
                         <li class="coll__li"><span class="coll__span"> 5 web sites</span></li>
                         <li class="coll__li"><span class="coll__span">15 e-mails</span></li>
-                        <li class="coll__li"><span class="coll__span">l databases</span></li>
+                        <li class="coll__li"><span class="coll__span">5 MySql databases</span></li>
                         <li class="coll__li"><span class="coll__span">10 Gb storage</span></li>
                         <li class="coll__price packages--grey"><b class="coll__price--dol">$5</b>/mo.</li>
                     </ul>
                     <button class="coll__btn coll__btn--grey" type="button">ORDER NOW</button>
                 </div>
             </div>
-            <div class="packages__coll">
+            <div class="coll">
                 <h3 class="coll__name--mobile coll__btn--red">STANDART</h3>
                 <div>
                     <h4 class="coll__name packages--red">Standart</h4>
@@ -33,7 +33,7 @@
                     <button class="coll__btn coll__btn--red" type="button">ORDER NOW</button>
                 </div>
             </div>
-            <div class="packages__coll">
+            <div class="coll">
                 <h3 class="coll__name--mobile coll__btn--yellow">PREMIUM</h3>
                 <div>
                     <h4 class="coll__name packages--yellow">Premium</h4>
@@ -52,7 +52,7 @@
         <script>
             if (window.matchMedia('(max-width: 480px)').matches) {
                 $('.coll__name--mobile').next().hide();
-                $('.coll__name--mobile').click(function () {
+                $('.coll__name--mobile').click(function() {
                     $(this).next().slideToggle();
                     $('.coll__name--mobile').not(this).next().stop(true, true).slideUp();
                 });
