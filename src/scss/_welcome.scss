@@ -4,7 +4,7 @@
     padding-top: 150px;
     min-height: 100vh;
     &__container {
-        // height: 100%;
+        padding: 0;
     }
     &--bgColor {
         background-color: $color-mainYellow;
