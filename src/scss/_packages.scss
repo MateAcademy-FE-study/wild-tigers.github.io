@@ -17,26 +17,6 @@
             right: 33%;
         }
     }
-    &__coll {
-        width: 33%;
-        padding-bottom: 50px;
-        &:hover .coll {
-            &__span {
-                transform: scale(1.1);
-                transform-origin: bottom;
-                color: $p-font-color;
-            }
-            &__btn,
-            &__name {
-                transform: scale(1.1);
-                transform-origin: bottom;
-            }
-            &__price--dol {
-                transform: scale(2);
-                transform-origin: right;
-            }
-        }
-    }
     &--grey {
         color: $color-liteGrey;
     }
@@ -49,6 +29,24 @@
 }
 
 .coll {
+    width: 33%;
+    padding-bottom: 50px;
+    &:hover & {
+        &__span {
+            transform: scale(1.1);
+            transform-origin: bottom;
+            color: $p-font-color;
+        }
+        &__btn,
+        &__name {
+            transform: scale(1.1);
+            transform-origin: bottom;
+        }
+        &__price--dol {
+            transform: scale(1.6);
+            transform-origin: right;
+        }
+    }
     &__span {
         display: block;
         transition: transform 0.25s ease-in 0.25s;
@@ -86,7 +84,7 @@
         white-space: nowrap;
         user-select: none;
         text-decoration: none;
-        transition: transform 0.75s linear 0.5s;
+        transition: all 0.75s linear 0.5s;
         &--grey {
             background-color: $color-liteGrey;
         }
@@ -95,32 +93,6 @@
         }
         &--yellow {
             background-color: $color-mainYellow;
-        }
-        &:hover {
-            animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) infinite;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-            cursor: pointer;
-            @keyframes shake {
-                10%,
-                90% {
-                    transform: translate3d(-1px, 0, 0);
-                }
-                20%,
-                80% {
-                    transform: translate3d(2px, 0, 0);
-                }
-                30%,
-                50%,
-                70% {
-                    transform: translate3d(-4px, 0, 0);
-                }
-                40%,
-                60% {
-                    transform: translate3d(4px, 0, 0);
-                }
-            }
         }
     }
 }
@@ -143,24 +115,22 @@
         &__price {
             padding: 15px;
         }
-    }
-    .packages {
-        &__table {
-            width: 100%;
-        }
-        &__coll:hover .coll {
+        &:hover & {
             &__price {
                 padding: 15px 0;
                 &--dol {
-                    transform: scale(1.5);
+                    transform: scale(1.3);
                 }
             }
+        }
+        .packages__table {
+            width: 100%;
         }
     }
 }
 
 @media screen and (max-width:568px) {
-    .packages__coll:hover .coll__span {
+    .coll:hover .coll__span {
         transform: scale(0.9);
     }
 }
@@ -174,13 +144,11 @@
                 width: 0px;
             }
         }
-        &__coll {
-            width: 80%;
-            padding: 0;
-            margin: 10px auto;
-        }
     }
     .coll {
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
         &__name {
             display: none;
             &--mobile {
@@ -198,7 +166,7 @@
             color: $p-font-color;
         }
         &__price--dol {
-            transform: scale(1.3);
+            transform: scale(1.2);
             transform-origin: right;
             padding: 10px 0;
         }
