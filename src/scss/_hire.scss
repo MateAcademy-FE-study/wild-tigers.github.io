@@ -93,7 +93,7 @@ $border-radius: 2px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     .hire-us {
         &__h3 {
             max-width: calc(100vw - 140px);
