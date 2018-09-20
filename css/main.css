@@ -309,6 +309,9 @@ template {
 body {
   font-family: "Roboto", sans-serif; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 @media (any-hover: none) {
   * {
     outline: none; } }
@@ -469,8 +472,6 @@ body {
   width: 100%;
   max-width: 1004px;
   margin: 0 auto; }
-  .container--no-padding {
-    padding: 0; }
   .container--footer {
     padding-top: 47px; }
 
@@ -499,7 +500,6 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   white-space: nowrap;
-  text-transform: uppercase;
   padding: 13px 14px;
   margin-top: 130px;
   margin-bottom: 145px;
@@ -542,7 +542,6 @@ body {
     transform: rotate(163deg) scaleX(-1); }
 
 .yellow-btn {
-  text-transform: uppercase;
   background-color: #ffc038;
   border: 0;
   white-space: nowrap;
@@ -707,8 +706,7 @@ body {
       padding-right: 0; }
   .nav__link {
     color: #464646;
-    text-decoration: none;
-    text-transform: uppercase; }
+    text-decoration: none; }
     .nav__link--centered {
       font-size: 12px;
       font-weight: 900;
@@ -733,7 +731,7 @@ body {
     transform: scale(1.05); }
 
 @media only screen and (min-width: 901px) {
-  .nav__link--decorated:hover {
+  .nav__link:hover {
     color: white; } }
 
 @media only screen and (max-width: 900px) {
@@ -779,6 +777,8 @@ body {
   width: 100vw;
   padding-top: 150px;
   min-height: 100vh; }
+  .welcome__container {
+    padding: 0; }
   .welcome--bgColor {
     background-color: #ffc038; }
 
@@ -810,7 +810,6 @@ body {
     min-width: 392px; }
   .hero__title {
     color: #fdfcfc;
-    text-transform: uppercase;
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
@@ -975,8 +974,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 1;
-    color: black;
-    text-transform: uppercase; }
+    color: black; }
   .services__text {
     font-weight: 300;
     font-size: 14px;
@@ -1203,22 +1201,25 @@ body {
     flex-wrap: wrap-reverse;
     justify-content: space-between; }
   .history__right, .history__left {
-    width: 50%;
-    min-width: 480px; }
+    width: 50%; }
   .history__left {
-    background-color: white; }
+    background-color: white;
+    display: flex; }
   .history__right {
     padding-left: 20px; }
   .history__image {
-    position: relative; }
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    margin: auto; }
     .history__image--background {
       width: 100%; }
     .history__image--hover {
       visibility: hidden;
       position: absolute;
-      width: 108px;
-      top: 121px;
-      left: 206px; }
+      width: 22%;
+      top: 23%;
+      left: 40%; }
     .history__image:hover .history__image--hover {
       visibility: visible; }
   .history__title--no-space {
@@ -1459,7 +1460,7 @@ body {
     .hire-us__wrap {
       overflow: hidden; } }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
   .hire-us__h3 {
     max-width: calc(100vw - 140px); }
   .hire-us__button {

@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" defer></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+        <script src="./scripts/blazy.min.js" defer></script>
+        <script src="./scripts/script.js" defer></script>
+
 
     <title>Unique-tech</title>
 </head>
@@ -23,9 +30,9 @@
 
 <header class="header header--bgColor">
     <div class="container header__container">
-        <a href="#" class="logo nav__link">
-            <div class="logo__element logo__element--bordered logo__element--light">UNIQUE</div>
-            <div class="logo__element">TECH</div>
+        <a href="#" class="logo nav__link uppercase">
+            <span class="logo__element logo__element--bordered logo__element--light">UNIQUE</span>
+            <span class="logo__element">TECH</span>
         </a>
         <button class="nav__burger" aria-label="open or close navigation panel">
             <i class="nav__burger--open fas fa-bars"></i>
@@ -34,14 +41,14 @@
 
         <nav class="nav">
             <ul class="nav__block">
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">home</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">services</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">about</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">portfolio</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">academic</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">blog</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">contact us</a><br />
-                    <a class="nav__link nav__link--centered" href='tel:#'>(+966-322 322)</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">home</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">services</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">about</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">portfolio</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">academic</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">blog</a></li>
+                <li class="nav__element"><a class="nav__link uppercase" href="#">contact us</a><br/>
+                    <a class="nav__link uppercase nav__link--centered" href='tel:#+966322322'>(+966-322 322)</a></li>
             </ul>
         </nav>
     </div>
@@ -50,7 +57,7 @@
     <div class="container welcome__container container--no-padding">
         <figure class="hero">
             <figcaption class="hero__message">
-                <h1 class="hero__title">
+                <h1 class="hero__title uppercase">
                     <span class="hero__title--nowrap">
                         unique-tech
                     </span>
@@ -70,36 +77,34 @@
                 <a class="button__icon--right" href="#">View More</a>
             </figcaption>
             <div class="hero__image">
-                <img class="hero__image--static" src="./img/png/macbook_1.png" alt="macbook">
-                <img class="slider--big__background b-lazy" src="./img/png/MacBook_black_screen_small.gif" data-src="./img/png/MacBook_black_screen.png"
-                    alt="macbook">
+                <img class="hero__image--static" src="./img/png/macbook_1.png" alt="laptop">
+                <img class="slider--big__background b-lazy"
+                src="./img/png/MacBook_black_screen_small.gif"
+                data-src="./img/png/MacBook_black_screen.png" alt="laptop">
 
                 <div class="slider--big">
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif"
-                            alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif" alt="web page in yellow color on laptop screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif"
-                            alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif" alt="mate academy web page on laptop screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif"
-                            alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif" alt="bootstrap web page on laptop screen">
                     </div>
                 </div>
 
-                <img class="slider--small__background" src="./img/png/iPhone_black_screen.png" alt="iPhone">
+                <img class="slider--small__background" src="./img/png/iPhone_black_screen.png" alt="smartphone">
 
                 <div class="slider--small">
                     <div class="slider--small__slide">
-                        <img src="./img/png/iphone_slide_01.png" alt="iphone screen">
+                        <img src="./img/png/iphone_slide_01.png" alt="web page in yellow color on smartphone screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img src="./img/png/iphone_slide_02.png" alt="iphone screen">
+                        <img src="./img/png/iphone_slide_02.png" alt="mate academy web page on smartphone screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img src="./img/png/iphone_slide_03.png" alt="iphone screen">
+                        <img src="./img/png/iphone_slide_03.png" alt="bootstrap web page on smartphone screen">
                     </div>
                 </div>
                 <div class="slider__dots"></div>
@@ -111,13 +116,13 @@
     <div class="container" data-aos="fade-up">
         <div class="text-center">
 
-            <h2 class="section-name section-name--mw330 section-name--arrow-r">what we do</h2>
+            <h2 class="section-name uppercase section-name--mw330 section-name--arrow-r">what we do</h2>
         </div>
         <div class="services__container">
             <div class="services__block">
                 <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
-                    <h3 class="services__header">web design</h3>
+                    <h3 class="services__header uppercase">web design</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed
                         enim ut sem. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
@@ -125,13 +130,13 @@
                         imperdiet sed euismod nisi porta lorem. Est placerat in egestas erat imperdiet sed euismod
                         nisi.
                     </p>
-                    <button type="button" class="yellow-btn services__btn open-button">view more </button>
+                    <button type="button" class="yellow-btn uppercase services__btn open-button">view more </button>
                 </article>
             </div>
             <div class="services__block">
                 <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
-                    <h3 class="services__header">search engine optimization</h3>
+                    <h3 class="services__header uppercase">search engine optimization</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed
                         enim ut sem. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
@@ -139,14 +144,14 @@
                         imperdiet sed euismod nisi porta lorem. Est placerat in egestas erat imperdiet sed euismod
                         nisi.
                     </p>
-                    <button type="button" class="yellow-btn services__btn open-button">view more </button>
+                    <button type="button" class="yellow-btn uppercase services__btn open-button">view more </button>
                 </article>
 
             </div>
             <div class="services__block">
                 <img class="services__image services__size b-lazy" data-src="img/png/macbook_1.png" src="img/png/macbook_1_small.gif" alt="macbook">
                 <article class="services__content">
-                    <h3 class="services__header">affiliate marketting</h3>
+                    <h3 class="services__header uppercase">affiliate marketting</h3>
                     <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed
                         enim ut sem. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
@@ -154,7 +159,7 @@
                         imperdiet sed euismod nisi porta lorem. Est placerat in egestas erat imperdiet sed euismod
                         nisi.
                     </p>
-                    <button type="button" class="yellow-btn services__btn open-button">view more </button>
+                    <button type="button" class="yellow-btn uppercase services__btn open-button">view more </button>
                 </article>
             </div>
         </div>
@@ -166,7 +171,7 @@
 <section class="process">
     <div class="container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="section-name section-name--mw330 section-name--arrow-l">how we work</h2>
+            <h2 class="section-name uppercase section-name--mw330 section-name--arrow-l">how we work</h2>
         </div>
         <div class="process__content">
             <img class="b-lazy" src="./img/svg/big_pic/big_pic_small.gif" data-src="./img/svg/big_pic/big_pic.svg" alt="process scheme">
@@ -176,7 +181,7 @@
 <section class="features">
     <div class="container features__container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="features__heading section-name section-name--mw330  section-name--arrow-r">our features</h2>
+            <h2 class="features__heading section-name uppercase section-name--mw330  section-name--arrow-r">our features</h2>
         </div>
         <div class="features__content">
             <div class="features__section">
@@ -282,11 +287,11 @@
 <section class="packages">
     <div class="container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="section-name section-name--mw330  section-name--arrow-l">our packages</h2>
+            <h2 class="section-name uppercase section-name--mw330  section-name--arrow-l">our packages</h2>
         </div>
         <div class="packages__table">
             <div class="coll">
-                <h3 class="coll__name--mobile coll__btn--grey">BASIC</h3>
+                <h3 class="coll__name--mobile coll__btn--grey uppercase">Basic</h3>
                 <div>
                     <h4 class="coll__name packages--grey">Basic</h4>
                     <ul>
@@ -296,11 +301,11 @@
                         <li class="coll__li"><span class="coll__span">10 Gb storage</span></li>
                         <li class="coll__price packages--grey"><b class="coll__price--dol">$5</b>/mo.</li>
                     </ul>
-                    <button class="coll__btn coll__btn--grey" type="button">ORDER NOW</button>
+                    <button class="coll__btn coll__btn--grey uppercase" type="button">order now</button>
                 </div>
             </div>
             <div class="coll">
-                <h3 class="coll__name--mobile coll__btn--red">STANDART</h3>
+                <h3 class="coll__name--mobile coll__btn--red uppercase">Standart</h3>
                 <div>
                     <h4 class="coll__name packages--red">Standart</h4>
                     <ul>
@@ -311,11 +316,11 @@
                         <li class="coll__price packages--red">
                             <b class="coll__price--dol">$12</b>/mo.</li>
                     </ul>
-                    <button class="coll__btn coll__btn--red" type="button">ORDER NOW</button>
+                    <button class="coll__btn coll__btn--red uppercase" type="button">order now</button>
                 </div>
             </div>
             <div class="coll">
-                <h3 class="coll__name--mobile coll__btn--yellow">PREMIUM</h3>
+                <h3 class="coll__name--mobile coll__btn--yellow uppercase">Premium</h3>
                 <div>
                     <h4 class="coll__name packages--yellow">Premium</h4>
                     <ul>
@@ -326,7 +331,7 @@
                         <li class="coll__price packages--yellow">
                             <b class="coll__price--dol">$19</b>/mo.</li>
                     </ul>
-                    <button class="coll__btn coll__btn--yellow" type="button">ORDER NOW</button>
+                    <button class="coll__btn coll__btn--yellow uppercase" type="button">order now</button>
                 </div>
             </div>
         </div>
@@ -342,7 +347,7 @@
         </div>
 
         <div class="history__right">
-            <h2 class="history__title--no-space section-name section-name--mw220">OUR HISTORY</h2>
+            <h2 class="history__title--no-space section-name uppercase section-name--mw220">OUR HISTORY</h2>
             <p class="history__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae lacus justo. Ut ullamcorper
                 fermentum ex. Nullam mollis diam id orci volutpat malesuada. Duis quis interdum justo, ac ultricies
@@ -357,7 +362,7 @@
                 lacus augue, volutpat quis porttitor a, placerat in lacus.
             </p>
 
-            <button type="button" class="history__button yellow-btn">browse our story</button>
+            <button type="button" class="history__button yellow-btn uppercase">browse our story</button>
         </div>
 
     </div>
@@ -365,7 +370,7 @@
 <section class="projects">
     <div class="container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="projects__name section-name section-name--mw446 section-name--arrow-r">OUR BUSINESS RELATED projects
+            <h2 class="projects__name section-name uppercase section-name--mw446 section-name--arrow-r">OUR BUSINESS RELATED projects
             </h2>
         </div>
         <div class="projects__block">
@@ -440,7 +445,7 @@
 </section>
 <section class="team screen-width" data-aos="fade-up">
     <div class="text-center">
-        <h2 class="team__name section-name section-name--mw446  section-name--arrow-l">OUR TEAM MEMBERS</h2>
+        <h2 class="team__name section-name uppercase section-name--mw446  section-name--arrow-l">OUR TEAM MEMBERS</h2>
     </div>
     <div class="screen-width brand-yellow">
         <div class="team__wrapper container">
@@ -485,7 +490,7 @@
 <section class="support">
     <div class="container" data-aos="fade-up">
         <div class="text-center">
-            <h2 class="support__name section-name section-name--mw446  section-name--arrow-r">updates & support</h2>
+            <h2 class="support__name section-name uppercase section-name--mw446  section-name--arrow-r">updates & support</h2>
         </div>
         <div class="suppport__inner">
             <img class="b-lazy support__img" data-src="img/png/macbook_2.png" src="img/png/macbook_2_small.gif" alt="macbook">
@@ -494,7 +499,7 @@
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
             </div>
-            <button class="support_button yellow-btn">SUPPORT CENTER</button>
+            <button class="support_button yellow-btn uppercase">SUPPORT CENTER</button>
         </div>
     </div>
 </section>
@@ -611,12 +616,7 @@
 
     <!-- <script src="./scripts/_AOSconfig.js"></script>
             <script src="./scripts/aos.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/blazy.min.js"></script>
+
 </body>
 
 </html>
