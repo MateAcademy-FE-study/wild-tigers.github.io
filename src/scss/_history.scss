@@ -11,26 +11,29 @@
     }
     &__right,
     &__left {
-        width: 50%;
-        min-width: 480px;
+        width: 50%; // min-width: 480px;
     }
     &__left {
         background-color: $color-white;
+        display: flex;
     }
     &__right {
         padding-left: 20px;
     }
     &__image {
-        position: relative; // height: 100%;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        margin: auto;
         &--background {
             width: 100%;
         }
         &--hover {
             visibility: hidden;
             position: absolute;
-            width: 108px;
-            top: 121px;
-            left: 206px;
+            width: 22%;
+            top: 23%;
+            left: 40%;
         }
         &:hover &--hover {
             visibility: visible;
