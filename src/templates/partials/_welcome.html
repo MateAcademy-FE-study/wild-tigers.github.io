@@ -7,7 +7,7 @@
                         unique-tech
                     </span>
                     <span class="hero__title--nowrap">
-                            app development
+                        app development
                     </span>
                 </h1>
                 <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -23,19 +23,21 @@
             </figcaption>
             <div class="hero__image">
                 <img class="hero__image--static" src="./img/png/macbook_1.png" alt="macbook">
-                <img class="slider--big__background b-lazy"
-                src="./img/png/MacBook_black_screen_small.gif"
-                data-src="./img/png/MacBook_black_screen.png" alt="macbook">
+                <img class="slider--big__background b-lazy" src="./img/png/MacBook_black_screen_small.gif" data-src="./img/png/MacBook_black_screen.png"
+                    alt="macbook">
 
                 <div class="slider--big">
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif"
+                            alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif"
+                            alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif"
+                            alt="macbook screen">
                     </div>
                 </div>
 
@@ -56,31 +58,4 @@
             </div>
         </figure>
     </div>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $('.slider--big').slick({
-            autoplay: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplaySpeed: 1000,
-            arrows: false,
-            fade: true,
-            // dotsClass: 'slider__dots',
-            asNavFor: '.slider--small'
-        });
-        $('.slider--small').slick({
-            autoplay: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplaySpeed: 1000,
-            dots: true,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider--big',
-            appendDots: $('.slider__dots'),
-            // dotsClass: 'slider__dots',
-        });
-    </script>
 </section>
