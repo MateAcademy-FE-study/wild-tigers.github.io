@@ -9,12 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7cRoboto:100,300,400,500,700,900%7cSource+Sans+Pro:700&amp;subset=cyrillic-ext"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
     <title>Unique-tech</title>
 </head>
 
@@ -41,44 +40,11 @@
                 <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">portfolio</a></li>
                 <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">academic</a></li>
                 <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">blog</a></li>
-                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">contact us</a><br/>
+                <li class="nav__element"><a class="nav__link nav__link--decorated" href="#">contact us</a><br />
                     <a class="nav__link nav__link--centered" href='tel:#'>(+966-322 322)</a></li>
             </ul>
         </nav>
     </div>
-
-    <script>
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 30) {
-                $('.header').addClass("header--minimized");
-            }
-            else {
-                $('.header').removeClass("header--minimized");
-            }
-        });
-
-    </script>
-
-    <script>
-        function onOff() {
-            document.querySelector('.nav__burger--open').classList.toggle('hide');
-            document.querySelector('.nav').classList.toggle('show');
-            document.querySelector('.nav__burger--close').classList.toggle('hide');
-            // document.querySelector('.close').focus();
-
-        }
-
-        // function hide() {
-        //     document.querySelector('.nav').classList.remove('show');
-        //     // document.querySelector('#click_me').focus();
-        // }
-
-        window.onload = function () {
-            document.querySelector('.nav__burger').addEventListener('click', onOff);
-            // document.querySelector('.nav__link').addEventListener('click', hide);
-        }
-    </script>
 </header>
 <section class="welcome welcome--bgColor">
     <div class="container welcome__container container--no-padding">
@@ -89,7 +55,7 @@
                         unique-tech
                     </span>
                     <span class="hero__title--nowrap">
-                            app development
+                        app development
                     </span>
                 </h1>
                 <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -105,19 +71,21 @@
             </figcaption>
             <div class="hero__image">
                 <img class="hero__image--static" src="./img/png/macbook_1.png" alt="macbook">
-                <img class="slider--big__background b-lazy"
-                src="./img/png/MacBook_black_screen_small.gif"
-                data-src="./img/png/MacBook_black_screen.png" alt="macbook">
+                <img class="slider--big__background b-lazy" src="./img/png/MacBook_black_screen_small.gif" data-src="./img/png/MacBook_black_screen.png"
+                    alt="macbook">
 
                 <div class="slider--big">
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_01.png" src="./img/png/macbook_slide_01_small.gif"
+                            alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_02.png" src="./img/png/macbook_slide_02_small.gif"
+                            alt="macbook screen">
                     </div>
                     <div class="slider--big__slide">
-                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif" alt="macbook screen">
+                        <img class="b-lazy" data-src="./img/png/macbook_slide_03.png" src="./img/png/macbook_slide_03_small.gif"
+                            alt="macbook screen">
                     </div>
                 </div>
 
@@ -138,33 +106,6 @@
             </div>
         </figure>
     </div>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $('.slider--big').slick({
-            autoplay: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplaySpeed: 1000,
-            arrows: false,
-            fade: true,
-            // dotsClass: 'slider__dots',
-            asNavFor: '.slider--small'
-        });
-        $('.slider--small').slick({
-            autoplay: true,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplaySpeed: 1000,
-            dots: true,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider--big',
-            appendDots: $('.slider__dots'),
-            // dotsClass: 'slider__dots',
-        });
-    </script>
 </section>
 <section class="services">
     <div class="container" data-aos="fade-up">
@@ -389,15 +330,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            if (window.matchMedia('(max-width: 480px)').matches) {
-                $('.coll__name--mobile').next().hide();
-                $('.coll__name--mobile').click(function() {
-                    $(this).next().slideToggle();
-                    $('.coll__name--mobile').not(this).next().stop(true, true).slideUp();
-                });
-            }
-        </script>
     </div>
 </section>
 <section class="history">
@@ -678,41 +610,13 @@
 
 
     <!-- <script src="./scripts/_AOSconfig.js"></script>
-    <script src="./scripts/aos.js"></script> -->
+            <script src="./scripts/aos.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-        // You can also pass an optional settings object
-        // below listed default settings
-        AOS.init({
-            // Global settings
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            // Settings that can be overriden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
-            duration: 400, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-        });
-    </script>
-
-
     <script src="./scripts/script.js"></script>
     <script src="./scripts/blazy.min.js"></script>
-    <script>
-
-        $(document).ready(function () {
-            var bLazy = new Blazy();
-        });
-
-
-    </script>
 </body>
 
 </html>
