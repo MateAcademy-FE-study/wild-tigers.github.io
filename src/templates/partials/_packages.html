@@ -49,14 +49,5 @@
                 </div>
             </div>
         </div>
-        <script>
-            if (window.matchMedia('(max-width: 480px)').matches) {
-                $('.coll__name--mobile').next().hide();
-                $('.coll__name--mobile').click(function() {
-                    $(this).next().slideToggle();
-                    $('.coll__name--mobile').not(this).next().stop(true, true).slideUp();
-                });
-            }
-        </script>
     </div>
 </section>
